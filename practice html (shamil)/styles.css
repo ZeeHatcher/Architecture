@@ -1,0 +1,27 @@
+html {color: white;
+      background-color: black}
+
+h1 {font-family: 'Catamaran', sans-serif;}
+
+
+body {font-family: 'Roboto', sans-serif;}
+
+img {filter:grayscale(100);}
+
+ a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.classname a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+nav {
+    width: 1000px;
+    border: 10px solid cyan;
+    padding: 25px;
+    margin: 25px;
+}
+
+/* some tests */

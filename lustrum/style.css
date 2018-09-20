@@ -1,1 +1,110 @@
+/*
+#474747 - outer space grey
+#000000 - black
+#FFEFED - seashell white
+*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Catamaran", sans-serif;
+}
 
+.text-center {
+  text-align: center;
+}
+
+.logo-img {
+  display: block;
+  margin: 10px auto;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar {
+  list-style-type: none;
+  width: 80%;
+  margin: auto;
+}
+
+.navbar li {
+  display: inline;
+  float: left;
+}
+
+.navbar li:last-child {
+  float: none;
+}
+
+.navbar li a {
+  display: block;
+  padding: 5px 25px;
+  text-transform: uppercase;
+}
+
+.navbar li a:hover {
+  transition: 0.2s;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.banner {
+  position: relative;
+  height: 750px;
+}
+
+.banner-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: blur(3px);
+}
+
+.banner-center {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.banner-content {
+  position: absolute;
+  top: 40%;
+}
+
+.darken {
+  opacity: 0.7;
+  width: 80%;
+  height: 100%;
+  background-color: #000;
+}
+
+.darken-pos {
+  position: absolute;
+  top: 50%;
+}
+
+.title {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 7.5em;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.subtitle {
+  color: #fff;
+}
+
+.button {
+  padding: 0 20px;
+  color: #fff;
+  border-radius: 50px / 50px;
+  border: solid 2px #fff;
+}
+
+.button:hover {
+  transition: 0.2s;
+  background-color: #fff;
+  color: #000;
+}

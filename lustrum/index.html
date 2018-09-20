@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebusneuebold" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img alt="Nikken Sekkei Logo" src="images/logo.png" class="logo-img"></a>
+    <nav>
+      <ul class="navbar">
+        <li><a href="intro.html">Introduction to Architecture</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="opportunities.html">Opportunities</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="banner text-center">
+      <img class="banner-img" src="images/steel_architecture_hd.jpg" alt="Banner Image">
+      <div class="darken banner-center darken-pos"></div>
+      <div class="banner-content banner-center">
+        <h1 class="title">Architecture</h1>
+        <p class="subtitle">Architecture is wondrous and beautiful</p>
+        <a class="button" href="intro.html">Learn More</a>
+      </div>
+    </div>
+
+
+    <div class="grid-content">
+      <div>
+        <img src="#" alt="">
+        <h2>What Is Architecture</h2>
+      </div>
+      <div>
+        <img src="#" alt="">
+        <h2>Projects</h2>
+      </div>
+      <div>
+        <img src="#" alt="">
+        <h2>Opportunites</h2>
+      </div>
+      <div>
+        <img src="#" alt="">
+        <h2>News</h2>
+      </div>
+      <div>
+        <h2>Feedback</h2>
+        <p>We would like and appreciate any feedback that you may want to give</p>
+        <button>Click Here</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <a href="sitemap.html">Sitemap</a>
+    <a href="feedback.html">Feedback</a>
+    © <a href="#">Lustrum</a> | Last modified: <span id="dateModified"></span>
+  </footer>
+
+  <script>
+  function lastModified() {
+    var modifiedDate = new Date(document.lastModified);
+    var date = modifiedDate.toLocaleDateString();
+    return date
+  }
+
+  document.getElementById("dateModified").innerHTML = lastModified()
+  </script>
+</body>
+
+</html>

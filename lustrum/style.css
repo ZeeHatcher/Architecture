@@ -49,10 +49,10 @@ a {
   display: block;
   padding: 5px 25px;
   text-transform: uppercase;
+  transition: color 0.2s;
 }
 
 .navbar li a:hover {
-  transition: 0.2s;
   color: rgba(0, 0, 0, 0.4);
 }
 
@@ -103,10 +103,10 @@ a {
   color: #fff;
   border-radius: 50px / 50px;
   border: solid 2px #fff;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 .button:hover {
-  transition: 0.2s;
   background-color: #fff;
   color: #000;
 }
@@ -134,6 +134,7 @@ a {
   height: 400px;
   filter: brightness(50%);
   object-fit: cover;
+  transition: filter 0.2s;
 }
 
 .index-card > h2 {
@@ -145,6 +146,5 @@ a {
 }
 
 .index-card > img:hover {
-  transition: 0.2s;
   filter: brightness(10%);
 }

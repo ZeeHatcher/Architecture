@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   font-family: "Catamaran", sans-serif;
+  color: #222;
 }
 
 .text-center {
@@ -85,7 +86,7 @@ footer > * {
 
 .banner {
   position: relative;
-  height: 650px;
+  height: 800px;
   overflow: hidden;
 }
 
@@ -127,15 +128,29 @@ footer > * {
 
 .button {
   padding: 0 20px;
-  color: #fff;
   border-radius: 50px / 50px;
-  border: solid 2px #fff;
-  transition: background-color 0.2s, color 0.2s;
+  border: solid 2px;
+  transition: 0.2s, color 0.2s;
 }
 
-.button:hover {
+.black-button {
+  color: #222;
+  border-color: #222;
+}
+
+.black-button:hover {
+  color: #fff;
+  background-color: #222;
+}
+
+.white-button {
+  color: #fff;
+  border-color: #fff;
+}
+
+.white-button:hover {
+  color: #222;
   background-color: #fff;
-  color: #000;
 }
 
 .grid-index {
@@ -174,4 +189,14 @@ footer > * {
 
 .index-card > img:hover {
   filter: brightness(10%);
+}
+
+.content-feedback {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.heading {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3em;
 }

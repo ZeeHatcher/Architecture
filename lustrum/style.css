@@ -190,13 +190,3 @@ footer > * {
 .index-card > img:hover {
   filter: brightness(10%);
 }
-
-.content-feedback {
-  text-align: center;
-  margin-bottom: 100px;
-}
-
-.heading {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 3em;
-}

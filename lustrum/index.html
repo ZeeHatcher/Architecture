@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Catamaran:400,700" rel="stylesheet">
   <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebusneuebold" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -37,21 +38,27 @@
     <div class="grid-index">
       <div class="index-card">
         <img src="images/arches-architectural-design-architecture-135018.jpg" alt="">
-        <div class="index-card-title">
-          <h2 class="">What<br>Is<br>Architecture</h2>
-        </div>
+				<div class="index-card-title">
+					<h2 class="img-center">What<br>Is<br>Architecture</h2>
+				</div>
       </div>
       <div class="index-card">
         <img src="images/green_design.jpg" alt="">
-        <h2 class="">Projects</h2>
+				<div class="index-card-title">
+        	<h2 class="img-center">Projects</h2>
+				</div>
       </div>
       <div class="index-card">
         <img src="images/opportunities.png" alt="">
-        <h2 class="">Opportunities</h2>
+				<div class="index-card-title">
+        	<h2 class="img-center">Opportunities</h2>
+				</div>
       </div>
       <div class="index-card">
         <img src="images/news.jpg" alt="">
-        <h2 class="">News</h2>
+				<div class="index-card-title">
+        	<h2 class="img-center">News</h2>
+				</div>
       </div>
     </div>
   </main>
@@ -73,6 +80,13 @@
   }
 
   document.getElementById("dateModified").innerHTML = lastModified();
+		
+	$(window).on("resize", function () {
+		$(".index-card-title").outerWidth( $(".index-card").width() / 2 );
+		$(".index-card-title").outerHeight( $(".index-card").width() / 2 );
+		$(".index-card").children("img").outerWidth( $(".index-card").width() / 2 );
+		$(".index-card").children("img").outerHeight( $(".index-card").width() / 2 );
+	}).resize();
 
   </script>
 </body>

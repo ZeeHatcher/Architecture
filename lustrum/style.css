@@ -1,5 +1,6 @@
 /*
 #474747 - outer space grey
+#222222 - jon's sexy black
 #000000 - black
 #FFEFED - seashell white
 */
@@ -8,8 +9,15 @@
   padding: 0;
   font-family: "Catamaran", sans-serif;
   color: #222;
+  box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Utility CSS start */
 .text-center {
   text-align: center;
 }
@@ -28,15 +36,12 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
+/* Utility CSS end */
 
+/* Universal CSS start */
 .logo-img {
   display: block;
   margin: 10px auto;
-}
-
-a {
-  text-decoration: none;
-  color: #000;
 }
 
 .navbar {
@@ -58,11 +63,11 @@ a {
 .navbar-link {
   margin-right: 50px;
   text-transform: uppercase;
-  transition: color 0.2s;
+  transition: opacity 0.2s;
 }
 
 .navbar-link:hover {
-  color: rgba(0, 0, 0, 0.4);
+  opacity: 0.4;
 }
 
 .navbar-active {
@@ -78,15 +83,24 @@ footer {
   height: 1.4em;
 }
 
-footer > * {
+footer * {
   color: #fff;
   margin: 0 20px;
   font-size: 0.8em;
 }
 
+.footer-link {
+  transition: opacity 0.2s;
+}
+
+.footer-link:hover {
+  opacity: 0.4;
+}
+/* Universal CSS end */
+
 .banner {
   position: relative;
-  height: 800px;
+  height: 80vh;
   overflow: hidden;
 }
 
@@ -155,31 +169,28 @@ footer > * {
 
 .grid-index {
   display: grid;
-  width: 800px;
-  grid-template-columns: 400px 400px;
-  margin: auto;
+  width: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 100px;
   padding: 100px 0;
 }
 
-.grid-item-feedback {
-  grid-column: 1 / 3;
-}
-
 .index-card {
-  width: 400px;
-  height: 400px;
-  position: relative;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  width: auto;
+  height: 350px;
 }
 
 .index-card > img {
-  width: 400px;
-  height: 400px;
-  filter: brightness(50%);
+  max-width: 100%;
+  width: auto;
+  height: 350px;
   object-fit: cover;
-  transition: filter 0.2s;
 }
 
 .index-card > h2 {
+<<<<<<< HEAD
   font-family: "Bebas Neue", sans-serif;
   text-transform: uppercase;
   font-size: 3em;
@@ -189,4 +200,13 @@ footer > * {
 
 .index-card > img:hover {
   filter: brightness(10%);
+  line-height: 1em;
+  text-align: center;
+  width: auto;
+  height: auto;
+  border: solid #222 5px;
+  font-family: "Bebas Neue", sans-serif;
+  text-transform: uppercase;
+  font-size: 3em;
+  color: #222;
 }

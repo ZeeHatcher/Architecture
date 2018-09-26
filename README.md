@@ -12,7 +12,7 @@ sexy styled scrollbar
   
 KH will do all the above and the below
   
-DISCARDED/IMPOSSIBLE IDEAS THAT MAY BE IMPLEMENTED	|
+DISCARDED/IMPOSSIBLE IDEAS THAT MAY BE IMPLEMENTED	|  
 animation - scrolling, changing into a new website
 parallax scrolling
 seamless page transition

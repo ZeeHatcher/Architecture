@@ -80,31 +80,49 @@ a {
   font-weight: 700;
 }
 
+footer {
+  margin-top: 20px;
+  position: relative;
+}
+
 .sitemap-button {
-  background-color: #666;
+  position: absolute;
+  bottom: 2em;
+  background-color: #111;
   text-align: center;
-  font-size: 2em;
   width: 100%;
   height: 10px;
   cursor: pointer;
+  z-index: 1;
 }
 
 .sitemap-button > span {
-  color: pink;
+  color: #fff;
 }
 
 .sitemap {
   display: none;
+  position: absolute;
+  bottom: 2em;
+  width: 100%;
+  background-color: #222;
+  padding: 20px;
+  padding-bottom: 50px;
+  border-top: solid #111 5px;
+}
+
+.sitemap ul li a {
+  color: #fff;
 }
 
 .footer {
-  background-color: #000;
-  opacity: 0.9;
+  background-color: #222;
   padding: 6px;
-  height: 1.4em;
+  height: 2em;
+  border-top: double #111 5px;
 }
 
-.footer * {
+.footer > * {
   color: #fff;
   margin: 0 20px;
   font-size: 0.8em;

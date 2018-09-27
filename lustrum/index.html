@@ -64,22 +64,15 @@
   </main>
 
   <footer>
-    <div id="sitemap-open" class="sitemap-button" onclick="openSitemap()"><span>^</span></div>
-
+    <div id="sitemap-open" class="sitemap-button"><span></span></div>
     <div class="sitemap" id="sitemap">
-      <div id="sitemap-close" class="sitemap-button" onclick="closeSitemap()">^</div>
-      <a href="" class="sitemap-link">test</a>
-      <a href="" class="sitemap-link">test</a>
-      <a href="" class="sitemap-link">test</a>
-      <a href="" class="sitemap-link"></a>
-      <a href="" class="sitemap-link"></a>
-      <a href="" class="sitemap-link"></a>
-      <a href="" class="sitemap-link"></a>
-      <a href="" class="sitemap-link"></a>
-      <a href="" class="sitemap-link"></a>
-      <a href="" class="sitemap-link"></a>
-      <a href="" class="sitemap-link"></a>
+      <ul>
+        <li><a href="">Link 1</a></li>
+        <li><a href="">Link 2</a></li>
+        <li><a href="">Link 3</a></li>
+      </ul>
     </div>
+
     <div class="footer">
       <a href="sitemap.html" class="float-left footer-link">Site Map ></a>
       <a href="sitemap.html" class="float-left footer-link">Site Policy ></a>
@@ -95,30 +88,27 @@
     var modifiedDate = new Date(document.lastModified);
     var date = modifiedDate.toLocaleDateString();
     return date
-  }
+  };
 
-  document.getElementById("dateModified").innerHTML = lastModified();
+  $("#dateModified").html(lastModified());
 
-	$(window).on("resize", function () {
-		$(".index-card-title").outerWidth( $(".index-card").width() / 2 );
-		$(".index-card-title").outerHeight( $(".index-card").width() / 2 );
-		$(".index-card").children("img").outerWidth( $(".index-card").width() / 2 );
-		$(".index-card").children("img").outerHeight( $(".index-card").width() / 2 );
-	}).resize();
+  $(document).ready(function() {
+    $(".index-card-title").outerWidth($(".index-card").width() / 2);
+		$(".index-card-title").outerHeight($(".index-card").width() / 2);
+		$(".index-card").children("img").outerWidth($(".index-card").width() / 2);
+		$(".index-card").children("img").outerHeight($(".index-card").width() / 2);
 
-  function openSitemap() {
-    var sitemap = document.getElementById("sitemap");
-    var sitemap_button = document.getElementById("sitemap-open");
-    sitemap.style.display = "block";
-    sitemap_button.style.display = "none";
-  }
+    $(window).resize(function() {
+  		$(".index-card-title").outerWidth($(".index-card").width() / 2);
+  		$(".index-card-title").outerHeight($(".index-card").width() / 2);
+  		$(".index-card").children("img").outerWidth($(".index-card").width() / 2);
+  		$(".index-card").children("img").outerHeight($(".index-card").width() / 2);
+  	});
 
-  function closeSitemap() {
-    var sitemap = document.getElementById("sitemap");
-    var sitemap_button = document.getElementById("sitemap-open");
-    sitemap.style.display = "none";
-    sitemap_button.style.display = "block";
-  }
+    $(".sitemap-button").click(function() {
+      $("#sitemap").slideToggle({direction: "up"}, "slow");
+    });
+  });
 
   </script>
 </body>

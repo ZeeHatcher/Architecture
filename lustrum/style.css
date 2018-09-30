@@ -4,55 +4,89 @@
 #000000 - black
 #FFEFED - seashell white
 */
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Catamaran", sans-serif;
-  color: #222;
-  box-sizing: border-box;
+
+/* ==========================================================================
+   Utility CSS
+   ========================================================================== */
+
+/* Classes as "tools" for aligning, floating, etc. */
+
+.float-left {
+ float: left;
 }
 
-a {
-  text-decoration: none;
-  color: #000;
+.float-right {
+ float: right;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
-/* Utility CSS start */
 .text-center {
   text-align: center;
 }
 
-.float-left {
-  float: left;
-}
-
-.float-right {
-  float: right;
-}
-
-.img-center {
-  position: absolute;
+.pos-center {
   left: 50%;
+  position: absolute;
   transform: translate(-50%, -50%);
-  text-align: center;
 }
-/* Utility CSS end */
 
-/* Universal CSS start */
+/* ==========================================================================
+   Universal CSS
+   ========================================================================== */
+
+/**
+ * CSS with direct element selectors for consistency across pages
+ */
+
+* {
+  box-sizing: border-box;
+  color: #222;
+  font-family: "Catamaran", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 20px;
+  position: relative;
+}
+
+/* ==========================================================================
+   Website-Wide CSS
+   ========================================================================== */
+
+/**
+ * CSS that is consistent throughout every page
+ */
+
+/* Scrollbar
+   ========================================================================== */
+
+::-webkit-scrollbar {
+ display: none;
+}
+
+/* Header
+   ========================================================================== */
+
+/* Nikken Sekkei Logo */
+
 .logo-img {
   display: block;
   margin: 10px auto;
 }
 
+/* Navigation Bar */
+
 .navbar {
-  padding: 5px 0;
   list-style-type: none;
-  width: 75%;
   margin: auto;
+  padding: 5px 0;
+  width: 75%;
 }
 
 .navbar li {
@@ -75,57 +109,59 @@ a {
 }
 
 .navbar-active {
-  text-transform: uppercase;
   font-family: "Catamaran", sans-serif;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
-footer {
-  margin-top: 20px;
-  position: relative;
-}
+/* Footer
+   ========================================================================== */
+
+/* Sitemap Menu */
 
 .sitemap-button {
-  position: absolute;
-  bottom: 2em;
-  background-color: #111;
-  text-align: center;
-  width: 100%;
-  height: 10px;
-  cursor: pointer;
-  z-index: 1;
+ background-color: #111;
+ bottom: 2em;
+ cursor: pointer;
+ height: 10px;
+ position: absolute;
+ text-align: center;
+ width: 100%;
+ z-index: 1;
 }
 
 .sitemap-button > span {
-  color: #fff;
+ color: #fff;
 }
 
 .sitemap {
-  display: none;
-  position: absolute;
-  bottom: 2em;
-  width: 100%;
-  background-color: #222;
-  padding: 20px;
-  padding-bottom: 50px;
-  border-top: solid #111 5px;
+ background-color: #222;
+ border-top: solid #111 5px;
+ bottom: 2em;
+ display: none;
+ padding: 20px;
+ padding-bottom: 50px;
+ position: absolute;
+ width: 100%;
 }
 
 .sitemap ul li a {
-  color: #fff;
+ color: #fff;
 }
+
+/* Footer Bar */
 
 .footer {
   background-color: #222;
-  padding: 6px;
-  height: 2em;
   border-top: double #111 5px;
+  height: 2em;
+  padding: 6px;
 }
 
 .footer > * {
   color: #fff;
-  margin: 0 20px;
   font-size: 0.8em;
+  margin: 0 20px;
 }
 
 .footer-link {
@@ -135,19 +171,28 @@ footer {
 .footer-link:hover {
   opacity: 0.4;
 }
-/* Universal CSS end */
+
+/* ==========================================================================
+   Main
+   ========================================================================== */
+
+/**
+ * CSS for the content of the page
+ */
+
+/* Banner */
 
 .banner {
-  position: relative;
   height: 80vh;
   overflow: hidden;
+  position: relative;
 }
 
 .banner-img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
   filter: blur(3px);
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 
 .banner-content {
@@ -156,11 +201,11 @@ footer {
 }
 
 .darken {
-  opacity: 0.7;
-  width: 80%;
-  height: 100%;
   background-color: #000;
   filter: blur(3px);
+  height: 100%;
+  opacity: 0.7;
+  width: 80%;
 }
 
 .darken-pos {
@@ -170,9 +215,9 @@ footer {
 
 .title {
   color: #fff;
-  text-transform: uppercase;
-  font-size: 7.5em;
   font-family: "Bebas Neue", sans-serif;
+  font-size: 7.5em;
+  text-transform: uppercase;
 }
 
 .subtitle {
@@ -180,67 +225,69 @@ footer {
 }
 
 .button {
-  padding: 0 20px;
-  border-radius: 50px / 50px;
   border: solid 2px;
+  border-radius: 50px / 50px;
+  padding: 0 20px;
   transition: 0.2s, color 0.2s;
 }
 
 .black-button {
-  color: #222;
   border-color: #222;
+  color: #222;
 }
 
 .black-button:hover {
-  color: #fff;
   background-color: #222;
+  color: #fff;
 }
 
 .white-button {
-  color: #fff;
   border-color: #fff;
+  color: #fff;
 }
 
 .white-button:hover {
-  color: #222;
   background-color: #fff;
+  color: #222;
 }
+
+/* Index Cards */
 
 .grid-index {
   display: grid;
-  width: auto;
-  grid-template-columns: 1fr 1fr;
 	grid-gap: 25px 0;
+  grid-template-columns: 1fr 1fr;
   padding: 25px 0;
+  width: auto;
 }
 
 .index-card {
   display: inline-grid;
   grid-template-columns: 1fr 1fr;
-  width: auto;
   padding-top: 50%;
   position: relative;
+  width: auto;
 }
 
 .index-card > img {
-  position: absolute;
-  top: 0;
   left: 0;
   object-fit: cover;
+  position: absolute;
+  top: 0;
 }
 
 .index-card-title {
+	background-color: rgba(34, 34, 34, 0.95);
+	left: 50%;
 	position: absolute;
   top: 0;
-	left: 50%;
-	background-color: rgba(34, 34, 34, 0.95);
 }
 
 .index-card-title > h2 {
-	top: 50%;
-  line-height: 1em;
-  font-family: "Bebas Neue", sans-serif;
-  text-transform: uppercase;
-  font-size: 3.5em;
   color: #fff;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3.5em;
+  line-height: 1em;
+  text-transform: uppercase;
+	top: 50%;
 }

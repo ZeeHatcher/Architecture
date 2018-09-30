@@ -2,24 +2,37 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
+  <!-- Description: FST10011 Fundamentals Of Web Technology : Web Development Assignment -->
+  <!-- Author: benis :~DDDDDDDDDDDD -->
+  <!-- Date: -->
+  <!-- Validated: -->
   <title>Home</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <meta charset="utf-8">
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Catamaran:400,700" rel="stylesheet">
-  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebusneuebold" type="text/css" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebusneuebold" type="text/css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
   <header>
-    <a href="index.html"><img alt="Nikken Sekkei Logo" src="images/logo.png" class="logo-img"></a>
+    <div class="text-center margin-1em">
+      <a href="index.html"><img alt="Nikken Sekkei Logo" src="images/logo.png"></a>
+    </div>
     <nav>
-      <ul class="navbar">
-        <li><a href="intro.html" class="navbar-link">Introduction to Architecture</a></li>
-        <li><a href="project.html" class="navbar-link">Projects</a></li>
-        <li><a href="news.html" class="navbar-link">News</a></li>
-        <li><a href="opportunities.html" class="navbar-link">Opportunities</a></li>
+      <ul class="navbar margin-auto">
+        <li><a href="intro.html" class="link--animation text-color-black text-uppercase">Introduction to Architecture</a></li>
+        <li><a href="project.html" class="link--animation text-color-black text-uppercase">Projects</a></li>
+        <li><a href="news.html" class="link--animation text-color-black text-uppercase">News</a></li>
+        <li><a href="opportunities.html" class="link--animation text-color-black text-uppercase">Opportunities</a></li>
       </ul>
     </nav>
   </header>
@@ -27,38 +40,38 @@
   <main>
     <div class="banner text-center">
       <img class="banner-img" src="images/steel_architecture_hd.jpg" alt="Banner Image">
-      <div class="darken img-center darken-pos"></div>
-      <div class="banner-content img-center">
+      <div class="darken pos-center darken-pos"></div>
+      <div class="banner-content pos-center">
         <h1 class="title">Architecture</h1>
         <p class="subtitle">Architecture is wondrous and beautiful</p>
-        <a class="button white-button" href="intro.html">Learn More</a>
+        <a class="button button-white" href="intro.html">Learn More</a>
       </div>
     </div>
 
     <div class="grid-index">
       <div class="index-card">
         <img src="images/arches-architectural-design-architecture-135018.jpg" alt="">
-				<div class="index-card-title">
-					<h2 class="img-center">What<br>Is<br>Architecture</h2>
-				</div>
+        <div class="index-card-title">
+          <h2 class="pos-center">What<br>Is<br>Architecture</h2>
+        </div>
       </div>
       <div class="index-card">
         <img src="images/green_design.jpg" alt="">
-				<div class="index-card-title">
-        	<h2 class="img-center">Projects</h2>
-				</div>
+        <div class="index-card-title">
+          <h2 class="pos-center">Projects</h2>
+        </div>
       </div>
       <div class="index-card">
         <img src="images/opportunities.png" alt="">
-				<div class="index-card-title">
-        	<h2 class="img-center">Opportunities</h2>
-				</div>
+        <div class="index-card-title">
+          <h2 class="pos-center">Opportunities</h2>
+        </div>
       </div>
       <div class="index-card">
         <img src="images/news.jpg" alt="">
-				<div class="index-card-title">
-        	<h2 class="img-center">News</h2>
-				</div>
+        <div class="index-card-title">
+          <h2 class="pos-center">News</h2>
+        </div>
       </div>
     </div>
   </main>
@@ -66,6 +79,7 @@
   <footer>
     <div id="sitemap-open" class="sitemap-button"><span></span></div>
     <div class="sitemap" id="sitemap">
+      <div id="sitemap-open" class="sitemap-button"><span></span></div>
       <ul>
         <li><a href="">Link 1</a></li>
         <li><a href="">Link 2</a></li>
@@ -84,31 +98,33 @@
   </footer>
 
   <script>
-  function lastModified() {
-    var modifiedDate = new Date(document.lastModified);
-    var date = modifiedDate.toLocaleDateString();
-    return date
-  };
+    function lastModified() {
+      var modifiedDate = new Date(document.lastModified);
+      var date = modifiedDate.toLocaleDateString();
+      return date
+    };
 
-  $("#dateModified").html(lastModified());
+    $("#dateModified").html(lastModified());
 
-  $(document).ready(function() {
-    $(".index-card-title").outerWidth($(".index-card").width() / 2);
-		$(".index-card-title").outerHeight($(".index-card").width() / 2);
-		$(".index-card").children("img").outerWidth($(".index-card").width() / 2);
-		$(".index-card").children("img").outerHeight($(".index-card").width() / 2);
+    $(document).ready(function() {
+      $(".index-card-title").outerWidth($(".index-card").width() / 2);
+      $(".index-card-title").outerHeight($(".index-card").width() / 2);
+      $(".index-card").children("img").outerWidth($(".index-card").width() / 2);
+      $(".index-card").children("img").outerHeight($(".index-card").width() / 2);
 
-    $(window).resize(function() {
-  		$(".index-card-title").outerWidth($(".index-card").width() / 2);
-  		$(".index-card-title").outerHeight($(".index-card").width() / 2);
-  		$(".index-card").children("img").outerWidth($(".index-card").width() / 2);
-  		$(".index-card").children("img").outerHeight($(".index-card").width() / 2);
-  	});
+      $(window).resize(function() {
+        $(".index-card-title").outerWidth($(".index-card").width() / 2);
+        $(".index-card-title").outerHeight($(".index-card").width() / 2);
+        $(".index-card").children("img").outerWidth($(".index-card").width() / 2);
+        $(".index-card").children("img").outerHeight($(".index-card").width() / 2);
+      });
 
-    $(".sitemap-button").click(function() {
-      $("#sitemap").slideToggle({direction: "up"}, "slow");
+      $(".sitemap-button").click(function() {
+        $("#sitemap").slideToggle({
+          direction: "up"
+        }, "slow");
+      });
     });
-  });
 
   </script>
 </body>

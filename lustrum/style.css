@@ -1,27 +1,85 @@
-/*
-#474747 - outer space grey
-#222222 - jon's sexy black
-#000000 - black
-#FFEFED - seashell white
-*/
+/* ==========================================================================
+   Reference
+   ========================================================================== */
+/* Colors
+   ========================================================================== */
+/**
+ * #474747 - outer space grey
+ * #222 - jon's sexy black
+ * #000 - black
+ * #ffefed - seashell white
+ */
+
+/* Fonts
+   ========================================================================== */
+/**
+ * Catamaran
+ * Roboto
+ * Bebas Neue
+ */
+
 
 /* ==========================================================================
    Utility CSS
    ========================================================================== */
+/**
+ * Classes as "tools" for aligning, floating, etc.
+ *
+ * Use the CSS in this list for neatness and consistency.
+ * Any property that may be used multiple times should be added as a utility css.
+ * Give a suitable and understandable name for the classes.
+ * The classes are sorted in alphabetical order.
+ */
 
-/* Classes as "tools" for aligning, floating, etc. */
-
-.float-left {
- float: left;
+.button {
+  border: solid 2px;
+  border-radius: 50px;
+  padding: 0 1.2em;
 }
 
-.float-right {
- float: right;
+.button-black {
+  border-color: #222;
+  color: #222;
 }
 
-.text-center {
-  text-align: center;
+.button-black:hover {
+  background-color: #222;
+  color: #fff;
 }
+
+.button-white {
+  border-color: #fff;
+  color: #fff;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.button-white:hover {
+  background-color: #fff;
+  color: #222;
+}
+
+.float-left { float: left; }
+
+.float-right { float: right; }
+
+.link-active { font-weight: 700; }
+
+.link--animation { transition: opacity 0.2s; }
+
+.link--animation:hover { opacity: 0.4; }
+
+.margin-auto { margin: auto; }
+.margin-1em { margin: 1em; }
+
+.text-color-black { color: #222; }
+.text-color-white { color: #fff; }
+
+.text-font-main { font-family: "Catamaran", sans-serif; }
+.text-font-sub { font-family:"Roboto", sans-serif; }
+.text-font-title { font-family: "Bebas Neue", serif; }
+
+.text-center { text-align: center; }
+.text-uppercase { text-transform: uppercase; }
 
 .pos-center {
   left: 50%;
@@ -29,25 +87,36 @@
   transform: translate(-50%, -50%);
 }
 
+.pos-middle { top: 50%; }
+.pos-relative { position: relative; }
+
+.width-auto { width: auto; }
+.width-max { width: 100%; }
+
 /* ==========================================================================
    Universal CSS
    ========================================================================== */
-
 /**
  * CSS with direct element selectors for consistency across pages
+ *
+ * The elements that are guarenteed to have a specific property should be added in here.
  */
-
 * {
   box-sizing: border-box;
-  color: #222;
-  font-family: "Catamaran", sans-serif;
   margin: 0;
   padding: 0;
 }
 
+body {
+  font-family: "Catamaran", sans-serif;
+}
+
 a {
-  color: #000;
   text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
 
 footer {
@@ -58,107 +127,73 @@ footer {
 /* ==========================================================================
    Website-Wide CSS
    ========================================================================== */
-
 /**
  * CSS that is consistent throughout every page
  */
-
 /* Scrollbar
    ========================================================================== */
-
 ::-webkit-scrollbar {
- display: none;
+  display: none;
 }
 
 /* Header
    ========================================================================== */
-
 /* Nikken Sekkei Logo */
-
-.logo-img {
-  display: block;
-  margin: 10px auto;
+.logo {
+  margin-top: 1em;
 }
 
 /* Navigation Bar */
-
 .navbar {
-  list-style-type: none;
-  margin: auto;
-  padding: 5px 0;
-  width: 75%;
+  width: 80%;
 }
 
 .navbar li {
   display: inline;
-  float: left;
-}
-
-.navbar li:last-child {
-  float: none;
-}
-
-.navbar-link {
-  margin-right: 50px;
-  text-transform: uppercase;
-  transition: opacity 0.2s;
-}
-
-.navbar-link:hover {
-  opacity: 0.4;
-}
-
-.navbar-active {
-  font-family: "Catamaran", sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
+  margin: 0 2em;
 }
 
 /* Footer
    ========================================================================== */
-
 /* Sitemap Menu */
-
 .sitemap-button {
- background-color: #111;
- bottom: 2em;
- cursor: pointer;
- height: 10px;
- position: absolute;
- text-align: center;
- width: 100%;
- z-index: 1;
+  background-color: #111;
+  bottom: 2em;
+  cursor: pointer;
+  height: 10px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
 }
 
 .sitemap-button > span {
- color: #fff;
+  color: #fff;
 }
 
 .sitemap {
- background-color: #222;
- border-top: solid #111 5px;
- bottom: 2em;
- display: none;
- padding: 20px;
- padding-bottom: 50px;
- position: absolute;
- width: 100%;
+  background-color: #222;
+  border-top: solid #111 5px;
+  bottom: 2em;
+  display: none;
+  padding: 20px;
+  padding-bottom: 50px;
+  position: absolute;
+  width: 100%;
 }
 
 .sitemap ul li a {
- color: #fff;
+  color: #fff;
 }
 
 /* Footer Bar */
-
 .footer {
   background-color: #222;
-  border-top: double #111 5px;
   height: 2em;
   padding: 6px;
 }
 
-.footer > * {
+.footer>* {
   color: #fff;
   font-size: 0.8em;
   margin: 0 20px;
@@ -175,13 +210,10 @@ footer {
 /* ==========================================================================
    Main
    ========================================================================== */
-
 /**
  * CSS for the content of the page
  */
-
 /* Banner */
-
 .banner {
   height: 80vh;
   overflow: hidden;
@@ -224,38 +256,10 @@ footer {
   color: #fff;
 }
 
-.button {
-  border: solid 2px;
-  border-radius: 50px / 50px;
-  padding: 0 20px;
-  transition: 0.2s, color 0.2s;
-}
-
-.black-button {
-  border-color: #222;
-  color: #222;
-}
-
-.black-button:hover {
-  background-color: #222;
-  color: #fff;
-}
-
-.white-button {
-  border-color: #fff;
-  color: #fff;
-}
-
-.white-button:hover {
-  background-color: #fff;
-  color: #222;
-}
-
 /* Index Cards */
-
 .grid-index {
   display: grid;
-	grid-gap: 25px 0;
+  grid-gap: 1em 1em;
   grid-template-columns: 1fr 1fr;
   padding: 25px 0;
   width: auto;
@@ -269,7 +273,7 @@ footer {
   width: auto;
 }
 
-.index-card > img {
+.index-card>img {
   left: 0;
   object-fit: cover;
   position: absolute;
@@ -277,17 +281,17 @@ footer {
 }
 
 .index-card-title {
-	background-color: rgba(34, 34, 34, 0.95);
-	left: 50%;
-	position: absolute;
+  background-color: rgba(34, 34, 34, 0.95);
+  left: 50%;
+  position: absolute;
   top: 0;
 }
 
-.index-card-title > h2 {
+.index-card-title>h2 {
   color: #fff;
   font-family: "Bebas Neue", sans-serif;
   font-size: 3.5em;
   line-height: 1em;
   text-transform: uppercase;
-	top: 50%;
+  top: 50%;
 }

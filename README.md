@@ -18,5 +18,5 @@ animation - scrolling, changing into a new website
 parallax scrolling  
 seamless page transition  
   
-| steps for this repo |
+| steps for this repo |  
 new branch for issue > fix the issue/add the stuff > commit > push > delete that branch  

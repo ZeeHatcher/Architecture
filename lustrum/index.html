@@ -6,6 +6,7 @@
   <!-- Author: benis :~DDDDDDDDDDDD -->
   <!-- Date: -->
   <!-- Validated: -->
+    
   <title>Home</title>
 
   <meta charset="utf-8">
@@ -49,29 +50,21 @@
     </div>
 
     <div class="grid-index">
-      <div class="index-card">
+      <div class="index-card pos-relative">
         <img src="images/arches-architectural-design-architecture-135018.jpg" alt="">
-        <div class="index-card-title">
-          <h2 class="pos-center">What<br>Is<br>Architecture</h2>
-        </div>
+         <h2 class="pos-center pos-middle text-center">What<br>Is<br>Architecture</h2>
       </div>
-      <div class="index-card">
+      <div class="index-card pos-relative">
         <img src="images/green_design.jpg" alt="">
-        <div class="index-card-title">
-          <h2 class="pos-center">Projects</h2>
-        </div>
+        <h2 class="pos-center pos-middle text-center">Projects</h2>
       </div>
-      <div class="index-card">
+      <div class="index-card pos-relative">
         <img src="images/opportunities.png" alt="">
-        <div class="index-card-title">
-          <h2 class="pos-center">Opportunities</h2>
-        </div>
+        <h2 class="pos-center pos-middle text-center">Opportunities</h2>
       </div>
-      <div class="index-card">
+      <div class="index-card pos-relative">
         <img src="images/news.jpg" alt="">
-        <div class="index-card-title">
-          <h2 class="pos-center">News</h2>
-        </div>
+        <h2 class="pos-center pos-middle text-center">News</h2>
       </div>
     </div>
   </main>
@@ -79,7 +72,6 @@
   <footer>
     <div id="sitemap-open" class="sitemap-button"><span></span></div>
     <div class="sitemap" id="sitemap">
-      <div id="sitemap-open" class="sitemap-button"><span></span></div>
       <ul>
         <li><a href="">Link 1</a></li>
         <li><a href="">Link 2</a></li>
@@ -103,21 +95,9 @@
       var date = modifiedDate.toLocaleDateString();
       return date
     };
-
-    $("#dateModified").html(lastModified());
-
-    $(document).ready(function() {
-      $(".index-card-title").outerWidth($(".index-card").width() / 2);
-      $(".index-card-title").outerHeight($(".index-card").width() / 2);
-      $(".index-card").children("img").outerWidth($(".index-card").width() / 2);
-      $(".index-card").children("img").outerHeight($(".index-card").width() / 2);
-
-      $(window).resize(function() {
-        $(".index-card-title").outerWidth($(".index-card").width() / 2);
-        $(".index-card-title").outerHeight($(".index-card").width() / 2);
-        $(".index-card").children("img").outerWidth($(".index-card").width() / 2);
-        $(".index-card").children("img").outerHeight($(".index-card").width() / 2);
-      });
+		
+		$(document).ready(function() {			
+			$("#dateModified").html(lastModified());
 
       $(".sitemap-button").click(function() {
         $("#sitemap").slideToggle({
@@ -125,7 +105,7 @@
         }, "slow");
       });
     });
-
+    
   </script>
 </body>
 

@@ -208,39 +208,34 @@ footer {
 
 .grid-index {
   display: grid;
-  width: auto;
-  grid-template-columns: 1fr 1fr;
-	grid-gap: 25px 0;
-  padding: 25px 0;
+  width: 800px;
+  grid-template-columns: 400px 400px;
+  margin: auto;
+  padding: 100px 0;
 }
 
 .index-card {
-  display: inline-grid;
-  grid-template-columns: 1fr 1fr;
-  width: auto;
-  padding-top: 50%;
+  width: 400px;
+  height: 400px;
   position: relative;
 }
 
 .index-card > img {
-  position: absolute;
-  top: 0;
-  left: 0;
+  width: 400px;
+  height: 400px;
+  filter: brightness(50%);
   object-fit: cover;
+  transition: filter 0.2s;
 }
 
-.index-card-title {
-	position: absolute;
-  top: 0;
-	left: 50%;
-	background-color: rgba(34, 34, 34, 0.95);
-}
-
-.index-card-title > h2 {
-	top: 50%;
-  line-height: 1em;
+.index-card > h2 {
   font-family: "Bebas Neue", sans-serif;
   text-transform: uppercase;
-  font-size: 3.5em;
+  font-size: 3em;
+  top: 50%;
   color: #fff;
+}
+
+.index-card > img:hover {
+  filter: brightness(10%);
 }

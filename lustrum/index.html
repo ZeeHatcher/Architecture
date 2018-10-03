@@ -38,27 +38,19 @@
     <div class="grid-index">
       <div class="index-card">
         <img src="images/arches-architectural-design-architecture-135018.jpg" alt="">
-				<div class="index-card-title">
-					<h2 class="img-center">What<br>Is<br>Architecture</h2>
-				</div>
+        <h2 class="img-center">What Is Architecture</h2>
       </div>
       <div class="index-card">
         <img src="images/green_design.jpg" alt="">
-				<div class="index-card-title">
-        	<h2 class="img-center">Projects</h2>
-				</div>
+        <h2 class="img-center">Projects</h2>
       </div>
       <div class="index-card">
         <img src="images/opportunities.png" alt="">
-				<div class="index-card-title">
-        	<h2 class="img-center">Opportunities</h2>
-				</div>
+        <h2 class="img-center">Opportunities</h2>
       </div>
       <div class="index-card">
         <img src="images/news.jpg" alt="">
-				<div class="index-card-title">
-        	<h2 class="img-center">News</h2>
-				</div>
+        <h2 class="img-center">News</h2>
       </div>
     </div>
   </main>
@@ -90,20 +82,10 @@
     return date
   };
 
-  $("#dateModified").html(lastModified());
+
 
   $(document).ready(function() {
-    $(".index-card-title").outerWidth($(".index-card").width() / 2);
-		$(".index-card-title").outerHeight($(".index-card").width() / 2);
-		$(".index-card").children("img").outerWidth($(".index-card").width() / 2);
-		$(".index-card").children("img").outerHeight($(".index-card").width() / 2);
-
-    $(window).resize(function() {
-  		$(".index-card-title").outerWidth($(".index-card").width() / 2);
-  		$(".index-card-title").outerHeight($(".index-card").width() / 2);
-  		$(".index-card").children("img").outerWidth($(".index-card").width() / 2);
-  		$(".index-card").children("img").outerHeight($(".index-card").width() / 2);
-  	});
+    $("#dateModified").html(lastModified());
 
     $(".sitemap-button").click(function() {
       $("#sitemap").slideToggle({direction: "up"}, "slow");

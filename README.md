@@ -17,3 +17,6 @@ KH will do all the above and the below
 animation - scrolling, changing into a new website  
 parallax scrolling  
 seamless page transition  
+  
+steps for this repo
+New branch for issue > fix the issue/add the stuff > commit > push > delete that branch  

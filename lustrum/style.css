@@ -239,3 +239,55 @@ footer {
 .index-card > img:hover {
   filter: brightness(10%);
 }
+
+/* Temporary CSS created by  */
+
+.font-sizebig {
+	font-size: 5.5em
+}
+
+.grid-container {
+	  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: yellow;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 1);
+  font-size: 2em;
+  text-align: center;
+	color: black
+}
+bodylustrum {
+	color:black
+	
+}
+
+.bodylustrum {
+	color:black
+}
+
+.vl1 {
+    border-left: 6px solid black;
+    height: 100%;
+    position: absolute;
+    left: 34%;
+    margin-left: -3px;
+    top: 0;
+}
+	
+.vl2 {
+	  border-left: 6px solid black;
+    height: 100%;
+    position: absolute;
+    right: 34%;
+    margin-left: -3px;
+    top: 0;
+}
+
+.bigline {
+	color:black;
+	border-width: 10px;
+	
+}
+

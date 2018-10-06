@@ -26,21 +26,55 @@
 
 	<h1>Feedback</h1>
 	<p>Your feedback will help us make this website better.</p>
-
+  <hr>
 	<div>
-  	<form action="/action_page.php">
-    	<label></label>
-    	<input type="text" id="" name="" placeholder="">
+  	<form action="/action_page.php" method="post">  <!--add modal-->
+    	<label>1. Is this your first time visiting the website?</label>  <br>
+    	<input type="radio" id="" name="firstvisit" onclick=""> Yes  <br>
+      <input type="radio" id="" name="firstvisit" onclick=""> No  <br>
 
-    	<label></label>
-    	<input type="text" id="" name="" placeholder="">
+    	<label>2. What was your reason for visiting the website?</label>  <br>
+    	<input type="text" id="" name="visitreason" placeholder="...">  <br>
 
-    	<label></label>
-    	<select id="" name="">
-      	<option value=""></option>
-      	<option value=""></option>
-      	<option value=""></option>
-    </select>
+      <label>3. Did you find what you were looking for?</label>  <br>
+    	<input type="radio" id="" name="foundinfo" onclick=""> Yes, all of it  <br>
+      <input type="radio" id="" name="foundinfo" onclick=""> Some of it  <br>
+      <input type="radio" id="" name="foundinfo" onclick=""> None at all  <br>
+
+      <label>4. What do you suggest was missing and should be included in the website?</label>  <br>
+      <input type="text" id="" name="missinginfo" placeholder="...">  <br>
+
+      <label>5. How easy was it for you to navigate around the website?</label>  <br>
+      <input type="radio" id="" name="navigation" onclick=""> Very easy  <br>
+      <input type="radio" id="" name="navigation" onclick=""> Easy  <br>
+      <input type="radio" id="" name="navigation" onclick=""> Just okay  <br>
+      <input type="radio" id="" name="navigation" onclick=""> Confusing  <br>
+      <input type="radio" id="" name="navigation" onclick=""> Very confusing  <br>
+
+      <label>6. What is your overall impression of the website?</label>  <br>
+      <div>Professional
+        <input type="radio" id="" name="professional" onclick="">
+        <input type="radio" id="" name="professional" onclick="">
+        <input type="radio" id="" name="professional" onclick="">   <br>
+      </div>
+      <div>Informative
+        <input type="radio" id="" name="informative" onclick="">
+        <input type="radio" id="" name="informative" onclick="">
+        <input type="radio" id="" name="informative" onclick="">   <br>
+      </div>
+      <div>Visually Pleasing
+        <input type="radio" id="" name="visual" onclick="">
+        <input type="radio" id="" name="visual" onclick="">
+        <input type="radio" id="" name="visual" onclick="">   <br>
+      </div>
+      <div>Performance Speed
+        <input type="radio" id="" name="speed" onclick="">
+        <input type="radio" id="" name="speed" onclick="">
+        <input type="radio" id="" name="speed" onclick="">   <br>
+      </div>
+
+      <label>7. Other suggestions to help improve the website.</label>  <br>
+      <input type="text" id="" name="suggestion" placeholder="...">  <br>
 
     	<input type="submit" value="Submit">
   	</form>

@@ -2,7 +2,15 @@
 <html lang="en">
 
 <head>
+  <!-- Description: FST10011 Fundamentals Of Web Technology: Web Development Assignment -->
+  <!-- Authors: Wong Kah Heng, Shamil Haqeem bin Shukarmin, Jonathan Seng -->
+  <!-- Date:  -->
+  <!-- Validated:  -->
+
   <meta charset="utf-8">
+  <meta name="author" content="Wong Kah Heng, Shamil Haqeem bin Shukarmin, Jonathan Seng">
+  <meta name="description" content="Introduction To Architecture">
+  <meta name="keywords" content="architecture, nikken sekkei, scholarship">
   <title>Home</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
@@ -13,80 +21,126 @@
 
 <body>
   <header>
-    <a href="index.html"><img alt="Nikken Sekkei Logo" src="images/logo.png" class="logo-img"></a>
+    <div class="logo">
+      <a href="index.html"><img alt="Nikken Sekkei Logo" src="images/logo.png"></a>
+    </div>
     <nav>
       <ul class="navbar">
-        <li><a href="intro.html" class="navbar-link">Introduction to Architecture</a></li>
-        <li><a href="project.html" class="navbar-link">Projects</a></li>
-        <li><a href="news.html" class="navbar-link">News</a></li>
-        <li><a href="opportunities.html" class="navbar-link">Opportunities</a></li>
+        <li class="navbar__link"><a href="intro.html">Introduction to Architecture</a></li>
+        <li class="navbar__link"><a href="project.html">Projects</a></li>
+        <li class="navbar__link"><a href="news.html">News</a></li>
+        <li class="navbar__link"><a href="opportunities.html">Opportunities</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <div class="banner text-center">
-      <img class="banner-img" src="images/steel_architecture_hd.jpg" alt="Banner Image">
-      <div class="darken img-center darken-pos"></div>
-      <div class="banner-content img-center">
-        <h1 class="title">Architecture</h1>
-        <p class="subtitle">Architecture is wondrous and beautiful</p>
-        <a class="button white-button" href="intro.html">Learn More</a>
+    <div class="hero">
+      <img class="hero__img" src="images/steel_architecture_hd.jpg" alt="Banner Image">
+      <div class="hero__filter"></div>
+      <div class="hero__content">
+        <h1 class="hero__title">Architecture</h1>
+        <p class="hero__subtitle">Architecture is wondrous and beautiful</p>
+        <a class="button button--white" href="intro.html">Learn More</a>
       </div>
     </div>
 
-    <div class="grid-index">
-      <div class="index-card">
-        <img src="images/arches-architectural-design-architecture-135018.jpg" alt="">
-        <h2 class="img-center">What Is Architecture</h2>
-      </div>
-      <div class="index-card">
-        <img src="images/green_design.jpg" alt="">
-        <h2 class="img-center">Projects</h2>
-      </div>
-      <div class="index-card">
-        <img src="images/opportunities.png" alt="">
-        <h2 class="img-center">Opportunities</h2>
-      </div>
-      <div class="index-card">
-        <img src="images/news.jpg" alt="">
-        <h2 class="img-center">News</h2>
+    <div class="tiles">
+      <div class="grid__col-2">
+        <div class="tiles__tile">
+          <a href="#">
+            <img class="tiles__img" src="images/arches-architectural-design-architecture-135018.jpg" alt="">
+            <h2 class="tiles__title">What<br>Is<br>Architecture</h2>
+          </a>
+        </div>
+        <div class="tiles__tile">
+          <a href="#">
+            <img class="tiles__img" src="images/green_design.jpg" alt="">
+            <h2 class="tiles__title">Projects</h2>
+          </a>
+        </div>
+        <div class="tiles__tile">
+          <a href="#">
+            <img class="tiles__img" src="images/opportunities.png" alt="">
+            <h2 class="tiles__title">Opportunities</h2>
+          </a>
+        </div>
+        <div class="tiles__tile">
+          <a href="#">
+            <img class="tiles__img" src="images/news.jpg" alt="">
+            <h2 class="tiles__title">News</h2>
+          </a>
+        </div>
       </div>
     </div>
   </main>
 
   <footer>
-    <div id="sitemap-open" class="sitemap-button"><span></span></div>
-    <div class="sitemap" id="sitemap">
-      <ul>
-        <li><a href="">Link 1</a></li>
-        <li><a href="">Link 2</a></li>
-        <li><a href="">Link 3</a></li>
-      </ul>
+    <div class="wrapper">
+      <div class="sitemap">
+        <div id="sitemap-button" class="sitemap__button" title="Expand Sitemap"></div>
+        <div class="sitemap__bar"></div>
+        <nav id="sitemap-links" class="sitemap__links">
+          <ul class="sitemap__section">
+            <li class="sitemap__link"><a href="#">Link</a></li>
+            <li class="sitemap__link"><a href="#">Link</a></li>
+            <li class="sitemap__link"><a href="#">Link</a></li>
+          </ul>
+          <ul class="sitemap__section">
+            <li class="sitemap__link"><a href="#">Link</a></li>
+            <li class="sitemap__link"><a href="#">Link</a></li>
+            <li class="sitemap__link"><a href="#">Link</a></li>
+          </ul>
+          <ul class="sitemap__section">
+            <li class="sitemap__link"><a href="#">Link</a></li>
+            <li class="sitemap__link"><a href="#">Link</a></li>
+            <li class="sitemap__link"><a href="#">Link</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
 
     <div class="footer">
-      <a href="sitemap.html" class="float-left footer-link">Site Map ></a>
-      <a href="sitemap.html" class="float-left footer-link">Site Policy ></a>
-      <a href="sitemap.html" class="float-left footer-link">Privacy Policy ></a>
-      <a href="feedback.html" class="float-left footer-link">Feedback ></a>
-      <a href="lustrum.html" class="float-right">&copy; 2018 Lustrum</a>
-      <p class="float-right">Last modified: <span id="dateModified"></span></p>
+      <a href="sitemap.html" class="footer__link">Site Map ></a>
+      <a href="sitemap.html" class="footer__link">Site Policy ></a>
+      <a href="sitemap.html" class="footer__link">Privacy Policy ></a>
+      <a href="feedback.html" class="footer__link">Feedback ></a>
+      <a href="lustrum.html" class="footer__link">&copy; 2018 Lustrum</a>
+      <span class="footer__date">Last modified: <span id="date-modified"></span></span>
     </div>
   </footer>
 
   <script>
-  function lastModified() {
-    var modifiedDate = new Date(document.lastModified);
-    var date = modifiedDate.toLocaleDateString();
-    return date
-  };
   $(document).ready(function() {
-    $("#dateModified").html(lastModified());
-    $(".sitemap-button").click(function() {
-      $("#sitemap").slideToggle({direction: "up"}, "slow");
+
+    var sitemapOpen = false;
+
+    function lastModified() {
+      var modifiedDate = new Date(document.lastModified);
+      var date = modifiedDate.toLocaleDateString();
+      return date;
+    };
+
+    function toggleDarken() {
+      if (sitemapOpen == true) {
+        $("main, header").animate({opacity: "1"});
+        sitemapOpen = false;
+      } else {
+        $("main, header").animate({opacity: "0.7"});
+        sitemapOpen = true;
+      };
+    };
+
+    $("#sitemap-links").hide();
+
+    $("#date-modified").html(lastModified());
+
+    $("#sitemap-button").click(function() {
+      $("#sitemap-links").slideToggle();
+      toggleDarken();
     });
   });
+
   </script>
 </body>
 

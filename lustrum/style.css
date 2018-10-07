@@ -1,266 +1,282 @@
-/*
-#474747 - outer space grey
-#222222 - jon's sexy black
-#000000 - black
-#FFEFED - seashell white
-*/
+/*  ==============================================================
+      References
+    ==============================================================  */
+/**
+ * #474747 - outer space grey
+ * #222222 - jon's sexy black
+ * #000000 - black
+ * #FFEFED - seashell white
+ */
+
+ /*  ==============================================================
+       Default CSS
+     ==============================================================  */
 * {
+  box-sizing: border-box;
+  color: #222;
+  font-family: "Catamaran", sans-serif;
   margin: 0;
   padding: 0;
-  font-family: "Catamaran", sans-serif;
-  color: #222;
-  box-sizing: border-box;
 }
 
 a {
-  text-decoration: none;
   color: #000;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
 
 ::-webkit-scrollbar {
   display: none;
 }
 
-/* Utility CSS start */
-.text-center {
+/*  ==============================================================
+      Mandatory CSS
+    ==============================================================  */
+.logo {
+  margin: 0.5em;
   text-align: center;
-}
-
-.float-left {
-  float: left;
-}
-
-.float-right {
-  float: right;
-}
-
-.img-center {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-/* Utility CSS end */
-
-/* Universal CSS start */
-.logo-img {
-  display: block;
-  margin: 10px auto;
 }
 
 .navbar {
-  padding: 5px 0;
-  list-style-type: none;
-  width: 75%;
   margin: auto;
+  padding: 5px 0;
+  width: 75%;
 }
 
-.navbar li {
+.navbar__link {
   display: inline;
-  float: left;
-}
-
-.navbar li:last-child {
-  float: none;
-}
-
-.navbar-link {
-  margin-right: 50px;
+  margin: 0 3em;
   text-transform: uppercase;
   transition: opacity 0.2s;
 }
 
-.navbar-link:hover {
+.navbar__link:hover {
   opacity: 0.4;
 }
 
-.navbar-active {
-  text-transform: uppercase;
-  font-family: "Catamaran", sans-serif;
+.navbar__link--active {
   font-weight: 700;
 }
 
-footer {
-  margin-top: 20px;
+.wrapper {
   position: relative;
 }
 
-.sitemap-button {
-  position: absolute;
-  bottom: 2em;
-  background-color: #111;
-  text-align: center;
-  width: 100%;
-  height: 10px;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.sitemap-button > span {
-  color: #fff;
-}
-
 .sitemap {
-  display: none;
+  margin: auto;
   position: absolute;
-  bottom: 2em;
+  bottom: -15px;
+  left: 0;
   width: 100%;
-  background-color: #222;
-  padding: 20px;
-  padding-bottom: 50px;
-  border-top: solid #111 5px;
 }
 
-.sitemap ul li a {
+.sitemap__button {
+  background-color: #222;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
   color: #fff;
+  cursor: pointer;
+  transform: translate(0, 50%);
+  margin: auto;
+}
+
+.sitemap__bar {
+  background-color: #222;
+  width: 100%;
+  height: 15px;
+}
+
+.sitemap__links {
+  padding: 2em;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #333;
+}
+
+.sitemap__link {
+  transition: opacity 0.2s;
+}
+
+.sitemap__link:hover {
+  opacity: 0.4;
 }
 
 .footer {
   background-color: #222;
-  padding: 6px;
   height: 2em;
-  border-top: double #111 5px;
+  padding: 6px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
-.footer > * {
+.footer__link {
   color: #fff;
-  margin: 0 20px;
   font-size: 0.8em;
-}
-
-.footer-link {
+  margin: 0 20px;
   transition: opacity 0.2s;
 }
 
-.footer-link:hover {
+.footer__link:hover {
   opacity: 0.4;
 }
-/* Universal CSS end */
 
-.banner {
-  position: relative;
+.footer__date {
+  color: #fff;
+  font-size: 0.8em;
+  margin: 0 20px;
+}
+
+/*  ==============================================================
+      Reusable CSS
+    ==============================================================  */
+
+.hero {
   height: 80vh;
   overflow: hidden;
+  position: relative;
 }
 
-.banner-img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+.hero__img {
   filter: blur(3px);
-}
-
-.banner-content {
-  position: absolute;
-  top: 40%;
-}
-
-.darken {
-  opacity: 0.7;
-  width: 80%;
   height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.hero__content {
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.hero__filter {
   background-color: #000;
   filter: blur(3px);
-}
-
-.darken-pos {
+  height: 100%;
+  left: 50%;
+  opacity: 0.7;
   position: absolute;
   top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
 }
 
-.title {
+.hero__title {
   color: #fff;
-  text-transform: uppercase;
-  font-size: 7.5em;
   font-family: "Bebas Neue", sans-serif;
+  font-size: 7.5em;
+  text-transform: uppercase;
 }
 
-.subtitle {
+.hero__subtitle {
   color: #fff;
 }
 
 .button {
-  padding: 0 20px;
-  border-radius: 50px / 50px;
   border: solid 2px;
+  border-radius: 50px;
+  padding: 0 20px;
   transition: 0.2s, color 0.2s;
+  cursor: pointer;
 }
 
-.black-button {
-  color: #222;
+.button--black {
   border-color: #222;
-}
-
-.black-button:hover {
-  color: #fff;
-  background-color: #222;
-}
-
-.white-button {
-  color: #fff;
-  border-color: #fff;
-}
-
-.white-button:hover {
   color: #222;
-  background-color: #fff;
 }
 
-.grid-index {
+.button--black:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+.button--white {
+  border-color: #fff;
+  color: #fff;
+}
+
+.button--white:hover {
+  background-color: #fff;
+  color: #222;
+}
+
+/*  ==============================================================
+      index.html CSS
+    ==============================================================  */
+
+.grid__col-2 {
   display: grid;
-  width: 800px;
   grid-template-columns: 400px 400px;
+}
+
+.tiles {
   margin: auto;
   padding: 100px 0;
+  width: 800px;
 }
 
-.index-card {
-  width: 400px;
+.tiles__tile {
   height: 400px;
   position: relative;
+  text-align: center;
+  width: 400px;
 }
 
-.index-card > img {
-  width: 400px;
-  height: 400px;
+.tiles__img {
   filter: brightness(50%);
+  height: 400px;
   object-fit: cover;
   transition: filter 0.2s;
+  width: 400px;
 }
 
-.index-card > h2 {
-  font-family: "Bebas Neue", sans-serif;
-  text-transform: uppercase;
-  font-size: 3em;
-  top: 50%;
+.tiles__title {
   color: #fff;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3em;
+  left: 50%;
+  line-height: 1em;
+  position: absolute;
+  text-transform: uppercase;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.index-card > img:hover {
+.tiles__img:hover {
   filter: brightness(10%);
 }
 
-/* Temporary CSS created by  */
-
+/*  ==============================================================
+      lustrum.html CSS
+    ==============================================================  */
 .font-sizebig {
 	font-size: 5.5em
 }
 
 .grid-container {
-	  display: grid;
-  grid-template-columns: auto auto auto;
   background-color: yellow;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
 .grid-item {
   background-color: rgba(255, 255, 255, 1);
+	color: black;
   font-size: 2em;
-  text-align: center;
-	color: black
+  text-align: center
 }
+
 bodylustrum {
 	color:black
-
 }
 
 .bodylustrum {
@@ -268,25 +284,88 @@ bodylustrum {
 }
 
 .vl1 {
-    border-left: 6px solid black;
-    height: 100%;
-    position: absolute;
-    left: 34%;
-    margin-left: -3px;
-    top: 0;
+  border-left: 6px solid black;
+  height: 100%;
+  left: 34%;
+  margin-left: -3px;
+  position: absolute;
+  top: 0;
 }
 
 .vl2 {
-	  border-left: 6px solid black;
-    height: 100%;
-    position: absolute;
-    right: 34%;
-    margin-left: -3px;
-    top: 0;
+  border-left: 6px solid black;
+  height: 100%;
+  margin-left: -3px;
+  position: absolute;
+  right: 34%;
+  top: 0;
 }
 
 .bigline {
-	color:black;
 	border-width: 10px;
+	color:black;
+}
 
+/*  ==============================================================
+      feedback.html CSS
+    ==============================================================  */
+.feedback {
+  margin: .5em 2em;
+}
+
+.form {
+  background-color: #FFFFFF;
+  margin: 2% 10%;
+  border: .02em solid black;
+  padding: 1em;
+}
+
+.form__question {
+  font-weight: bold;
+
+}
+
+.form__input__text {
+  width: 50em;
+  max-width: 100%;
+}
+
+.form__table {
+  border-collapse: collapse;
+  text-align: left;
+  padding: 1%;
+  width: 50%;
+  border: .1em solid;
+}
+
+.form__table, .form__table__tr {
+  border: .015em solid grey;
+}
+
+.form__textarea {
+  max-width: 100%;
+}
+
+.form__submit__box {
+  margin: 1.5em .2em;
+  height: 1em;
+}
+
+.form__submit {
+  float: right;
+  height: 3em;
+  width: 6em;
+  font-weight: bold;
+}
+
+.button--green {
+  border-color: #32CD32;
+  color: #FFF;
+  background-color: #32CD32;
+}
+
+.button--green:hover {
+  background-color: #00FF00;
+  color: #FFF;
+  border-color: #00FF00
 }

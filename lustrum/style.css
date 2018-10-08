@@ -24,6 +24,18 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 7.5em;
+  font-family: "Bebas Neue", sans-serif;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 3.5em;
+  font-family: "Bebas Neue", sans-serif;
+  text-transform: uppercase;
+}
+
 li {
   list-style: none;
 }
@@ -61,7 +73,7 @@ li {
   font-weight: 700;
 }
 
-.wrapper {
+.container {
   position: relative;
 }
 
@@ -172,12 +184,10 @@ li {
 
 .hero__title {
   color: #fff;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 7.5em;
-  text-transform: uppercase;
 }
 
 .hero__subtitle {
+  margin-top: 1em;
   color: #fff;
 }
 
@@ -213,36 +223,35 @@ li {
       index.html CSS
     ==============================================================  */
 
-.grid__col-2 {
+.grid--col-2 {
   display: grid;
-  grid-template-columns: 400px 400px;
+  grid-template-columns: 1fr 1fr;
 }
 
 .tiles {
   margin: auto;
   padding: 100px 0;
-  width: 800px;
+  width: 900px;
 }
 
 .tiles__tile {
-  height: 400px;
+  height: 450px;
   position: relative;
   text-align: center;
-  width: 400px;
+  width: 450px;
 }
 
 .tiles__img {
   filter: brightness(50%);
-  height: 400px;
+  height: 450px;
   object-fit: cover;
   transition: filter 0.2s;
-  width: 400px;
+  width: 450px;
 }
 
 .tiles__title {
   color: #fff;
   font-family: "Bebas Neue", sans-serif;
-  font-size: 3em;
   left: 50%;
   line-height: 1em;
   position: absolute;
@@ -251,8 +260,8 @@ li {
   transform: translate(-50%, -50%);
 }
 
-.tiles__img:hover {
-  filter: brightness(10%);
+.tiles__tile:hover .tiles__img {
+  filter: brightness(20%);
 }
 
 /*  ==============================================================

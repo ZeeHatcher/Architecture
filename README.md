@@ -10,6 +10,7 @@ broken grid layouts - little bibs and bobs
 rounder corners for pretty much everything - dem curves  
 sexy styled scrollbar  
 loading bars
+back to top button 
 
 KH will do all the above and the below
   

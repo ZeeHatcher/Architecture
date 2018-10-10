@@ -314,3 +314,67 @@ bodylustrum {
 	border-width: 10px;
 	color:black;
 }
+
+/*  ==============================================================
+      feedback.html CSS
+    ==============================================================  */
+.feedback {
+  margin: .5em 2em;
+}
+
+.form {
+  background-color: #FFFFFF;
+  margin: 2% 10%;
+  border: .02em solid black;
+  padding: 1em;
+}
+
+.form__question {
+  font-weight: bold;
+
+}
+
+.form__input__text {
+  width: 50em;
+  max-width: 100%;
+}
+
+.form__table {
+  border-collapse: collapse;
+  text-align: left;
+  padding: 1%;
+  width: 50%;
+  border: .1em solid;
+}
+
+.form__table, .form__table__tr {
+  border: .015em solid grey;
+}
+
+.form__textarea {
+  max-width: 100%;
+}
+
+.form__submit__box {
+  margin: 1.5em .2em;
+  height: 1em;
+}
+
+.form__submit {
+  float: right;
+  height: 3em;
+  width: 6em;
+  font-weight: bold;
+}
+
+.button--green {
+  border-color: #32CD32;
+  color: #FFF;
+  background-color: #32CD32;
+}
+
+.button--green:hover {
+  background-color: #00FF00;
+  color: #FFF;
+  border-color: #00FF00
+}

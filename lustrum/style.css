@@ -228,6 +228,9 @@ li {
   grid-template-columns: 1fr 1fr;
 }
 
+.textalign {
+    text-align: center
+}
 .tiles {
   margin: auto;
   padding: 100px 0;
@@ -263,6 +266,7 @@ li {
 .tiles__tile:hover .tiles__img {
   filter: brightness(20%);
 }
+
 
 /*  ==============================================================
       lustrum.html CSS
@@ -308,6 +312,10 @@ bodylustrum {
   position: absolute;
   right: 34%;
   top: 0;
+}
+
+.imagerotate{
+    image-orientation: 90deg;
 }
 
 .bigline {

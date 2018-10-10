@@ -276,24 +276,25 @@ li {
 }
 
 .grid-container {
-  background-color: yellow;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  grid-area:center;
+  margin-left: -10px;
+  margin-right: 10px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  
+    
 }
-
+.backgroundcolor{
+    background-color: beige
+}
 .grid-item {
   background-color: rgba(255, 255, 255, 1);
 	color: black;
   font-size: 2em;
   text-align: center
-}
-
-bodylustrum {
-	color:black
-}
-
-.bodylustrum {
-	color:black
 }
 
 .vl1 {
@@ -314,8 +315,10 @@ bodylustrum {
   top: 0;
 }
 
-.imagerotate{
-    image-orientation: 90deg;
+.imageattributes{
+    transform: rotate(90deg);
+    height:100%;
+    width:100%;
 }
 
 .bigline {

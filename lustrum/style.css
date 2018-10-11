@@ -223,18 +223,21 @@ li {
       index.html CSS
     ==============================================================  */
 
-.grid--col-2 {
+.tiles__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  background-image: url(images/stock/pattern-1.png);
+  background-repeat: repeat-x;
 }
 
 .tiles {
   margin: auto;
   padding: 100px 0;
-  width: 900px;
+  width: 90%;
 }
 
 .tiles__tile {
+  margin: auto;
   height: 450px;
   position: relative;
   text-align: center;

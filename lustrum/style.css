@@ -284,17 +284,18 @@ li {
   margin-right: 10px;
   margin-top: -10px;
   margin-bottom: 10px;
+	filter: blur(5px)
   
     
 }
 .backgroundcolor{
-    background-color: beige
+    background-color:white;
 }
 .grid-item {
-  background-color: rgba(255, 255, 255, 1);
-	color: black;
-  font-size: 2em;
-  text-align: center
+  background-color:white;
+  text-align: center;
+	border: 2px solid black ;
+	text-decoration-color: white;
 }
 
 .vl1 {
@@ -316,9 +317,10 @@ li {
 }
 
 .imageattributes{
-    transform: rotate(90deg);
-    height:100%;
-    width:100%;
+  transform: rotate(90deg) scale(0.7);
+  height:100%;
+  width:100%;
+	border-radius: 5em;
 }
 
 .bigline {
@@ -388,4 +390,10 @@ li {
   background-color: #00FF00;
   color: #FFF;
   border-color: #00FF00
+}
+
+
+
+.Name {
+	
 }

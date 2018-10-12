@@ -38,100 +38,98 @@
     <h2>Feedback</h2>
     <h3>Your feedback will help us make this website better.</h3>
   </div>
-  <div class="background-pattern">
-    <hr>
-    <div class="form">
-      <form action="/action_page.php" method="post">
-        <label class="form__question">1. Is this your first time visiting the website?</label>
-        <ul>
-          <li><input type="radio" id="question1" name="firstvisit" onclick=""> Yes </li>
-          <li><input type="radio" id="question1" name="firstvisit" onclick=""> No </li>
-        </ul>
-        <br>
+  <hr>
+  <div class="form">
+    <form action="feedback2.html" method="post">
+      <label class="form__question">1. Is this your first time visiting the website?</label>
+      <ul>
+        <li><input type="radio" id="question1" name="firstvisit" onclick=""> Yes </li>
+        <li><input type="radio" id="question1" name="firstvisit" onclick=""> No </li>
+      </ul>
+      <br>
 
-        <label class="form__question">2. How did you find our website?</label>
-        <ul>
-          <li><input type="radio" id="question2" name="foundsite" onclick=""> Found in search engine </li>
-          <li><input type="radio" id="question2" name="foundsite" onclick=""> Through social media </li>
-          <li><input type="radio" id="question2" name="foundsite" onclick=""> Through advertisments </li>
-          <li><input type="radio" id="question2" name="foundsite" onclick=""> Other: <input type="text" id="question2" name="foundsite" class="form__input__text"></li>
-        </ul>
-        <br>
+      <label class="form__question">2. How did you find our website?</label>
+      <ul>
+        <li><input type="radio" id="question2" name="foundsite" onclick=""> Found in search engine </li>
+        <li><input type="radio" id="question2" name="foundsite" onclick=""> Through social media </li>
+        <li><input type="radio" id="question2" name="foundsite" onclick=""> Through advertisments </li>
+        <li><input type="radio" id="question2" name="foundsite" onclick=""> Other: <input type="text" id="question2" name="foundsite" class="form__input__text"></li>
+      </ul>
+      <br>
 
-        <label for="question3" class="form__question">3. What was your reason for visiting the website?</label><br>
-        <ul>
-          <li><input type="text" id="question3" name="visitreason" class="form__input__text">
-        </ul>
-        <br>
+      <label for="question3" class="form__question">3. What was your reason for visiting the website?</label><br>
+      <ul>
+        <li><input type="text" id="question3" name="visitreason" class="form__input__text">
+      </ul>
+      <br>
 
-        <label class="form__question">4. Did you find everything you were looking for?</label>
-        <ul>
-          <li><input type="radio" id="question4" name="foundinfo" onclick=""> Yes, all of it</li>
-          <li><input type="radio" id="question4" name="foundinfo" onclick=""> Some of it </li>
-          <li><input type="radio" id="question4" name="foundinfo" onclick=""> None at all </li>
-        </ul>
-        <br>
+      <label class="form__question">4. Did you find everything you were looking for?</label>
+      <ul>
+        <li><input type="radio" id="question4" name="foundinfo" onclick=""> Yes, all of it</li>
+        <li><input type="radio" id="question4" name="foundinfo" onclick=""> Some of it </li>
+        <li><input type="radio" id="question4" name="foundinfo" onclick=""> None at all </li>
+      </ul>
+      <br>
 
-        <label for="question5" class="form__question">5. What was missing and should be included in the website?</label><br>
-        <ul>
-          <li><input type="text" id="question5" name="missinginfo" class="form__input__text">
-        </ul>
-        <br>
+      <label for="question5" class="form__question">5. What was missing and should be included in the website?</label><br>
+      <ul>
+        <li><input type="text" id="question5" name="missinginfo" class="form__input__text">
+      </ul>
+      <br>
 
-        <label class="form__question">6. How easy was it for you to navigate around the website?</label>
-        <ul>
-          <li><input type="radio" id="question6" name="navigation" onclick=""> Effortless </li>
-          <li><input type="radio" id="question6" name="navigation" onclick=""> Comfortable </li>
-          <li><input type="radio" id="question6" name="navigation" onclick=""> Easy </li>
-          <li><input type="radio" id="question6" name="navigation" onclick=""> Confusing </li>
-          <li><input type="radio" id="question6" name="navigation" onclick=""> Unmanageable</li>
-        </ul>
-        <br>
+      <label class="form__question">6. How easy was it for you to navigate around the website?</label>
+      <ul>
+        <li><input type="radio" id="question6" name="navigation" onclick=""> Effortless </li>
+        <li><input type="radio" id="question6" name="navigation" onclick=""> Comfortable </li>
+        <li><input type="radio" id="question6" name="navigation" onclick=""> Easy </li>
+        <li><input type="radio" id="question6" name="navigation" onclick=""> Confusing </li>
+        <li><input type="radio" id="question6" name="navigation" onclick=""> Unmanageable</li>
+      </ul>
+      <br>
 
-        <label class="form__question">7. What is your overall impression of the website?</label>
-        <div class="padthree">
-          <table class="form__table">
-            <tr class="form__table__tr">
-              <th></th>
-              <th>1</th>
-              <th>2</th>
-              <th>3</th>
-            </tr>
-            <tr class="form__table__tr">
-              <td>Professional</td>
-              <td><input type="radio" id="question7" name="professional" onclick=""></td>
-              <td><input type="radio" id="question7" name="professional" onclick=""></td>
-              <td><input type="radio" id="question7" name="professional" onclick=""></td>
-            </tr>
-            <tr class="form__table__tr">
-              <td>Informative</td>
-              <td><input type="radio" id="question7" name="informative" onclick=""></td>
-              <td><input type="radio" id="question7" name="informative" onclick=""></td>
-              <td><input type="radio" id="question7" name="informative" onclick=""></td>
-            </tr>
-            <tr class="form__table__tr">
-              <td>Visually Pleasing</td>
-              <td><input type="radio" id="question7" name="visual" onclick="">
-              <td><input type="radio" id="question7" name="visual" onclick="">
-              <td><input type="radio" id="question7" name="visual" onclick="">
-            </tr>
-            <tr class="form__table__tr">
-              <td>Performance Speed</td>
-              <td><input type="radio" id="question7" name="speed" onclick="">
-              <td><input type="radio" id="question7" name="speed" onclick="">
-              <td><input type="radio" id="question7" name="speed" onclick="">
-            </tr>
-          </table><br>
-        </div>
+      <label class="form__question">7. What is your overall impression of the website?</label>
+      <div class="padthree">
+        <table class="form__table">
+          <tr class="form__table__tr">
+            <th></th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+          </tr>
+          <tr class="form__table__tr">
+            <td>Professional</td>
+            <td><input type="radio" id="question7" name="professional" onclick=""></td>
+            <td><input type="radio" id="question7" name="professional" onclick=""></td>
+            <td><input type="radio" id="question7" name="professional" onclick=""></td>
+          </tr>
+          <tr class="form__table__tr">
+            <td>Informative</td>
+            <td><input type="radio" id="question7" name="informative" onclick=""></td>
+            <td><input type="radio" id="question7" name="informative" onclick=""></td>
+            <td><input type="radio" id="question7" name="informative" onclick=""></td>
+          </tr>
+          <tr class="form__table__tr">
+            <td>Visually Pleasing</td>
+            <td><input type="radio" id="question7" name="visual" onclick="">
+            <td><input type="radio" id="question7" name="visual" onclick="">
+            <td><input type="radio" id="question7" name="visual" onclick="">
+          </tr>
+          <tr class="form__table__tr">
+            <td>Performance Speed</td>
+            <td><input type="radio" id="question7" name="speed" onclick="">
+            <td><input type="radio" id="question7" name="speed" onclick="">
+            <td><input type="radio" id="question7" name="speed" onclick="">
+          </tr>
+        </table><br>
+      </div>
 
-        <label for="question8" class="form__question">8. Other suggestions to help improve the website.</label> <br>
-        <div class="padthree">
-          <textarea class="form__textarea" id="question8" name="suggestion" rows=4 cols="100"></textarea>
-        </div>
+      <label for="question8" class="form__question">8. Other suggestions to help improve the website.</label> <br>
+      <div class="padthree">
+        <textarea class="form__textarea" id="question8" name="suggestion" rows=4 cols="100"></textarea>
+      </div>
 
-        <div class="form__submit__box"><input type="submit" value="Submit" class="form__submit button button--green"></div>
-      </form>
-    </div>
+      <div class="form__submit__box"><input type="submit" value="Submit" class="form__submit button button--green"></div>
+    </form>
   </div>
 
   <footer>

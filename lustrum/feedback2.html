@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Description: FST10011 Fundamentals Of Web Technology: Web Development Assignment -->
+  <!-- Authors: Wong Kah Heng, Shamil Haqeem bin Shukarmin, Jonathan Seng -->
+  <!-- Date:  -->
+  <!-- Validated:  -->
+
+  <meta charset="utf-8">
+  <meta name="author" content="Wong Kah Heng, Shamil Haqeem bin Shukarmin, Jonathan Seng">
+  <meta name="description" content="Intdoduction To Architecture">
+  <meta name="keywords" content="architecture, nikken sekkei, scholarship">
+  <title>Feedback</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:400,700" rel="stylesheet">
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebusneuebold" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img alt="Nikken Sekkei Logo" src="images/logos/logo.png"></a>
+    </div>
+    <nav>
+      <ul class="navbar">
+        <li class="navbar__link"><a href="intro.html">Introduction to Architecture</a></li>
+        <li class="navbar__link"><a href="project.html">Projects</a></li>
+        <li class="navbar__link"><a href="news.html">News</a></li>
+        <li class="navbar__link"><a href="opportunities.html">Opportunities</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="feedback">
+    <h2>Feedback</h2>
+    <h3>Your feedback will help us make this website better.</h3>
+  </div>
+  <hr>
+
+  <div class="form">
+    <h4>Thank you for filling up our feedback form. Your feedback has been sent.</h4>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <a href="index.html">Back to our homepage</a>
+    <br><br>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="sitemap">
+        <div id="sitemap-button" class="sitemap__button" title="Expand Sitemap"></div>
+        <div class="sitemap__bar"></div>
+        <nav id="sitemap-links" class="sitemap__links">
+          <ul class="sitemap__section">
+            <li class="sitemap__link"><a href="#">Link</a></li>
+            <li class="sitemap__link"><a href="#">Link</a></li>
+            <li class="sitemap__link"><a href="#">Link</a></li>
+          </ul>
+          <ul class="sitemap__section">
+            <li class="sitemap__link"><a href="#">Link</a></li>
+            <li class="sitemap__link"><a href="#">Link</a></li>
+            <li class="sitemap__link"><a href="#">Link</a></li>
+          </ul>
+          <ul class="sitemap__section">
+            <li class="sitemap__link"><a href="#">Link</a></li>
+            <li class="sitemap__link"><a href="#">Link</a></li>
+            <li class="sitemap__link"><a href="#">Link</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="footer">
+      <a href="sitemap.html" class="footer__link">Site Map ></a>
+      <a href="sitemap.html" class="footer__link">Site Policy ></a>
+      <a href="sitemap.html" class="footer__link">Privacy Policy ></a>
+      <a href="feedback.html" class="footer__link">Feedback ></a>
+      <a href="lustrum.html" class="footer__link">&copy; 2018 Lustrum</a>
+      <span class="footer__date">Last modified: <span id="date-modified"></span></span>
+    </div>
+  </footer>
+
+  <script>
+    $(document).ready(function() {
+
+      var sitemapOpen = false;
+
+      function lastModified() {
+        var modifiedDate = new Date(document.lastModified);
+        var date = modifiedDate.toLocaleDateString();
+        return date;
+      };
+
+      function toggleDarken() {
+        if (sitemapOpen == true) {
+          $("main, header").animate({
+            opacity: "1"
+          });
+          sitemapOpen = false;
+        } else {
+          $("main, header").animate({
+            opacity: "0.7"
+          });
+          sitemapOpen = true;
+        };
+      };
+
+      $("#sitemap-links").hide();
+
+      $("#date-modified").html(lastModified());
+
+      $("#sitemap-button").click(function() {
+        $("#sitemap-links").slideToggle();
+        toggleDarken();
+      });
+    });
+  </script>
+
+</body>
+
+
+</html>

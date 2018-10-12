@@ -13,27 +13,38 @@
      ==============================================================  */
 * {
   box-sizing: border-box;
-  color: #222;
-  font-family: "Catamaran", sans-serif;
   margin: 0;
   padding: 0;
 }
 
+body {
+  font-family: "Catamaran", sans-serif;
+  font-size: 18px;
+  min-height: 100vh;
+  position: relative;
+}
+
+footer {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Bebas Neue", sans-serif;
+  text-transform: uppercase;
+}
+
+h1 { font-size: 7.5em; }
+h2 { font-size: 5em; }
+h3 { font-size: 4em; }
+h4 { font-size: 3em; }
+h5 { font-size: 2em; }
+h6 { font-size: 1.5em; }
+
 a {
   color: #000;
   text-decoration: none;
-}
-
-h1 {
-  font-size: 7.5em;
-  font-family: "Bebas Neue", sans-serif;
-  text-transform: uppercase;
-}
-
-h2 {
-  font-size: 3.5em;
-  font-family: "Bebas Neue", sans-serif;
-  text-transform: uppercase;
 }
 
 li {
@@ -73,42 +84,58 @@ li {
   font-weight: 700;
 }
 
+.disclaimer {
+  background-color: #aaa;
+  padding: 1em 10em;
+  margin: 1em 0;
+}
+
+.disclaimer__title {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.disclaimer__text {
+  text-align: center;
+  line-height: 1em;
+}
+
 .container {
   position: relative;
 }
 
 .sitemap {
-  margin: auto;
-  position: absolute;
   bottom: -15px;
   left: 0;
+  margin: auto;
+  position: absolute;
   width: 100%;
 }
 
 .sitemap__button {
   background-color: #222;
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
   border-radius: 50%;
   color: #fff;
   cursor: pointer;
-  transform: translate(0, 50%);
+  cursor: pointer;
+  height: 50px;
   margin: auto;
+  transform: translate(0, 50%);
+  width: 50px;
 }
 
 .sitemap__bar {
   background-color: #222;
-  width: 100%;
   height: 15px;
+  width: 100%;
 }
 
 .sitemap__links {
-  padding: 2em;
-  width: 100%;
+  background-color: #333;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: #333;
+  padding: 2em;
+  width: 100%;
 }
 
 .sitemap__link {
@@ -120,29 +147,80 @@ li {
 }
 
 .footer {
-  background-color: #222;
-  height: 2em;
-  padding: 6px;
-  width: 100%;
+  height: 500px;
+  background-color: #333;
   position: relative;
-  z-index: 1;
+  width: 100%;
 }
 
-.footer__link {
+.finfo__col-2 li::before {
+  content: ">";
+  margin-right: 1em;
+}
+
+.footer__logo {
+  text-align: center;
+  padding: 3em;
+}
+
+.finfo {
+  padding: 3em 10em;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  color: #ccc;
+}
+
+.finfo__title {
+  margin-bottom: 1em;
+}
+
+.finfo__p {
+  line-height: 1em;
+  margin-bottom: 2em;
+}
+
+.finfo__button {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.finfo__link {
+  padding-right: 0.5em;
+  color: #ccc;
+  transition: color 0.2s
+}
+
+.finfo__link:hover {
   color: #fff;
-  font-size: 0.8em;
-  margin: 0 20px;
-  transition: opacity 0.2s;
 }
 
-.footer__link:hover {
-  opacity: 0.4;
+.copyright {
+  position: absolute;
+  color: #555;
+  bottom: 0;
+  padding: 3em 10em;
+  width: 100%;
+  background-color: #222;
 }
 
-.footer__date {
-  color: #fff;
-  font-size: 0.8em;
-  margin: 0 20px;
+.copyright__policy {
+  float: left;
+  margin-right: 1em;
+}
+
+.copyright__link {
+  color: #555;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.copyright__link:hover {
+  color: #ccc;
+}
+
+.date-modified {
+  float: right;
 }
 
 /*  ==============================================================
@@ -187,16 +265,16 @@ li {
 }
 
 .hero__subtitle {
-  margin-top: 1em;
   color: #fff;
+  margin-top: 1em;
 }
 
 .button {
   border: solid 2px;
   border-radius: 50px;
+  cursor: pointer;
   padding: 0 20px;
   transition: 0.2s, color 0.2s;
-  cursor: pointer;
 }
 
 .button--black {
@@ -219,15 +297,26 @@ li {
   color: #222;
 }
 
+.button--grey {
+  border-color: #ccc;
+  color: #ccc;
+}
+
+.button--grey:hover {
+  border-color: #fff;
+  color: #222;
+  background-color: #fff;
+}
+
 /*  ==============================================================
       index.html CSS
     ==============================================================  */
 
 .tiles__grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   background-image: url(images/stock/pattern-1.png);
   background-repeat: repeat-x;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .tiles {
@@ -237,8 +326,8 @@ li {
 }
 
 .tiles__tile {
-  margin: auto;
   height: 450px;
+  margin: auto;
   position: relative;
   text-align: center;
   width: 450px;
@@ -327,8 +416,8 @@ bodylustrum {
 
 .form {
   background-color: #FFFFFF;
-  margin: 2% 10%;
   border: .02em solid black;
+  margin: 2% 10%;
   padding: 1em;
 }
 
@@ -338,16 +427,16 @@ bodylustrum {
 }
 
 .form__input__text {
-  width: 50em;
   max-width: 100%;
+  width: 50em;
 }
 
 .form__table {
-  border-collapse: collapse;
-  text-align: left;
-  padding: 1%;
-  width: 50%;
   border: .1em solid;
+  border-collapse: collapse;
+  padding: 1%;
+  text-align: left;
+  width: 50%;
 }
 
 .form__table, .form__table__tr {
@@ -359,25 +448,25 @@ bodylustrum {
 }
 
 .form__submit__box {
-  margin: 1.5em .2em;
   height: 1em;
+  margin: 1.5em .2em;
 }
 
 .form__submit {
   float: right;
+  font-weight: bold;
   height: 3em;
   width: 6em;
-  font-weight: bold;
 }
 
 .button--green {
+  background-color: #32CD32;
   border-color: #32CD32;
   color: #FFF;
-  background-color: #32CD32;
 }
 
 .button--green:hover {
   background-color: #00FF00;
-  color: #FFF;
-  border-color: #00FF00
+  border-color: #00FF00;
+  color: #FFF
 }

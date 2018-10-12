@@ -20,8 +20,14 @@
 body {
   font-family: "Catamaran", sans-serif;
   font-size: 18px;
-  min-height: 100vh;
+  min-height: 200vh;
   position: relative;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 footer {
@@ -58,26 +64,54 @@ li {
 /*  ==============================================================
       Mandatory CSS
     ==============================================================  */
-.logo {
-  margin: 0.5em;
-  text-align: center;
+.navbar {
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  height: 100px;
+  padding: 3em;
+  width: 100%;
 }
 
-.navbar {
-  margin: auto;
-  padding: 5px 0;
-  width: 75%;
+.navbar--hero {
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+}
+
+.navbar--hero .navbar__link a {
+  color: #fff;
+}
+
+.navbar__logo {
+  float: left;
+  padding: 1em 1em 0.5em 1em;
+}
+
+.navbar__logo:hover {
+  border: solid #222 1px;
+}
+
+.navbar--hero .navbar__logo:hover {
+  border: solid #fff 1px;
+}
+
+.navbar__links {
+  margin-left: auto;
 }
 
 .navbar__link {
   display: inline;
-  margin: 0 3em;
+  margin-left: 3em;
   text-transform: uppercase;
-  transition: opacity 0.2s;
 }
 
 .navbar__link:hover {
-  opacity: 0.4;
+  border-bottom: solid #222 1px;
+}
+
+.navbar--hero .navbar__link:hover {
+  border-bottom: solid #fff 1px;
 }
 
 .navbar__link--active {
@@ -86,21 +120,21 @@ li {
 
 .disclaimer {
   background-color: #aaa;
-  padding: 1em 10em;
   margin: 1em 0;
+  padding: 1em 10em;
 }
 
 .disclaimer__title {
-  text-align: center;
   margin-bottom: 0.5em;
+  text-align: center;
 }
 
 .disclaimer__text {
-  text-align: center;
   line-height: 1em;
+  text-align: center;
 }
 
-.container {
+/* .container {
   position: relative;
 }
 
@@ -144,11 +178,11 @@ li {
 
 .sitemap__link:hover {
   opacity: 0.4;
-}
+} */
 
 .footer {
-  height: 500px;
   background-color: #333;
+  height: 500px;
   position: relative;
   width: 100%;
 }
@@ -159,16 +193,16 @@ li {
 }
 
 .footer__logo {
-  text-align: center;
   padding: 3em;
+  text-align: center;
 }
 
 .finfo {
-  padding: 3em 10em;
-  width: 100%;
+  color: #ccc;
   display: flex;
   justify-content: space-around;
-  color: #ccc;
+  padding: 3em 10em;
+  width: 100%;
 }
 
 .finfo__title {
@@ -181,13 +215,13 @@ li {
 }
 
 .finfo__button {
-  text-align: center;
   margin-top: 2em;
+  text-align: center;
 }
 
 .finfo__link {
-  padding-right: 0.5em;
   color: #ccc;
+  padding-right: 0.5em;
   transition: color 0.2s
 }
 
@@ -196,12 +230,12 @@ li {
 }
 
 .copyright {
-  position: absolute;
-  color: #555;
-  bottom: 0;
-  padding: 3em 10em;
-  width: 100%;
   background-color: #222;
+  bottom: 0;
+  color: #555;
+  padding: 3em 10em;
+  position: absolute;
+  width: 100%;
 }
 
 .copyright__policy {
@@ -228,9 +262,12 @@ li {
     ==============================================================  */
 
 .hero {
-  height: 80vh;
+  height: 100vh;
+  width: 100%;
   overflow: hidden;
-  position: relative;
+  position: absolute;
+  top: 0;
+  background-image: url(images/stock/oboi7.com-66350.jpg);
 }
 
 .hero__img {
@@ -303,9 +340,9 @@ li {
 }
 
 .button--grey:hover {
+  background-color: #fff;
   border-color: #fff;
   color: #222;
-  background-color: #fff;
 }
 
 /*  ==============================================================

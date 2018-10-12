@@ -23,11 +23,12 @@
 
 <body>
   <header>
-    <div class="logo">
-      <a href="index.html"><img alt="Nikken Sekkei Logo" src="images/logos/logo.png"></a>
-    </div>
-    <nav>
-      <ul class="navbar">
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <a href="index.html"><img alt="Nikken Sekkei Logo" src="images/logos/logo.png"></a>
+      </div>
+
+      <ul class="navbar__links">
         <li class="navbar__link"><a href="intro.html">Introduction to Architecture</a></li>
         <li class="navbar__link"><a href="project.html">Projects</a></li>
         <li class="navbar__link"><a href="news.html">News</a></li>
@@ -35,6 +36,23 @@
       </ul>
     </nav>
   </header>
+
+  <main>
+    <div class="hero">
+      <nav class="navbar navbar--hero">
+        <div class="navbar__logo">
+          <a href="index.html"><img alt="Nikken Sekkei Logo" src="images/logos/logo-white.png"></a>
+        </div>
+
+        <ul class="navbar__links">
+          <li class="navbar__link"><a href="intro.html">Introduction to Architecture</a></li>
+          <li class="navbar__link"><a href="project.html">Projects</a></li>
+          <li class="navbar__link"><a href="news.html">News</a></li>
+          <li class="navbar__link"><a href="opportunities.html">Opportunities</a></li>
+        </ul>
+      </nav>
+    </div>
+  </main>
 
   <footer>
     <div class="disclaimer">
@@ -116,17 +134,30 @@
       return date;
     };
 
-    function toggleDarken() {
-      if (sitemapOpen == true) {
-        $("main, header").animate({opacity: "1"});
-        sitemapOpen = false;
-      } else {
-        $("main, header").animate({opacity: "0.7"});
-        sitemapOpen = true;
-      };
-    };
+    // function toggleDarken() {
+    //   if (sitemapOpen == true) {
+    //     $("main, header").animate({opacity: "1"});
+    //     sitemapOpen = false;
+    //   } else {
+    //     $("main, header").animate({opacity: "0.7"});
+    //     sitemapOpen = true;
+    //   };
+    // };
+    //
+    //
+    // $("#sitemap-links").hide();
 
-    $("#sitemap-links").hide();
+    $("header").hide();
+
+    $(document).scroll(function(){
+        var top = $(document).scrollTop();
+
+        if (top != 0) {
+          $("header").fadeIn("slow");
+        } else {
+          $("header").fadeOut("slow");
+        };
+    });
 
     $("#date-modified").html(lastModified());
 

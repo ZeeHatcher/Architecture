@@ -41,9 +41,16 @@ li {
 }
 
 ::-webkit-scrollbar {
-  display: none;
+  width: .5em;
 }
 
+::-webkit-scrollbar-track {
+  background: #FFF
+}
+
+::-webkit-scrollbar-thumb {
+  width: .5em;
+}
 /*  ==============================================================
       Mandatory CSS
     ==============================================================  */
@@ -285,7 +292,7 @@ li {
 }
 
 bodylustrum {
-	color:black
+	color:black;
 }
 
 .bodylustrum {
@@ -325,8 +332,9 @@ bodylustrum {
 .form {
   background-color: #FFFFFF;
   margin: 2% 10%;
-  border: .02em solid black;
-  padding: 1em;
+  border: .2em solid black;
+  padding: 3em 5em;
+  border-radius: 5%;
 }
 
 .form__question {
@@ -336,7 +344,7 @@ bodylustrum {
 
 .form__input__text {
   width: 50em;
-  max-width: 100%;
+  max-width: 80em;
 }
 
 .form__table {

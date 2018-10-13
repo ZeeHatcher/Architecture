@@ -7,8 +7,7 @@
  * #000000 - black
  * #FFEFED - seashell white
  */
-
- /*  ==============================================================
+/*  ==============================================================
        Default CSS
      ==============================================================  */
 * {
@@ -30,6 +29,12 @@ header {
   z-index: 1;
 }
 
+main {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 footer {
   bottom: 0;
   position: absolute;
@@ -41,12 +46,29 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
-h1 { font-size: 7.5em; }
-h2 { font-size: 5em; }
-h3 { font-size: 4em; }
-h4 { font-size: 3em; }
-h5 { font-size: 2em; }
-h6 { font-size: 1.5em; }
+h1 {
+  font-size: 7.5em;
+}
+
+h2 {
+  font-size: 5em;
+}
+
+h3 {
+  font-size: 4em;
+}
+
+h4 {
+  font-size: 3em;
+}
+
+h5 {
+  font-size: 2em;
+}
+
+h6 {
+  font-size: 1.5em;
+}
 
 a {
   color: #000;
@@ -85,15 +107,20 @@ li {
 
 .navbar__logo {
   float: left;
+  margin-left: 1px;
   padding: 1em 1em 0.5em 1em;
 }
 
 .navbar__logo:hover {
-  border: solid #222 1px;
+  border-color: #222;
+  border-style: solid none;
+  border-width: 1px;
 }
 
 .navbar--hero .navbar__logo:hover {
-  border: solid #fff 1px;
+  border-color: #fff;
+  border-style: solid none;
+  border-width: 1px;
 }
 
 .navbar__links {
@@ -115,6 +142,12 @@ li {
 }
 
 .navbar__link--active {
+  border-bottom: solid #222 2px;
+  font-weight: 700;
+}
+
+.navbar__link--active:hover {
+  border-bottom: solid #222 2px;
   font-weight: 700;
 }
 
@@ -179,7 +212,6 @@ li {
 .sitemap__link:hover {
   opacity: 0.4;
 } */
-
 .footer {
   background-color: #333;
   height: 500px;
@@ -262,53 +294,63 @@ li {
     ==============================================================  */
 
 .hero {
+  background-image: url(images/stock/pj0005_02.jpg);
+  background-position: 0 50%;
   height: 100vh;
-  width: 100%;
   overflow: hidden;
-  position: absolute;
-  top: 0;
-  background-image: url(images/stock/oboi7.com-66350.jpg);
-}
-
-.hero__img {
-  filter: blur(3px);
-  height: 100%;
-  object-fit: cover;
   width: 100%;
 }
 
 .hero__content {
-  left: 50%;
-  position: absolute;
-  text-align: center;
-  top: 40%;
-  transform: translate(-50%, -50%);
-}
-
-.hero__filter {
-  background-color: #000;
-  filter: blur(3px);
-  height: 100%;
-  left: 50%;
-  opacity: 0.7;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
+  padding: 13% 13em;
+  color: #fff;
 }
 
 .hero__title {
-  color: #fff;
+  letter-spacing: 0.1em;
 }
 
-.hero__subtitle {
-  color: #fff;
-  margin-top: 1em;
+.hero__p {
+  line-height: 1.7em;
+  font-size: 1.2em;
+  margin-top: 2em;
+  margin-left: 2em;
+}
+
+.hero__p--em-a {
+  border: solid #fff 1px;
+  text-transform: uppercase;
+  padding: 0 0.5em;
+}
+
+.hero__p--em-b {
+  background-color: #d62c2c;
+  color: #222;
+  text-transform: uppercase;
+  padding: 0 0.5em;
+}
+
+.blockquote {
+  float: right;
+  font-family: "Playfair Display", serif;
+  font-size: 1.5em;
+  margin-top: 5em;
+}
+
+.blockquote__cite {
+  float: right;
+  position: relative;
+  top: 0.5em;
+  left: 2em;
+}
+
+.blockquote__cite::before {
+  content: "-";
+  margin-right: 0.5em;
 }
 
 .button {
   border: solid 2px;
-  border-radius: 50px;
   cursor: pointer;
   padding: 0 20px;
   transition: 0.2s, color 0.2s;
@@ -348,7 +390,6 @@ li {
 /*  ==============================================================
       index.html CSS
     ==============================================================  */
-
 .tiles__grid {
   background-image: url(images/stock/pattern-1.png);
   background-repeat: repeat-x;
@@ -397,7 +438,7 @@ li {
       lustrum.html CSS
     ==============================================================  */
 .font-sizebig {
-	font-size: 5.5em
+  font-size: 5.5em
 }
 
 .grid-container {
@@ -408,17 +449,17 @@ li {
 
 .grid-item {
   background-color: rgba(255, 255, 255, 1);
-	color: black;
+  color: black;
   font-size: 2em;
   text-align: center
 }
 
 bodylustrum {
-	color:black
+  color: black
 }
 
 .bodylustrum {
-	color:black
+  color: black
 }
 
 .vl1 {
@@ -440,8 +481,8 @@ bodylustrum {
 }
 
 .bigline {
-	border-width: 10px;
-	color:black;
+  border-width: 10px;
+  color: black;
 }
 
 /*  ==============================================================
@@ -460,7 +501,6 @@ bodylustrum {
 
 .form__question {
   font-weight: bold;
-
 }
 
 .form__input__text {

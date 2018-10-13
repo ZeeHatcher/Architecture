@@ -18,6 +18,7 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Catamaran:400,700" rel="stylesheet">
   <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebusneuebold" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
@@ -51,7 +52,21 @@
           <li class="navbar__link"><a href="opportunities.html">Opportunities</a></li>
         </ul>
       </nav>
+
+      <div id="hero" class="hero__content">
+        <h1 class="hero__title">Architecture</h1>
+        <p class="hero__p">
+          <span class="hero__p--em-a">Architecture</span> brings elegance and beauty to worldly constructs, <br>
+          sculpting a world filled with <span class="hero__p--em-b">art</span> on every corner of the Earth.
+        </p>
+        <blockquote class="blockquote">
+          <p class="blockquote__quote">Architecture is a visual art, and the buildings speak for themselves</p>
+          <cite class="blockquote__cite">Julia Morgan</cite>
+        </blockquote>
+      </div>
     </div>
+
+    <div id="test">It Works!</div>
   </main>
 
   <footer>
@@ -147,17 +162,29 @@
     //
     // $("#sitemap-links").hide();
 
+    $(window).bind("mousewheel", function() {
+      $("html, body").stop(true, false);
+    });
+
     $("header").hide();
 
-    $(document).scroll(function(){
-        var top = $(document).scrollTop();
+    $(document).scroll(function() {
+      var top = $(document).scrollTop();
 
-        if (top != 0) {
-          $("header").fadeIn("slow");
-        } else {
-          $("header").fadeOut("slow");
-        };
+      if (top != 0) {
+        $("header").fadeIn("slow");
+      } else {
+        $("header").fadeOut("slow");
+      };
     });
+
+    // $(document).scroll(function() {
+    //   if (top > 0) {
+    //     $(document).animate({
+    //       scrollTop: $("#test").offset().top
+    //     }, 1000);
+    //   };
+    // })
 
     $("#date-modified").html(lastModified());
 

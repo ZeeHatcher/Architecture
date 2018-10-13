@@ -19,25 +19,18 @@
 body {
   font-family: "Catamaran", sans-serif;
   font-size: 18px;
-  min-height: 200vh;
+  min-height: 100vh;
   position: relative;
 }
 
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100%;
   z-index: 1;
 }
 
-main {
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
 footer {
-  bottom: 0;
-  position: absolute;
   width: 100%;
 }
 
@@ -81,6 +74,11 @@ li {
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+hr {
+  margin: 0 10em;
+  border-top: solid #000 1px;
 }
 
 /*  ==============================================================
@@ -292,44 +290,6 @@ li {
 /*  ==============================================================
       Reusable CSS
     ==============================================================  */
-
-.hero {
-  background-image: url(images/stock/pj0005_02.jpg);
-  background-position: 0 50%;
-  height: 100vh;
-  overflow: hidden;
-  width: 100%;
-}
-
-.hero__content {
-  padding: 13% 13em;
-  color: #fff;
-}
-
-.hero__title {
-  letter-spacing: 0.1em;
-}
-
-.hero__p {
-  line-height: 1.7em;
-  font-size: 1.2em;
-  margin-top: 2em;
-  margin-left: 2em;
-}
-
-.hero__p--em-a {
-  border: solid #fff 1px;
-  text-transform: uppercase;
-  padding: 0 0.5em;
-}
-
-.hero__p--em-b {
-  background-color: #d62c2c;
-  color: #222;
-  text-transform: uppercase;
-  padding: 0 0.5em;
-}
-
 .blockquote {
   float: right;
   font-family: "Playfair Display", serif;
@@ -339,9 +299,9 @@ li {
 
 .blockquote__cite {
   float: right;
+  left: 2em;
   position: relative;
   top: 0.5em;
-  left: 2em;
 }
 
 .blockquote__cite::before {
@@ -354,6 +314,21 @@ li {
   cursor: pointer;
   padding: 0 20px;
   transition: 0.2s, color 0.2s;
+}
+
+.button--scroll-down{
+  display: block;
+  height: 2em;
+  padding: 0;
+  width: 2em;
+}
+
+.button--scroll-down {
+  bottom: 4em;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0);
+  z-index: 2;
 }
 
 .button--black {
@@ -387,51 +362,138 @@ li {
   color: #222;
 }
 
+.grid--col-12 {
+  margin: 3em;
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: repeat(12, auto);
+  padding: 3em;
+}
+
 /*  ==============================================================
       index.html CSS
     ==============================================================  */
-.tiles__grid {
-  background-image: url(images/stock/pattern-1.png);
-  background-repeat: repeat-x;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.tiles {
-  margin: auto;
-  padding: 100px 0;
-  width: 90%;
-}
-
-.tiles__tile {
-  height: 450px;
-  margin: auto;
+.hero {
+  background-image: url(images/stock/pj0005_02.jpg);
+  background-position: 0 50%;
+  height: 100vh;
+  overflow: hidden;
   position: relative;
-  text-align: center;
-  width: 450px;
+  width: 100%;
 }
 
-.tiles__img {
-  filter: brightness(50%);
-  height: 450px;
-  object-fit: cover;
-  transition: filter 0.2s;
-  width: 450px;
-}
-
-.tiles__title {
+.hero__content {
   color: #fff;
-  font-family: "Bebas Neue", sans-serif;
-  left: 50%;
-  line-height: 1em;
-  position: absolute;
-  text-transform: uppercase;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  padding: 13% 13em;
 }
 
-.tiles__tile:hover .tiles__img {
-  filter: brightness(20%);
+.hero__title {
+  letter-spacing: 0.1em;
+}
+
+.hero__p {
+  font-size: 1.2em;
+  line-height: 1.7em;
+  margin-left: 2em;
+  margin-top: 2em;
+}
+
+.hero__p--em-a {
+  border: solid #fff 1px;
+  padding: 0 0.5em;
+  text-transform: uppercase;
+}
+
+.hero__p--em-b {
+  background-color: #d62c2c;
+  color: #222;
+  padding: 0 0.5em;
+  text-transform: uppercase;
+}
+
+.card {
+  height: 700px;
+  width: 100%;
+  display: grid;
+}
+
+.card--small {
+  grid-template-rows: 60% 40%;
+}
+
+.card--large {
+  grid-template-columns: 40% 60%;
+}
+
+.card--black {
+  background-color: #222;
+}
+
+.card--white {
+  background-color: #eee;
+}
+
+.card--grey {
+  background-color: #333;
+}
+
+.card__content {
+  padding: 2em;
+  position: relative;
+}
+
+.card--black .card__content {
+  color: #fff;
+  padding: 3em;
+}
+
+.card--grey .card__content {
+  color: #ccc;
+}
+
+.card__p {
+  margin-top: 1em;
+  line-height: 1.2em;
+  font-size: 1.2em;
+}
+
+.card__img {
+  overflow: hidden;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.card__button {
+  position: absolute;
+  bottom: 2em;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.grid__intro {
+  grid-row: 1 / 2;
+  grid-column: 1 / -1;
+}
+
+.grid__projects {
+  grid-row: 2 / 3;
+  grid-column: 1 / 9;
+}
+
+.grid__news {
+  grid-row: 2 / 3;
+  grid-column: 9 / -1;
+}
+
+.grid__opportunities {
+  grid-row: 3 / 4;
+  grid-column: 1 / 6;
+}
+
+.grid__gallery {
+  grid-row: 3 / 4;
+  grid-column: 6 / -1;
 }
 
 /*  ==============================================================

@@ -212,7 +212,7 @@ hr {
 } */
 .footer {
   background-color: #333;
-  height: 500px;
+  height: 525px;
   position: relative;
   width: 100%;
 }
@@ -240,7 +240,7 @@ hr {
 }
 
 .finfo__p {
-  line-height: 1em;
+  line-height: 0.8em;
   margin-bottom: 2em;
 }
 
@@ -255,6 +255,10 @@ hr {
   transition: color 0.2s
 }
 
+.finfo__link--email {
+  text-decoration: underline;
+}
+
 .finfo__link:hover {
   color: #fff;
 }
@@ -266,6 +270,15 @@ hr {
   padding: 3em 10em;
   position: absolute;
   width: 100%;
+}
+
+.copyright__logo {
+  opacity: 0.3;
+  transition: opacity 0.2s;
+}
+
+.copyright__logo:hover {
+   opacity: 1;
 }
 
 .copyright__policy {
@@ -461,7 +474,6 @@ hr {
 
 .card--black .card__content {
   color: #fff;
-  padding: 3em;
 }
 
 .card--grey .card__content {

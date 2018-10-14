@@ -228,7 +228,7 @@ li {
 	grid-template-columns: 1fr 1fr;
 }
 
-.textalign {
+.lustrum_header {
 	text-align: center;
 }
 
@@ -288,7 +288,7 @@ li {
   margin-top: -10px;
   margin-bottom: 10px;
 */
-	filter: blur(5px);
+/*	filter: blur(5px);*/
 	max-width: 1fr;
 	padding: 1px;
 	color: black;
@@ -297,12 +297,12 @@ li {
 
 
 .backgroundcolor {
-	background-color: white;
-	background-image: url(images/stock/urban.jpg)
+  background: beige ;
+/*	background-image: url(images/disaster.jpg)*/
 }
 
 .grid-item {
-	background-color: white;
+	background-color: transparent;
 	text-align: center;
 	text-decoration-color: white;
 }
@@ -328,7 +328,14 @@ li {
 .imageattributes {
 	transform: rotate(90deg) scale(0.7);
 	width: 100%;
-	border-radius: 5em;
+	background-blend-mode: normal;
+/*	filter: blur(10px);*/
+	border-radius: 150px 500px;
+/*
+	filter: brightness(50%);
+	filter:saturate(50%);
+*/
+
 }
 
 .bigline {
@@ -403,4 +410,7 @@ li {
 
 
 
-.Name {}
+.Name {
+	font-size: 5em;
+	color: black;
+}

@@ -330,11 +330,12 @@ bodylustrum {
 }
 
 .form {
+  font-size: 1.2em;
   background-color: #FFFFFF;
   margin: 2% 20%;
-  border: .2em solid black;
-  padding: 1em 2em;
-  border-radius: 5%;
+  border: .12em solid black;
+  padding: 1.5em 2em;
+  border-radius: 2em;
 }
 
 .form__question {
@@ -346,7 +347,12 @@ form ul {
   padding-left:3%
 }
 
-.form__input__text {
+.form__input__text--short {
+  width: 30em;
+  max-width: 80%;
+}
+
+.form__input__text--long {
   width: 50em;
   max-width: 80%;
 }
@@ -359,12 +365,16 @@ form ul {
   border-collapse: collapse;
   text-align: left;
   padding-left: 3%;
-  width: 80%;
+  width: 90%;
   border: .1em solid;
 }
 
 .form__table, .form__table__tr {
   border: .015em solid grey;
+}
+
+th, td {
+  padding: 0em .5em;
 }
 
 .form__textarea {

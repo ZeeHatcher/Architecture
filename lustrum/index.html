@@ -65,7 +65,7 @@
         </blockquote>
       </div>
 
-      <div id="scroll-down" class="button button--white button--scroll-down"></div>
+      <div id="scroll-down" class="button button--white button--scroll-down"> </div>
     </div>
 
     <div id="page-content" class="grid--col-12">
@@ -83,7 +83,7 @@
         </div>
         <div class="card__content">
           <h3 class="card__title">Projects</h3>
-          <p class="card__p">Have a look at our projects, from the past or the future</p>
+          <p class="card__p">Have a look at our projects, from the past or the future.</p>
           <a href="" class="button button--black card__button">View Projects</a>
         </div>
       </div>
@@ -93,7 +93,7 @@
         </div>
         <div class="card__content">
           <h3 class="card__title">News</h3>
-          <p class="card__p">Bringing to you the latest news</p>
+          <p class="card__p">Bringing to you the latest news.</p>
           <a href="" class="button button--grey card__button">View News</a>
         </div>
       </div>
@@ -113,7 +113,7 @@
         </div>
         <div class="card__content">
           <h3 class="card__title">Gallery</h3>
-          <p class="card__p">Browse our collection of photos</p>
+          <p class="card__p">Browse our collection of photos.</p>
           <a href="" class="button button--white card__button">Browse Gallery</a>
         </div>
       </div>
@@ -229,7 +229,7 @@
     $(document).scroll(function() {
       var top = $(document).scrollTop();
 
-      if (top != 0) {
+      if (top > 100) {
         $("header").fadeIn("slow");
       } else {
         $("header").fadeOut("slow");

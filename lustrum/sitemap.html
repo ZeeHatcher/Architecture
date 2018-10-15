@@ -40,7 +40,7 @@
   </header>
 
   <main>
-    <div class="parallax parallax--bgA">
+    <div id="parallax-img" class="parallax parallax--bgA">
       <nav class="navbar navbar--white navbar--trans">
         <div class="navbar__logo">
           <a href="index.html"><img alt="Nikken Sekkei Logo" src="images/logos/logo-white.png"></a>
@@ -157,6 +157,10 @@
       $(window).bind("mousewheel", function() {
         $("html, body").stop(true, false);
       });
+
+      // Change parallax image here
+      // Put url in between the brackets
+      $("#parallax-img").css("background-image","url(images/stock/urban.jpg)");
 
       $("#date-modified").html(lastModified());
       // DO NOT DELETE ZONE END //

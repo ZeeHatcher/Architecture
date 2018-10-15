@@ -358,10 +358,6 @@ hr {
   min-height: 100vh;
 }
 
-.parallax--bgA {
-  background-image: url(images/stock/urban.jpg);
-}
-
 .parallax__title {
   letter-spacing: 0.1em;
   color: #fff;

@@ -40,6 +40,23 @@
   </header>
 
   <main>
+    <div id="parallax-img" class="parallax parallax--bgA">
+      <nav class="navbar navbar--white navbar--trans">
+        <div class="navbar__logo">
+          <a href="index.html"><img alt="Nikken Sekkei Logo" src="images/logos/logo-white.png"></a>
+        </div>
+
+        <ul class="navbar__links">
+          <li class="navbar__link"><a href="architecture.html">Introduction to Architecture</a></li>
+          <li class="navbar__link"><a href="projects.html">Projects</a></li>
+          <li class="navbar__link"><a href="news.html">News</a></li>
+          <li class="navbar__link"><a href="opportunities.html">Opportunities</a></li>
+          <li class="navbar__link"><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+
+      <h1 class="parallax__title">Title</h1>
+    </div>
     <!-- Your code goes here -->
   </main>
 
@@ -119,7 +136,23 @@
         $("html, body").stop(true, false);
       });
 
+      // Change parallax image here
+      // Put url in between the brackets
+      $('#parallax-img').css('background-image','url()');
+
       $("#date-modified").html(lastModified());
+
+      $("header").hide();
+
+      $(document).scroll(function() {
+        var top = $(document).scrollTop();
+
+        if (top > 99) {
+          $("header").fadeIn("slow");
+        } else {
+          $("header").fadeOut("slow");
+        };
+      });
       // DO NOT DELETE ZONE END //
       // Your JS code starts below //
     });

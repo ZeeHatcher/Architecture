@@ -160,6 +160,10 @@
         $("html, body").stop(true, false);
       });
 
+      // Change parallax image here
+      // Put url in between the brackets
+      $("#parallax-img").css("background-image","url(images/stock/urban.jpg)");
+
       $("header").hide();
 
       $(document).scroll(function() {
@@ -175,10 +179,6 @@
       $("#scroll-down").click(function() {
         scrollTo("#page-content");
       });
-
-      // Change parallax image here
-      // Put url in between the brackets
-      $("#parallax-img").css("background-image","url(images/stock/urban.jpg)");
 
       $("#date-modified").html(lastModified());
       // DO NOT DELETE ZONE END //

@@ -56,8 +56,13 @@
       </nav>
 
       <h1 class="parallax__title">Title</h1>
+
+      <div id="scroll-down" class="button button--white button--scroll-down"></div>
     </div>
-    <!-- Your code goes here -->
+
+    <div id="page-content" class="grid--col-12">
+      <!-- Your code goes here -->
+    </div>
   </main>
 
   <footer>
@@ -140,8 +145,6 @@
       // Put url in between the brackets
       $('#parallax-img').css('background-image','url()');
 
-      $("#date-modified").html(lastModified());
-
       $("header").hide();
 
       $(document).scroll(function() {
@@ -153,6 +156,12 @@
           $("header").fadeOut("slow");
         };
       });
+
+      $("#scroll-down").click(function() {
+        scrollTo("#page-content");
+      });
+
+      $("#date-modified").html(lastModified());
       // DO NOT DELETE ZONE END //
       // Your JS code starts below //
     });

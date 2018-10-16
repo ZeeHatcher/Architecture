@@ -9,14 +9,13 @@
 
   <meta charset="utf-8">
   <meta name="author" content="Wong Kah Heng, Shamil Haqeem bin Shukarmin, Jonathan Seng">
-  <meta name="description" content="Feedback">
-  <meta name="keywords" content="feedback">
+  <meta name="description" content="Introduction To Architecture">
+  <meta name="keywords" content="architecture, nikken sekkei, construction">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Feedback</title>
+  <title>Sitemap</title> <!-- Remember the title -->
   <link rel="shortcut icon" href="images/logos/logo-favicon.ico" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Catamaran:400,700" rel="stylesheet">
   <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebusneuebold" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i" rel="stylesheet">
@@ -56,21 +55,31 @@
         </ul>
       </nav>
 
-      <h1 class="parallax__title">FEEDBACK</h1>
+      <h1 class="parallax__title">Sitemap</h1>
 
       <div id="scroll-down" class="button button--white button--scroll-down"></div>
     </div>
 
-    <div id="page-content" class="background--blue">
-      <div class="feedback">
-        <h3>Feedback</h3>
-        <h5>Your feedback will help us make this website better.</h5>
-      </div>
-      <hr>
-      <div class="form">
-        <p>Your feedback has been sent to us. We appreciate the time you have taken to help us improve our site and services.</p>
-        <br><br><br><br><br><br><br><br>
-        <a href="index.html">Back to our homepage</a>
+    <div class="sitemap">
+      <div id="page-content" class="grid--col-12">
+        <h2 class="sitemap__title">Sitemap</h2>
+        <ul class="sitemap__links">
+          <li><a class="sitemap__link" href="index.html">Home</a></li>
+          <li><a class="sitemap__link" href="architecture.html">Introduction To Architecture</a></li>
+          <li><a class="sitemap__link" href="gallery.html">Gallery</a></li>
+          <li><a class="sitemap__link" href="projects.html">Projects</a></li>
+          <li>
+            <ul class="sitemap__nest">
+              <li><a class="sitemap__link" href="past.html">Past Projects</a></li>
+              <li><a class="sitemap__link" href="current.html">Ongoing Projects</a></li>
+              <li><a class="sitemap__link" href="future.html">Future Plans</a></li>
+            </ul>
+          </li>
+          <li><a class="sitemap__link" href="opportunities.html">Opportunities</a></li>
+          <li><a class="sitemap__link" href="news.html">News</a></li>
+          <li><a class="sitemap__link" href="about.html">About Nikken Sekkei</a></li>
+          <li><a class="sitemap__link" href="feedback.html">Feedback</a></li>
+        </ul>
       </div>
     </div>
   </main>
@@ -144,16 +153,21 @@
       function scrollTo(target) {
         $("html, body").animate({
           scrollTop: $(target).offset().top - 100
-        }, 1000);
+        }, 1500);
       };
 
       $(window).bind("mousewheel", function() {
         $("html, body").stop(true, false);
       });
 
+      setTimeout(function() {
+        scrollTo("#page-content");
+      }, 750);
+
+
       // Change parallax image here
       // Put url in between the brackets
-      $('#parallax-img').css('background-image','url(images/stock/1residential.jpg)');
+      $("#parallax-img").css("background-image","url(images/stock/urban.jpg)");
 
       $("header").hide();
 
@@ -173,7 +187,6 @@
 
       $("#date-modified").html(lastModified());
       // DO NOT DELETE ZONE END //
-      // Your JS code starts below //
     });
   </script>
 </body>

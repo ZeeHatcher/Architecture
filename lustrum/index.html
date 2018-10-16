@@ -10,137 +10,214 @@
   <meta charset="utf-8">
   <meta name="author" content="Wong Kah Heng, Shamil Haqeem bin Shukarmin, Jonathan Seng">
   <meta name="description" content="Introduction To Architecture">
-  <meta name="keywords" content="architecture, nikken sekkei, scholarship">
+  <meta name="keywords" content="architecture, nikken sekkei, construction">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Home</title>
+  <link rel="shortcut icon" href="images/logos/logo-favicon.ico" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Catamaran:400,700" rel="stylesheet">
   <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebusneuebold" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
   <header>
-    <div class="logo">
-      <a href="index.html"><img alt="Nikken Sekkei Logo" src="images/logos/logo.png"></a>
-    </div>
-    <nav>
-      <ul class="navbar">
-        <li class="navbar__link"><a href="intro.html">Introduction to Architecture</a></li>
-        <li class="navbar__link"><a href="project.html">Projects</a></li>
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <a href="index.html"><img alt="nikken sekkei Logo" src="images/logos/logo.png"></a>
+      </div>
+
+      <ul class="navbar__links">
+        <li class="navbar__link"><a href="architecture.html">Introduction to Architecture</a></li>
+        <li class="navbar__link"><a href="projects.html">Projects</a></li>
         <li class="navbar__link"><a href="news.html">News</a></li>
         <li class="navbar__link"><a href="opportunities.html">Opportunities</a></li>
+        <li class="navbar__link"><a href="about.html">About</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <div class="hero">
-      <img class="hero__img" src="images/stock/steel_architecture_hd.jpg" alt="Banner Image">
-      <div class="hero__filter"></div>
-      <div class="hero__content">
+    <div id="page-top" class="hero">
+      <nav class="navbar navbar--white navbar--trans">
+        <div class="navbar__logo">
+          <a href="index.html"><img alt="Nikken Sekkei Logo" src="images/logos/logo-white.png"></a>
+        </div>
+
+        <ul class="navbar__links">
+          <li class="navbar__link"><a href="architecture.html">Introduction to Architecture</a></li>
+          <li class="navbar__link"><a href="projects.html">Projects</a></li>
+          <li class="navbar__link"><a href="news.html">News</a></li>
+          <li class="navbar__link"><a href="opportunities.html">Opportunities</a></li>
+          <li class="navbar__link"><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+
+      <div id="hero" class="hero__content">
         <h1 class="hero__title">Architecture</h1>
-        <p class="hero__subtitle">Lorem ipsum dolor sit amet</p>
-        <a class="button button--white" href="intro.html">Learn More</a>
+        <p class="hero__p">
+          <span class="hero__p--em-a">Architecture</span> brings elegance and beauty to worldly constructs, <br>
+          sculpting a world filled with <span class="hero__p--em-b">art</span> on every corner of the Earth.
+        </p>
+        <blockquote class="blockquote">
+          <p class="blockquote__quote">Architecture is a <span class="blockquote__quote--em">visual art</span>, and the buildings speak for themselves</p>
+          <cite class="blockquote__cite">Julia Morgan</cite>
+        </blockquote>
       </div>
+
+      <div id="scroll-down" class="button button--white button--scroll-down"></div>
     </div>
 
-    <div class="tiles">
-      <div class="grid--col-2">
-        <div class="tiles__tile">
-          <a href="#">
-            <img class="tiles__img" src="images/stock/arches-architectural-design-architecture-135018.jpg" alt="">
-            <h2 class="tiles__title">What<br>Is<br>Architecture</h2>
-          </a>
+    <div id="page-content" class="grid--col-12">
+      <div class="grid__intro card card--black card--large">
+        <div class="card__content">
+          <h3 class="card__title">What is Architecture</h3>
+          <p class="card__p">Have you ever wondered how these magnificent structures were constructed?</p>
+          <a href="architecture.html" class="button button--white card__button">Learn More</a>
         </div>
-        <div class="tiles__tile">
-          <a href="#">
-            <img class="tiles__img" src="images/stock/green_design.jpg" alt="">
-            <h2 class="tiles__title">Projects</h2>
-          </a>
+        <img class="card__img" src="images/stock/arches-architectural-design-architecture-135018.jpg" alt="intro img">
+      </div>
+      <div class="grid__projects card card--white card--small">
+        <div>
+          <img class="card__img" src="images/stock/pj0001_02.jpg" alt="projects img">
         </div>
-        <div class="tiles__tile">
-          <a href="#">
-            <img class="tiles__img" src="images/stock/opportunities.png" alt="">
-            <h2 class="tiles__title">Opportunities</h2>
-          </a>
+        <div class="card__content">
+          <h3 class="card__title">Projects</h3>
+          <p class="card__p">Have a look at our projects, from the past or the future.</p>
+          <a href="projects.html" class="button button--black card__button">View Projects</a>
         </div>
-        <div class="tiles__tile">
-          <a href="#">
-            <img class="tiles__img" src="images/stock/news.jpg" alt="">
-            <h2 class="tiles__title">News</h2>
-          </a>
+      </div>
+      <div class="grid__news card card--grey card--small">
+        <div>
+          <img class="card__img" src="images/stock/news.jpg" alt="news img">
+        </div>
+        <div class="card__content">
+          <h3 class="card__title">News</h3>
+          <p class="card__p">Bringing to you the latest news.</p>
+          <a href="news.html" class="button button--grey card__button">View News</a>
+        </div>
+      </div>
+      <div class="grid__opportunities card card--white card--small">
+        <div>
+          <img class="card__img" src="images/stock/opportunities.png" alt="opportunities img">
+        </div>
+        <div class="card__content">
+          <h3 class="card__title">Opportunities</h3>
+          <p class="card__p">Interested in working with us?</p>
+          <a href="opportunities.html" class="button button--black card__button">View Prospects</a>
+        </div>
+      </div>
+      <div class="grid__gallery card card--black card--small">
+        <div>
+          <img class="card__img" src="images/stock/landscape.jpg" alt="gallery img">
+        </div>
+        <div class="card__content">
+          <h3 class="card__title">Gallery</h3>
+          <p class="card__p">Browse our collection of photos.</p>
+          <a href="gallery.html" class="button button--white card__button">Browse Gallery</a>
         </div>
       </div>
     </div>
   </main>
 
   <footer>
-    <div class="container">
-      <div class="sitemap">
-        <div id="sitemap-button" class="sitemap__button" title="Expand Sitemap"></div>
-        <div class="sitemap__bar"></div>
-        <nav id="sitemap-links" class="sitemap__links">
-          <ul class="sitemap__section">
-            <li class="sitemap__link"><a href="#">Link</a></li>
-            <li class="sitemap__link"><a href="#">Link</a></li>
-            <li class="sitemap__link"><a href="#">Link</a></li>
-          </ul>
-          <ul class="sitemap__section">
-            <li class="sitemap__link"><a href="#">Link</a></li>
-            <li class="sitemap__link"><a href="#">Link</a></li>
-            <li class="sitemap__link"><a href="#">Link</a></li>
-          </ul>
-          <ul class="sitemap__section">
-            <li class="sitemap__link"><a href="#">Link</a></li>
-            <li class="sitemap__link"><a href="#">Link</a></li>
-            <li class="sitemap__link"><a href="#">Link</a></li>
-          </ul>
-        </nav>
-      </div>
+    <hr>
+    <div class="disclaimer">
+      <h5 class="disclaimer__title">Disclaimer</h5>
+      <p class="disclaimer__text">
+        This website is created for education and non-commercial use only.
+        It is an assignment for completion of unit,
+        FST10011 Fundamentals of Web Technology based on the Foundation (IT/Multimedia) course from Swinburne University of Technology Sarawak Campus.
+      </p>
     </div>
 
     <div class="footer">
-      <a href="sitemap.html" class="footer__link">Site Map ></a>
-      <a href="sitemap.html" class="footer__link">Site Policy ></a>
-      <a href="sitemap.html" class="footer__link">Privacy Policy ></a>
-      <a href="feedback.html" class="footer__link">Feedback ></a>
-      <a href="lustrum.html" class="footer__link">&copy; 2018 Lustrum</a>
-      <span class="footer__date">Last modified: <span id="date-modified"></span></span>
+      <div class="finfo">
+        <div class="finfo__col-1">
+          <h6 class="finfo__title">Feedback</h6>
+          <p class="finfo__p">
+            We are always trying to improve your overall experience. <br><br>
+            Please tell us about your experience with this website.
+          </p>
+          <div class="finfo__button">
+            <a href="feedback.html" class="button button--grey">Feedback</a>
+          </div>
+        </div>
+        <div class="finfo__col-2">
+          <h6 class="finfo__title">Quick Access</h6>
+          <ul>
+            <li><a href="architecture.html" class="finfo__link">Introduction to Architecture</a></li>
+            <li><a href="projects.html" class="finfo__link">Projects</a></li>
+            <li><a href="news.html" class="finfo__link">News</a></li>
+            <li><a href="opportunities.html" class="finfo__link">Opportunities</a></li>
+            <li><a href="about.html" class="finfo__link">About</a></li>
+            <li><a href="sitemap.html" class="finfo__link">Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="finfo__col-3">
+          <h6 class="finfo__title">Contact Us</h6>
+          <p class="finfo__p">
+            General and Business Inquiries: <br><br>
+            <a class="finfo__link finfo__link--email" href="mailto:global@nikken.jp">global@nikken.jp</a>
+          </p>
+          <p class="finfo__p">
+            Press: <br><br>
+            <a class="finfo__link finfo__link--email" href="mailto:media@nikken.jp">media@nikken.jp</a>
+          </p>
+        </div>
+      </div>
+      <ul class="copyright">
+        <a class="copyright__logo" href="https://www.nikken.co.jp/en/index.html"><img src="images/logos/logo2-white.png" alt="nikken sekkei logo"></a>
+        <li>Copyrights &copy; 2018 <a href="lustrum.html" class="copyright__link">Lustrum</a> All Rights Reserved</li>
+        <li class="copyright__policy"><a href="sitepolicy.html" class="copyright__link">Site Policy</a></li>
+        <li class="copyright__policy">|</li>
+        <li class="copyright__policy"><a href="privacypolicy.html" class="copyright__link">Privacy Policy</a></li>
+        <li class="date-modified">Date Modified | <span id="date-modified"></span></li>
+      </ul>
     </div>
   </footer>
 
   <script>
   $(document).ready(function() {
 
-    var sitemapOpen = false;
-
+    // DO NOT DELETE ZONE START //
     function lastModified() {
       var modifiedDate = new Date(document.lastModified);
       var date = modifiedDate.toLocaleDateString();
       return date;
     };
 
-    function toggleDarken() {
-      if (sitemapOpen == true) {
-        $("main, header").animate({opacity: "1"});
-        sitemapOpen = false;
-      } else {
-        $("main, header").animate({opacity: "0.7"});
-        sitemapOpen = true;
-      };
+    function scrollTo(target) {
+      $("html, body").animate({
+        scrollTop: $(target).offset().top - 100
+      }, 1000);
     };
 
-    $("#sitemap-links").hide();
+    $(window).bind("mousewheel", function() {
+      $("html, body").stop(true, false);
+    });
+
+    $("header").hide();
+
+    $(document).scroll(function() {
+      var top = $(document).scrollTop();
+
+      if (top > 100) {
+        $("header").fadeIn("slow");
+      } else {
+        $("header").fadeOut("slow");
+      };
+    });
+
+    $("#scroll-down").click(function() {
+      scrollTo("#page-content");
+    });
 
     $("#date-modified").html(lastModified());
-
-    $("#sitemap-button").click(function() {
-      $("#sitemap-links").slideToggle();
-      toggleDarken();
-    });
+    // DO NOT DELETE ZONE END //
   });
-
   </script>
 </body>
 

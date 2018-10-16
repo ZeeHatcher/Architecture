@@ -153,12 +153,17 @@
       function scrollTo(target) {
         $("html, body").animate({
           scrollTop: $(target).offset().top - 100
-        }, 1000);
+        }, 1500);
       };
 
       $(window).bind("mousewheel", function() {
         $("html, body").stop(true, false);
       });
+
+      setTimeout(function() {
+        scrollTo("#page-content");
+      }, 750);
+
 
       // Change parallax image here
       // Put url in between the brackets

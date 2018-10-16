@@ -7,6 +7,7 @@
  * #000000 - black
  * #FFEFED - seashell white
  */
+
 /*  ==============================================================
        Default CSS
      ==============================================================  */
@@ -69,11 +70,11 @@ a {
 }
 
 li {
-  list-style: none;
+	list-style: none;
 }
 
 ::-webkit-scrollbar {
-  display: none;
+	display: none;
 }
 
 hr {
@@ -311,23 +312,23 @@ hr {
 }
 
 .button--black {
-  border-color: #222;
-  color: #222;
+	border-color: #222;
+	color: #222;
 }
 
 .button--black:hover {
-  background-color: #222;
-  color: #fff;
+	background-color: #222;
+	color: #fff;
 }
 
 .button--white {
-  border-color: #fff;
-  color: #fff;
+	border-color: #fff;
+	color: #fff;
 }
 
 .button--white:hover {
-  background-color: #fff;
-  color: #222;
+	background-color: #fff;
+	color: #222;
 }
 
 .button--grey {
@@ -498,6 +499,7 @@ hr {
   grid-column: 6 / -1;
 }
 
+
 /*  ==============================================================
       lustrum.html CSS
     ==============================================================  */
@@ -527,21 +529,34 @@ bodylustrum {
 }
 
 .vl1 {
-  border-left: 6px solid black;
-  height: 100%;
-  left: 34%;
-  margin-left: -3px;
-  position: absolute;
-  top: 0;
+	border-left: 6px solid black;
+	height: 100%;
+	left: 34%;
+	margin-left: -3px;
+	position: absolute;
+	top: 0;
 }
 
 .vl2 {
-  border-left: 6px solid black;
-  height: 100%;
-  margin-left: -3px;
-  position: absolute;
-  right: 34%;
-  top: 0;
+	border-left: 6px solid black;
+	height: 100%;
+	margin-left: -3px;
+	position: absolute;
+	right: 34%;
+	top: 0;
+}
+
+.imageattributes {
+	transform: rotate(90deg) scale(0.7);
+	width: 100%;
+	background-blend-mode: normal;
+/*	filter: blur(10px);*/
+	border-radius: 150px 500px;
+/*
+	filter: brightness(50%);
+	filter:saturate(50%);
+*/
+
 }
 
 .bigline {
@@ -553,7 +568,7 @@ bodylustrum {
       feedback.html CSS
     ==============================================================  */
 .feedback {
-  margin: .5em 2em;
+	margin: .5em 2em;
 }
 
 .form {
@@ -580,12 +595,13 @@ bodylustrum {
   width: 50%;
 }
 
-.form__table, .form__table__tr {
-  border: .015em solid grey;
+.form__table,
+.form__table__tr {
+	border: .015em solid grey;
 }
 
 .form__textarea {
-  max-width: 100%;
+	max-width: 100%;
 }
 
 .form__submit__box {

@@ -1,48 +1,91 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-	<!-- Description: FST10011 Fundamentals Of Web Technology : Web Development Assignment -->
-	<!-- Author: benis :~DDDDDDDDDDDD -->
-	<!-- Date: -->
-	<!-- Validated: -->
-	<meta charset="utf-8">
-	<meta name="author" content="">
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Catamaran:400,700" rel="stylesheet">
-	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebusneuebold" type="text/css">
-	<link rel="stylesheet" type="text/css" href="style.css">	
+  <!-- Description: FST10011 Fundamentals Of Web Technology: Web Development Assignment -->
+  <!-- Authors: Wong Kah Heng, Shamil Haqeem bin Shukarmin, Jonathan Seng -->
+  <!-- Date:  -->
+  <!-- Validated:  -->
 
-	<title>Lustrum Group</title>
-	<link rel="shortcut icon" type="image/x-icon" href="images/logos/wheelchair.png">
+  <meta charset="utf-8">
+  <meta name="author" content="Wong Kah Heng, Shamil Haqeem bin Shukarmin, Jonathan Seng">
+  <meta name="description" content="Introduction To Architecture">
+  <meta name="keywords" content="architecture, nikken sekkei, construction">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title></title> <!-- Remember the title -->
+  <link rel="shortcut icon" href="images/logos/logo-favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:400,700" rel="stylesheet">
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebusneuebold" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
-<body class="backgroundcolor">
+<body>
 
+  <main>
+    <div class="grid--col-12">
+      <div class="portrait">
+        <div class="portrait__image portrait__image--kh"></div>
+        <h4 class="portrait__name">Wong Kah Heng</h4>
+        <p class="portrait__p"></p>
+      </div>
+      <div class="portrait">
+        <h4 class="portrait__name">Shamil Haqeem bin Shukarmin</h4>
+        <p class="portrait__p"></p>
+      </div>
+      <div class="portrait">
+        <h4 class="portrait__name">Jonathan Seng</h4>
+        <p class="portrait__p"></p>
+      </div>
+    </div>
+  </main>
+    
+  <script>
+    $(document).ready(function() {
+      // DO NOT DELETE ZONE START //
+      function lastModified() {
+        var modifiedDate = new Date(document.lastModified);
+        var date = modifiedDate.toLocaleDateString();
+        return date;
+      };
 
-	<h1 class="lustrum_header">Lustrum</h1>
+      function scrollTo(target) {
+        $("html, body").animate({
+          scrollTop: $(target).offset().top - 100
+        }, 1000);
+      };
 
-	<div class="grid-container">
-		<div class="grid-item"><img class="imageattributes" src="images/portraits/Shamil.jpeg">
-			<div class="Name">Shamil</div>
-		</div>
-		<div class="grid-item"><img class="imageattributes" src="images/portraits/KH.jpeg">
-			<div class="Name">KH</div>
-		</div>
-		<div class="grid-item"><img class="imageattributes" src="images/portraits/John.jpeg">
-			<div class="Name">John</div>
-		</div>
-	</div>
+      $(window).bind("mousewheel", function() {
+        $("html, body").stop(true, false);
+      });
 
-<!--
-		<div class="vl1"></div>
-		<div class="vl2"></div>
--->
+      // Change parallax image here
+      // Put url in between the brackets
+      $('#parallax-img').css('background-image','url()');
+
+      $("header").hide();
+
+      $(document).scroll(function() {
+        var top = $(document).scrollTop();
+
+        if (top > 99) {
+          $("header").fadeIn("slow");
+        } else {
+          $("header").fadeOut("slow");
+        };
+      });
+
+      $("#scroll-down").click(function() {
+        scrollTo("#page-content");
+      });
+
+      $("#date-modified").html(lastModified());
+      // DO NOT DELETE ZONE END //
+      // Your JS code starts below //
+    });
+  </script>
 </body>
-
 
 </html>

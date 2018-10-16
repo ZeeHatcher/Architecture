@@ -13,7 +13,7 @@
   <meta name="keywords" content="architecture, nikken sekkei, construction">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title></title> <!-- Remember the title -->
+  <title>Sitemap</title> <!-- Remember the title -->
   <link rel="shortcut icon" href="images/logos/logo-favicon.ico" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Catamaran:400,700" rel="stylesheet">
@@ -55,13 +55,32 @@
         </ul>
       </nav>
 
-      <h1 class="parallax__title">Title</h1>
+      <h1 class="parallax__title">Sitemap</h1>
 
       <div id="scroll-down" class="button button--white button--scroll-down"></div>
     </div>
 
-    <div id="page-content" class="grid--col-12">
-      <!-- Your code goes here -->
+    <div class="sitemap">
+      <div id="page-content" class="grid--col-12">
+        <h2 class="sitemap__title">Sitemap</h2>
+        <ul class="sitemap__links">
+          <li><a class="sitemap__link" href="index.html">Home</a></li>
+          <li><a class="sitemap__link" href="architecture.html">Introduction To Architecture</a></li>
+          <li><a class="sitemap__link" href="gallery.html">Gallery</a></li>
+          <li><a class="sitemap__link" href="projects.html">Projects</a></li>
+          <li>
+            <ul class="sitemap__nest">
+              <li><a class="sitemap__link" href="past.html">Past Projects</a></li>
+              <li><a class="sitemap__link" href="current.html">Ongoing Projects</a></li>
+              <li><a class="sitemap__link" href="future.html">Future Plans</a></li>
+            </ul>
+          </li>
+          <li><a class="sitemap__link" href="opportunities.html">Opportunities</a></li>
+          <li><a class="sitemap__link" href="news.html">News</a></li>
+          <li><a class="sitemap__link" href="about.html">About Nikken Sekkei</a></li>
+          <li><a class="sitemap__link" href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
     </div>
   </main>
 
@@ -134,16 +153,21 @@
       function scrollTo(target) {
         $("html, body").animate({
           scrollTop: $(target).offset().top - 100
-        }, 1000);
+        }, 1500);
       };
 
       $(window).bind("mousewheel", function() {
         $("html, body").stop(true, false);
       });
 
+      setTimeout(function() {
+        scrollTo("#page-content");
+      }, 750);
+
+
       // Change parallax image here
       // Put url in between the brackets
-      $('#parallax-img').css('background-image','url()');
+      $("#parallax-img").css("background-image","url(images/stock/urban.jpg)");
 
       $("header").hide();
 
@@ -163,7 +187,6 @@
 
       $("#date-modified").html(lastModified());
       // DO NOT DELETE ZONE END //
-      // Your JS code starts below //
     });
   </script>
 </body>

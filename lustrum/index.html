@@ -41,7 +41,7 @@
 
   <main>
     <div id="page-top" class="hero">
-      <nav class="navbar navbar--hero">
+      <nav class="navbar navbar--white navbar--trans">
         <div class="navbar__logo">
           <a href="index.html"><img alt="Nikken Sekkei Logo" src="images/logos/logo-white.png"></a>
         </div>
@@ -67,7 +67,7 @@
         </blockquote>
       </div>
 
-      <div id="scroll-down" class="button button--white button--scroll-down"> </div>
+      <div id="scroll-down" class="button button--white button--scroll-down"></div>
     </div>
 
     <div id="page-content" class="grid--col-12">
@@ -199,9 +199,6 @@
       $("html, body").stop(true, false);
     });
 
-    $("#date-modified").html(lastModified());
-    // DO NOT DELETE ZONE END //
-
     $("header").hide();
 
     $(document).scroll(function() {
@@ -217,6 +214,9 @@
     $("#scroll-down").click(function() {
       scrollTo("#page-content");
     });
+
+    $("#date-modified").html(lastModified());
+    // DO NOT DELETE ZONE END //
   });
   </script>
 </body>

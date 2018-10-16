@@ -93,13 +93,13 @@ hr {
   width: 100%;
 }
 
-.navbar--hero {
+.navbar--trans {
   background-color: rgba(0, 0, 0, 0);
   position: absolute;
   top: 0;
 }
 
-.navbar--hero .navbar__link a {
+.navbar--white .navbar__link a {
   color: #fff;
 }
 
@@ -115,7 +115,7 @@ hr {
   border-width: 1px;
 }
 
-.navbar--hero .navbar__logo:hover {
+.navbar--white .navbar__logo:hover {
   border-color: #fff;
   border-style: solid none;
   border-width: 1px;
@@ -135,7 +135,7 @@ hr {
   border-bottom: solid #222 1px;
 }
 
-.navbar--hero .navbar__link:hover {
+.navbar--white .navbar__link:hover {
   border-bottom: solid #fff 1px;
 }
 
@@ -349,6 +349,24 @@ hr {
   padding: 3em;
 }
 
+.parallax {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.parallax__title {
+  letter-spacing: 0.1em;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /*  ==============================================================
       index.html CSS
     ==============================================================  */
@@ -393,7 +411,7 @@ hr {
 .hero__content .blockquote {
   text-shadow: 0 2px 3px #000;
   float: right;
-  margin-top: 5em;
+  margin-top: 4em;
 }
 
 .card {
@@ -597,3 +615,34 @@ bodylustrum {
 /*  ==============================================================
       sitemap.html CSS
     ==============================================================  */
+.sitemap {
+  background-color: #222;
+  color: #fff;
+}
+
+.sitemap__title {
+  grid-column: 2 / -1;
+}
+
+.sitemap__links {
+  grid-column: 2 / -1;
+  grid-row: 2 / 3;
+}
+
+.sitemap__link {
+  color: #aaa;
+  transition: color 0.2s;
+}
+
+.sitemap__link::before {
+  content: ">";
+  margin-right: 1em;
+}
+
+.sitemap__link:hover {
+  color: #fff;
+}
+
+.sitemap__nest {
+  margin-left: 2em;
+}

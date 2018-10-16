@@ -544,6 +544,10 @@ hr {
   letter-spacing: 0.4em;
 }
 
+.lustrum__subtitle--em {
+  color: #d62c2c;
+}
+
 .portraits {
   position: absolute;
   top: 5em;
@@ -562,6 +566,23 @@ hr {
 .portrait:hover {
   background-color: #fff;
   color: #222;
+}
+
+.portrait__border {
+  border-top: solid 1px;
+  margin: 0.5em 1em 1em 1em;
+}
+
+.portrait--kh .portrait__border {
+  border-color: #d1d10e;
+}
+
+.portrait--s .portrait__border {
+  border-color: #0e6fd1;
+}
+
+.portrait--j .portrait__border {
+  border-color: #d10e59;
 }
 
 .portrait__image {

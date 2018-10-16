@@ -22,38 +22,44 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body class="lustrum">
+  <header class="relative">
+    <div class="lustrum__head">
+      <h2 class="lustrum__title">Lustrum</h2>
+      <h5 class="lustrum__subtitle">Who we are</h5>
+      <hr>
+    </div>
+  </header>
 
   <main>
-    <div class="grid--col-12">
-      <div class="portrait">
-        <div class="portrait__image portrait__image--kh"></div>
-        <h4 class="portrait__name">Wong Kah Heng</h4>
-        <p class="portrait__p"></p>
+    <div class="portraits">
+      <div id="page-content" class="grid--col-3">
+        <div class="portrait portrait--kh">
+          <img class="portrait__image" src="images/portraits/KH.jpeg" alt="Wong Kah Heng">
+          <h5 class="portrait__name">Wong Kah Heng</h5>
+          <p class="portrait__p">Boss</p>
+        </div>
+        <div class="portrait portrait--s">
+          <img class="portrait__image" src="images/portraits/Shamil.jpeg" alt="Shamil Haqeem">
+          <h5 class="portrait__name">Shamil Haqeem</h5>
+          <p class="portrait__p">Drug Daddy</p>
+        </div>
+        <div class="portrait portrait--j">
+          <img class="portrait__image" src="images/portraits/Jonathan.jpeg" alt="Jonathan Seng">
+          <h5 class="portrait__name">Jonathan Seng</h5>
+          <p class="portrait__p">Me</p>
+        </div>
       </div>
-      <div class="portrait">
-        <h4 class="portrait__name">Shamil Haqeem bin Shukarmin</h4>
-        <p class="portrait__p"></p>
-      </div>
-      <div class="portrait">
-        <h4 class="portrait__name">Jonathan Seng</h4>
-        <p class="portrait__p"></p>
-      </div>
+
+      <a class="lustrum__button button button--white" href="index.html">< Back To Main Page</a>
     </div>
   </main>
-    
+
   <script>
     $(document).ready(function() {
-      // DO NOT DELETE ZONE START //
-      function lastModified() {
-        var modifiedDate = new Date(document.lastModified);
-        var date = modifiedDate.toLocaleDateString();
-        return date;
-      };
-
       function scrollTo(target) {
         $("html, body").animate({
-          scrollTop: $(target).offset().top - 100
+          scrollTop: $(target).offset().top
         }, 1000);
       };
 
@@ -61,29 +67,14 @@
         $("html, body").stop(true, false);
       });
 
-      // Change parallax image here
-      // Put url in between the brackets
-      $('#parallax-img').css('background-image','url()');
+      var top = $(document).scrollTop()
 
-      $("header").hide();
-
-      $(document).scroll(function() {
-        var top = $(document).scrollTop();
-
-        if (top > 99) {
-          $("header").fadeIn("slow");
-        } else {
-          $("header").fadeOut("slow");
-        };
-      });
-
-      $("#scroll-down").click(function() {
-        scrollTo("#page-content");
-      });
-
-      $("#date-modified").html(lastModified());
-      // DO NOT DELETE ZONE END //
-      // Your JS code starts below //
+      if (top == 0) {
+        console.log(top);
+        setTimeout(function() {
+          scrollTo("#page-content");
+        }, 750);
+      };
     });
   </script>
 </body>

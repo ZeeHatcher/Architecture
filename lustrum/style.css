@@ -350,6 +350,14 @@ hr {
   padding: 3em;
 }
 
+.grid--col-3 {
+  margin: 2em;
+  display: grid;
+  grid-gap: 7em;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 7em;
+}
+
 .parallax {
   position: relative;
   background-position: center;
@@ -503,27 +511,61 @@ hr {
 /*  ==============================================================
       lustrum.html CSS
     ==============================================================  */
-.portrait {
-  width: 100%;
-  height: 100vh;
-  grid-column: span 4;
-  text-align: center;
+.relative {
+  position: relative;
+}
+
+.lustrum {
   background-color: #222;
 }
 
-.portrait:nth-child(odd) {
-  background-color: #aaa; 
+.lustrum__head {
+  background-color: #fff;
+  width: 100%;
+  height: 50vh;
+  padding: 2em;
+}
+
+.lustrum__button {
+  position: absolute;
+  bottom: 2em;
+  left: 3em;
+}
+
+.lustrum__title {
+  color: #222;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+.lustrum__subtitle {
+  color: #222;
+  text-align: center;
+  letter-spacing: 0.4em;
+}
+
+.portraits {
+  position: absolute;
+  top: 5em;
+  left: 0;
+  z-index: 1;
+}
+
+.portrait {
+  width: 100%;
+  background-color: #333;
+  color: #aaa;
+  text-align: center;
+  transition: background-color 0.8s;
+}
+
+.portrait:hover {
+  background-color: #fff;
+  color: #222;
 }
 
 .portrait__image {
   width: 100%;
-  height: 500px;
-  background-position: center;
-  transform: rotate(90deg);
-}
-
-.portrait__image--kh {
-  background-image: url(images/portraits/KH.jpeg);
 }
 
 .portrait__name {
@@ -531,7 +573,8 @@ hr {
 }
 
 .portrait__p {
-  
+  padding: 0 2em;
+  margin-bottom: 1em;
 }
 
 /*  ==============================================================

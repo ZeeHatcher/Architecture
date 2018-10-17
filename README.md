@@ -1,34 +1,26 @@
 # web_assignment
 A project by a bunch of university nerds
 
-| Progress |  
-<img src="http://progressed.io/bar/99?title=Progress"> index.html  
-***
+<h1><strong>| Progress |</strong></h1>
+<h3><img src="http://progressed.io/bar/99?title=Progress">&nbspindex.html</h3>  
+<h3><img src="http://progressed.io/bar/0?title=Pending"> projects.html</h3>  
+<h4><img src="http://progressed.io/bar/0?title=Pending"> past.html <img src="http://progressed.io/bar/0?title=Pending" style="100px"> current.html <img src="http://progressed.io/bar/0?title=Pending">future.html</h4>  
+<h3><img src="http://progressed.io/bar/0?title=Pending"> architecture.html <img src="http://progressed.io/bar/0?title=Pending"> Gallery</h3>  
+<h3><img src="http://progressed.io/bar/0?title=Pending"> opportunities.html</h3>  
 
-<img src="http://progressed.io/bar/0?title=Pending"> projects.html   
-<img src="http://progressed.io/bar/0?title=Pending"> past.html <img src="http://progressed.io/bar/0?title=Pending"> current.html <img src="http://progressed.io/bar/0?title=Pending">future.html  
-***
+<h3><img src="http://progressed.io/bar/90?title=Progress"> lustrum.html</h3>  
 
-<img src="http://progressed.io/bar/0?title=Pending"> architecture.html <img src="http://progressed.io/bar/0?title=Pending"> Gallery  
-***
 
-<img src="http://progressed.io/bar/0?title=Pending"> opportunities.html 
-***
+<h3><img src="http://progressed.io/bar/100?title=Finished"> sitemap.html</h3>  
 
-<img src="http://progressed.io/bar/90?title=Progress"> lustrum.html  
-***
+<h3><img src="http://progressed.io/bar/0?title=Pending"> news.html</h3>  
 
-<img src="http://progressed.io/bar/100?title=Finished"> sitemap.html  
-***
 
-<img src="http://progressed.io/bar/0?title=Pending"> news.html  
-***
+<h3><img src="http://progressed.io/bar/70?title=Progress"> feedback.html</h3>  
 
-<img src="http://progressed.io/bar/70?title=Progress"> feedback.html  
-*** 
 
-<img src="http://progressed.io/bar/1?title=Pending"> about.html  
-***
+<h3><img src="http://progressed.io/bar/1?title=Pending"> about.html</h3>   
+
 
 
 |	FUTURE FEATURES		|   

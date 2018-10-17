@@ -1,48 +1,88 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-	<!-- Description: FST10011 Fundamentals Of Web Technology : Web Development Assignment -->
-	<!-- Author: benis :~DDDDDDDDDDDD -->
-	<!-- Date: -->
-	<!-- Validated: -->
-	<meta charset="utf-8">
-	<meta name="author" content="">
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Catamaran:400,700" rel="stylesheet">
-	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebusneuebold" type="text/css">
-	<link rel="stylesheet" type="text/css" href="style.css">	
+  <!-- Description: FST10011 Fundamentals Of Web Technology: Web Development Assignment -->
+  <!-- Authors: Wong Kah Heng, Shamil Haqeem bin Shukarmin, Jonathan Seng -->
+  <!-- Date:  -->
+  <!-- Validated:  -->
 
-	<title>Lustrum Group</title>
-	<link rel="shortcut icon" type="image/x-icon" href="images/logos/wheelchair.png">
+  <meta charset="utf-8">
+  <meta name="author" content="Wong Kah Heng, Shamil Haqeem bin Shukarmin, Jonathan Seng">
+  <meta name="description" content="Introduction To Architecture">
+  <meta name="keywords" content="architecture, nikken sekkei, construction">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>L U S T R U M</title> <!-- Remember the title -->
+  <link rel="icon" href="images/logos/wheelchair.png" type="image/png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:400,700" rel="stylesheet">
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebusneuebold" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
-<body class="backgroundcolor">
+<body class="lustrum">
+  <header class="relative">
+    <div class="lustrum__head">
+      <h2 class="lustrum__title">Lustrum</h2>
+      <h5 class="lustrum__subtitle">Who <span class="lustrum__subtitle--em">we</span> are</h5>
+      <hr>
+    </div>
+  </header>
 
+  <main>
+    <div class="portraits">
+      <div id="page-content" class="grid--col-3">
+        <div class="portrait portrait--kh">
+            <img class="portrait__image" src="images/portraits/KH.png" alt="Wong Kah Heng">
+          <div class="portrait__border">
+            <h5 class="portrait__name">Wong Kah Heng</h5>
+            <p class="portrait__p">Boss</p>
+          </div>
+        </div>
+        <div class="portrait portrait--s">
+          <img class="portrait__image" src="images/portraits/Shamil.png" alt="Shamil Haqeem">
+          <div class="portrait__border">
+            <h5 class="portrait__name">Shamil Haqeem</h5>
+            <p class="portrait__p">Drug Daddy</p>
+          </div>
+        </div>
+        <div class="portrait portrait--j">
+          <img class="portrait__image" src="images/portraits/Jonathan.png" alt="Jonathan Seng">
+          <div class="portrait__border">
+            <h5 class="portrait__name">Jonathan Seng</h5>
+            <p class="portrait__p">Me</p>
+          </div>
+        </div>
+      </div>
 
-	<h1 class="lustrum_header">Lustrum</h1>
+      <a class="lustrum__button button button--white" href="index.html">< Back To Main Page</a>
+    </div>
+  </main>
 
-	<div class="grid-container">
-		<div class="grid-item"><img class="imageattributes" src="images/portraits/Shamil.jpeg">
-			<div class="Name">Shamil</div>
-		</div>
-		<div class="grid-item"><img class="imageattributes" src="images/portraits/KH.jpeg">
-			<div class="Name">KH</div>
-		</div>
-		<div class="grid-item"><img class="imageattributes" src="images/portraits/John.jpeg">
-			<div class="Name">John</div>
-		</div>
-	</div>
+  <script>
+    $(document).ready(function() {
+      function scrollTo(target) {
+        $("html, body").animate({
+          scrollTop: $(target).offset().top
+        }, 1000);
+      };
 
-<!--
-		<div class="vl1"></div>
-		<div class="vl2"></div>
--->
+      $(window).bind("mousewheel", function() {
+        $("html, body").stop(true, false);
+      });
+
+      var top = $(document).scrollTop()
+
+      if (top == 0) {
+        console.log(top);
+        setTimeout(function() {
+          scrollTo("#page-content");
+        }, 750);
+      };
+    });
+  </script>
 </body>
-
 
 </html>

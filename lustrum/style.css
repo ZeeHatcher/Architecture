@@ -346,8 +346,16 @@ hr {
   margin: 3em;
   display: grid;
   grid-gap: 2em;
-  grid-template-columns: repeat(12, auto);
+  grid-template-columns: repeat(12, 1fr);
   padding: 3em;
+}
+
+.grid--col-3 {
+  margin: 2em;
+  display: grid;
+  grid-gap: 7em;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 7em;
 }
 
 .parallax {
@@ -503,65 +511,91 @@ hr {
 /*  ==============================================================
       lustrum.html CSS
     ==============================================================  */
-.font-sizebig {
-  font-size: 5.5em
+.relative {
+  position: relative;
 }
 
-.grid-container {
-  background-color: yellow;
-  display: grid;
-  grid-template-columns: auto auto auto;
+.lustrum {
+  background-color: #222;
 }
 
-.grid-item {
-  background-color: rgba(255, 255, 255, 1);
-  color: black;
-  font-size: 2em;
-  text-align: center
+.lustrum__head {
+  background-color: #fff;
+  width: 100%;
+  height: 50vh;
+  padding: 2em;
 }
 
-bodylustrum {
-  color: black
+.lustrum__button {
+  position: absolute;
+  bottom: 2em;
+  left: 3em;
 }
 
-.bodylustrum {
-  color: black
+.lustrum__title {
+  color: #222;
+  text-align: center;
+  letter-spacing: 0.1em;
 }
 
-.vl1 {
-	border-left: 6px solid black;
-	height: 100%;
-	left: 34%;
-	margin-left: -3px;
-	position: absolute;
-	top: 0;
+.lustrum__subtitle {
+  color: #222;
+  text-align: center;
+  letter-spacing: 0.4em;
 }
 
-.vl2 {
-	border-left: 6px solid black;
-	height: 100%;
-	margin-left: -3px;
-	position: absolute;
-	right: 34%;
-	top: 0;
+.lustrum__subtitle--em {
+  color: #d62c2c;
 }
 
-.imageattributes {
-	transform: rotate(90deg) scale(0.7);
-	width: 100%;
-	background-blend-mode: normal;
-/*	filter: blur(10px);*/
-	border-radius: 150px 500px;
-/*
-	filter: brightness(50%);
-	filter:saturate(50%);
-*/
-
+.portraits {
+  position: absolute;
+  top: 5em;
+  left: 0;
+  z-index: 1;
 }
 
-.bigline {
-  border-width: 10px;
-  color: black;
+.portrait {
+  width: 100%;
+  background-color: #333;
+  color: #aaa;
+  text-align: center;
+  transition: background-color 0.8s;
+}
+
+.portrait:hover {
+  background-color: #fff;
+  color: #222;
+}
+
+.portrait__border {
+  border-top: solid 1px;
+  margin: 0.5em 1em 1em 1em;
+}
+
+.portrait--kh .portrait__border {
+  border-color: #d1d10e;
+}
+
+.portrait--s .portrait__border {
+  border-color: #0e6fd1;
+}
+
+.portrait--j .portrait__border {
+  border-color: #d10e59;
+}
+
+.portrait__image {
+  width: 100%;
+}
+
+.portrait__name {
+  margin-top: 0.5em;
+}
+
+.portrait__p {
+  padding: 0 2em;
+  margin-bottom: 1em;
 }
 
 /*  ==============================================================

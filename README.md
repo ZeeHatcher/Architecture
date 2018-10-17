@@ -1,7 +1,7 @@
 # web_assignment
 A project by a bunch of university nerds
 
-| sites that are done |  
+| Progress |  
 <img src="http://progressed.io/bar/99?title=Progress"> index.html  
 ***
 

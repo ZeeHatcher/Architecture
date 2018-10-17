@@ -8,7 +8,8 @@ A project by a bunch of university nerds
 <img src="http://progressed.io/bar/0?title=Pending"> projects.html   
 ***
 
-<img src="http://progressed.io/bar/0?title=Pending"> past.html <img src="http://progressed.io/bar/0?title=Pending"> current.html <img src="http://progressed.io/bar/0?title=Pending">future.html  ***
+<img src="http://progressed.io/bar/0?title=Pending"> past.html <img src="http://progressed.io/bar/0?title=Pending"> current.html <img src="http://progressed.io/bar/0?title=Pending">future.html  
+***
 
 <img src="http://progressed.io/bar/0?title=Pending"> architecture.html <img src="http://progressed.io/bar/0?title=Pending"> Gallery  
 ***

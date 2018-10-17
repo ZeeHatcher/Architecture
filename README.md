@@ -20,4 +20,4 @@ parallax scrolling
 seamless page transition  
 
 | sites that are done |
-✓ http://progressed.io/bar/28 99% Index.html
+✓ <img src="http://progressed.io/bar/28"> 99% Index.html

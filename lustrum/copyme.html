@@ -140,6 +140,10 @@
       $(window).bind("mousewheel", function() {
         $("html, body").stop(true, false);
       });
+      
+      setTimeout(function() {
+        scrollTo("#page-content");
+      }, 750);
 
       // Change parallax image here
       // Put url in between the brackets

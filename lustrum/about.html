@@ -13,7 +13,7 @@
   <meta name="keywords" content="architecture, nikken sekkei, construction">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title></title> <!-- Remember the title -->
+  <title>About</title> <!-- Remember the title -->
   <link rel="shortcut icon" href="images/logos/logo-favicon.ico" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Catamaran:400,700" rel="stylesheet">
@@ -54,14 +54,33 @@
           <li class="navbar__link"><a href="about.html">About</a></li>
         </ul>
       </nav>
-
-      <h1 class="parallax__title">Title</h1>
-
+      
+      <div class="parallax__content">
+        <h1 class="parallax__title">Nikken Sekkei</h1>
+      </div>
+      
       <div id="scroll-down" class="button button--white button--scroll-down"></div>
     </div>
-
-    <div id="page-content" class="grid--col-12">
-      <!-- Your code goes here -->
+    
+    <div id="page-content" class="about grid--col-12">
+      <div class="about__head">
+        <h2 class="about__title">About Nikken Sekkei</h2>
+      </div>
+      <div class="about__body">
+        <p>This is the introduction to Nikken Sekkei.</p>
+      </div>
+      <div class="about__pic">
+        <img class="about__img" src="images/stock/skytree.jpg" alt="Tokyo Skytree">
+      </div>
+      <div class="about__vision">
+      
+      </div>
+      <div class="about__tagline">
+      
+      </div>
+      <div class="about__motto">
+      
+      </div>
     </div>
   </main>
 
@@ -140,10 +159,14 @@
       $(window).bind("mousewheel", function() {
         $("html, body").stop(true, false);
       });
+      
+      setTimeout(function() {
+        scrollTo("#page-content");
+      }, 750);
 
       // Change parallax image here
       // Put url in between the brackets
-      $('#parallax-img').css('background-image','url()');
+      $('#parallax-img').css('background-image','url(images/stock/18_Cover.jpg)');
 
       $("header").hide();
 

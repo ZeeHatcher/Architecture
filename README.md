@@ -106,7 +106,7 @@ DISCARDED/IMPOSSIBLE IDEAS THAT MAY BE IMPLEMENTED
     <td align="center"><img src="https://placehold.it/15/00ff00/000000?text=+"></td>
   </tr>
   <tr>
-    <td align="center">seamless page transistion</td>
+    <td>seamless page transistion</td>
     <td align="center"><img src="https://placehold.it/15/f03c15/000000?text=+"></td>
   </tr>
 </table>

@@ -6,50 +6,50 @@
 <table>
   <tr>
     <td>index.html</td>
-    <td><img src="http://progressed.io/bar/99?title=Polishing"></td>
+    <td align="center"><img src="http://progressed.io/bar/99?title=Polishing"></td>
   </tr>
   <tr>
     <td rowspan="4">projects.html</td>
   </tr>
   <tr>
     <td>past</td>
-    <td><img src="http://progressed.io/bar/0?title=Pending"></td>
+    <td align="center"><img src="http://progressed.io/bar/0?title=Pending"></td>
   </tr>
   <tr>
     <td>current</td>
-    <td><img src="http://progressed.io/bar/0?title=Pending"></td>
+    <td align="center"><img src="http://progressed.io/bar/0?title=Pending"></td>
   </tr>
   <tr>
     <td>future</td>
-    <td><img src="http://progressed.io/bar/0?title=Pending"></td>
+    <td align="center"><img src="http://progressed.io/bar/0?title=Pending"></td>
   </tr>
   <tr>
     <td>architecture.html</td>
-    <td><img src="http://progressed.io/bar/0?title=Pending"></td>
+    <td align="center"><img src="http://progressed.io/bar/0?title=Pending"></td>
   </tr>
   <tr>
     <td>opportunities.html</td>
-    <td><img src="http://progressed.io/bar/0?title=Pending"></td>
+    <td align="center"><img src="http://progressed.io/bar/0?title=Pending"></td>
   </tr>
   <tr>
     <td>lustrum.html</td>
-    <td><img src="http://progressed.io/bar/90?title=lackinginfo"></td>
+    <td align="center"><img src="http://progressed.io/bar/90?title=lackinginfo"></td>
   </tr>
   <tr>
     <td>sitemap.html</td>
-    <td><img src="http://progressed.io/bar/100?title=Finished"></td>
+    <td align="center"><img src="http://progressed.io/bar/100?title=Finished"></td>
   </tr>
   <tr>
     <td>news.html</td>
-    <td><img src="http://progressed.io/bar/0?title=Pending"></td>
+    <td align="center"><img src="http://progressed.io/bar/0?title=Pending"></td>
   </tr>
   <tr>
     <td>feedback.html</td>
-    <td><img src="http://progressed.io/bar/70?title=Polishing"></td>
+    <td align="center"><img src="http://progressed.io/bar/70?title=Polishing"></td>
   </tr>
   <tr>
     <td>about.html</td>
-    <td><img src="http://progressed.io/bar/1?title=Pending"></td>
+    <td align="center"><img src="http://progressed.io/bar/1?title=Pending"></td>
   </tr>
 </table>
 
@@ -58,39 +58,39 @@ FUTURE FEATURES
 <table>
  <tr>
     <td>gallery.html - shadows</td>
-    <td><img src="https://placehold.it/15/f03c15/000000?text=+"></td>
+    <td align="center"><img src="https://placehold.it/15/f03c15/000000?text=+"></td>
  </tr>
   <tr>
     <td>introduction.html - longform</td>
-    <td><img src="https://placehold.it/15/f03c15/000000?text=+"></td>
+    <td align="center"><img src="https://placehold.it/15/f03c15/000000?text=+"></td>
  </tr>
   <tr>
     <td>sitemap - press button to expand</td>
-    <td><img src="https://placehold.it/15/00ff00/000000?text=+"></td>
+    <td align="center"><img src="https://placehold.it/15/00ff00/000000?text=+"></td>
  </tr>
   <tr>
     <td>navbar - drop down menu</td>
-    <td><img src="https://placehold.it/15/00ff00/000000?text=+"></td>
+    <td align="center"><img src="https://placehold.it/15/00ff00/000000?text=+"></td>
  </tr>
   <tr>
     <td>broken grid layouts - little bibs and bobs  </td>
-    <td><img src="https://placehold.it/15/f03c15/000000?text=+"></td>
+    <td align="center"><img src="https://placehold.it/15/f03c15/000000?text=+"></td>
  </tr>
   <tr>
     <td> rounder corners for pretty much everything - dem curves</td>
-    <td><img src="https://placehold.it/15/f03c15/000000?text=+"></td>
+    <td align="center"><img src="https://placehold.it/15/f03c15/000000?text=+"></td>
  </tr>
    <tr>
     <td>sexy styled scrollbar   </td>
-    <td><img src="https://placehold.it/15/f03c15/000000?text=+"></td>
+    <td align="center"><img src="https://placehold.it/15/f03c15/000000?text=+"></td>
  </tr>
    <tr>
     <td>loading bars</td>
-    <td><img src="https://placehold.it/15/f03c15/000000?text=+"></td>
+    <td align="center"><img src="https://placehold.it/15/f03c15/000000?text=+"></td>
  </tr>
    <tr>
     <td>back to top button </td>
-    <td><img src="https://placehold.it/15/00ff00/000000?text=+"></td>
+    <td align="center"><img src="https://placehold.it/15/00ff00/000000?text=+"></td>
  </tr>
  </table>
   
@@ -99,15 +99,15 @@ DISCARDED/IMPOSSIBLE IDEAS THAT MAY BE IMPLEMENTED
 <table>
   <tr>
     <td>animation - scrolling, changing into a new website</td>
-    <td><img src="https://placehold.it/15/f03c15/000000?text=+"></td>
+    <td align="center"><img src="https://placehold.it/15/f03c15/000000?text=+"></td>
   </tr>
   <tr>
     <td>parallax scrolling</td>
-    <td><img src="https://placehold.it/15/00ff00/000000?text=+"></td>
+    <td align="center"><img src="https://placehold.it/15/00ff00/000000?text=+"></td>
   </tr>
   <tr>
-    <td>seamless page transistion</td>
-    <td><img src="https://placehold.it/15/f03c15/000000?text=+"></td>
+    <td align="center">seamless page transistion</td>
+    <td align="center"><img src="https://placehold.it/15/f03c15/000000?text=+"></td>
   </tr>
 </table>
 

@@ -49,7 +49,7 @@
   </tr>
   <tr>
     <td>about.html</td>
-    <td align="center"><img src="http://progressed.io/bar/1?title=Pending"></td>
+    <td align="center"><img src="http://progressed.io/bar/100?title=Finished"></td>
   </tr>
 </table>
 

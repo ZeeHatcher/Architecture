@@ -23,6 +23,7 @@ body {
   min-height: 100vh;
   color: #222;
   position: relative;
+  overflow-y: scroll;
 }
 
 header {
@@ -74,8 +75,22 @@ li {
 	list-style: none;
 }
 
-::-webkit-scrollbar {
-	display: none;
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0);
+}
+ 
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background-color: #555;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #888; 
 }
 
 hr {
@@ -380,6 +395,7 @@ hr {
     ==============================================================  */
 .hero {
   background-image: url(images/stock/pj0005_02.jpg);
+  background-repeat: no-repeat;
   background-position: 0 50%;
   height: 100vh;
   overflow: hidden;

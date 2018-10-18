@@ -13,7 +13,7 @@
   <meta name="keywords" content="architecture, nikken sekkei, construction">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title></title> <!-- Remember the title -->
+  <title>About</title> <!-- Remember the title -->
   <link rel="shortcut icon" href="images/logos/logo-favicon.ico" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Catamaran:400,700" rel="stylesheet">
@@ -54,14 +54,60 @@
           <li class="navbar__link"><a href="about.html">About</a></li>
         </ul>
       </nav>
-
-      <h1 class="parallax__title">Title</h1>
-
+      
+      <div class="parallax__content">
+        <h1 class="parallax__title">Nikken Sekkei</h1>
+      </div>
+      
       <div id="scroll-down" class="button button--white button--scroll-down"></div>
     </div>
-
-    <div id="page-content" class="grid--col-12">
-      <!-- Your code goes here -->
+    
+    <div id="page-content" class="about grid--col-12">
+      <div class="about__head">
+          <h2 class="about__title">About Nikken Sekkei</h2>
+        
+          <h6 class="about__motto">
+            more than creative | immutability | fair and neutral manner
+          </h6>
+      </div>
+      <div class="about__body">
+        <p class="about__p">
+          At Nikken Sekkei, we take an integrated approach to our projects as a professional service firm. Across all in-house disciplines of architectural design: urban design, research, planning and consulting -- our teams work collaboratively to deliver better solutions for clients. Since our establishment in 1900, we have completed more than 25,000 projects, in over 250 cities, across 50 countries.
+        </p>
+      </div>
+      <figure class="about__pic">
+        <img class="about__img" src="images/stock/skytree.jpg" alt="Tokyo Skytree">
+        <figcaption class="about__caption">
+          Tokyo Skytree, Japan<br>Second tallest structure in the world
+        </figcaption>
+      </figure>
+      <div class="about__vision">
+        <div class="about__text">
+          <h3 class="about__sub">Vision</h3>
+          <p class="about__p">
+            We are experts who integrate the skills, knowledge and experience needed to bring our clients' ideas to life.
+          </p>
+          <p class="about__p">
+            We are eager to listen to their voices, to share their vision, and together, to shape spaces, environments, cities and society.
+          </p>
+          <p class="about__p">
+            We invent new possibilities by bringing together the right mix of experience, creativity and passion to deliver that exceeds expectations.
+          </p>
+          <p class="about__p">
+            For 100 years, we have worked hand-in-hand with clients, designing solutions and environments that create truly meaningful experience for all.
+          </p>
+        </div>
+      </div>
+      <div class="about__who">
+        <h3 class="about__sub">Who We Are</h3>
+        <p class="about__p">
+          We proudly work under the expression <span class="about__p--em">"EXPERIENCE, INTEGRATED"</span>, which shows our determination in breaking new ground in environmental design by meeting and furthering expectations. We design solutions and environments that create truly meaningful experiences for people and communities around the world by integrating our accumulated expertise and knowledge with that of our clients’.
+        </p>
+      </div>
+      <div class="about__tagline">
+        <img class="about__tag" src="images/logos/tagline.svg" alt="Experience, Intergrated">
+        <p>Integrating accumulated proficiency to deliver rich experiences</p>
+      </div>
     </div>
   </main>
 
@@ -134,16 +180,20 @@
       function scrollTo(target) {
         $("html, body").animate({
           scrollTop: $(target).offset().top - 100
-        }, 1000);
+        }, 1500);
       };
 
       $(window).bind("mousewheel", function() {
         $("html, body").stop(true, false);
       });
+      
+      setTimeout(function() {
+        scrollTo("#page-content");
+      }, 750);
 
       // Change parallax image here
       // Put url in between the brackets
-      $('#parallax-img').css('background-image','url()');
+      $('#parallax-img').css('background-image','url(images/stock/18_Cover.jpg)');
 
       $("header").hide();
 

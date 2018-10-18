@@ -33,7 +33,7 @@
   </tr>
   <tr>
     <td>lustrum.html</td>
-    <td align="center"><img src="http://progressed.io/bar/90?title=lackinginfo"></td>
+    <td align="center"><img src="http://progressed.io/bar/100?title=Finished"></td>
   </tr>
   <tr>
     <td>sitemap.html</td>

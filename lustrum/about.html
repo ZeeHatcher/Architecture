@@ -64,22 +64,49 @@
     
     <div id="page-content" class="about grid--col-12">
       <div class="about__head">
-        <h2 class="about__title">About Nikken Sekkei</h2>
+          <h2 class="about__title">About Nikken Sekkei</h2>
+        
+          <h6 class="about__motto">
+            more than creative | immutability | fair and neutral manner
+          </h6>
       </div>
       <div class="about__body">
-        <p>This is the introduction to Nikken Sekkei.</p>
+        <p class="about__p">
+          At Nikken Sekkei, we take an integrated approach to our projects as a professional service firm. Across all in-house disciplines of architectural design: urban design, research, planning and consulting -- our teams work collaboratively to deliver better solutions for clients. Since our establishment in 1900, we have completed more than 25,000 projects, in over 250 cities, across 50 countries.
+        </p>
       </div>
-      <div class="about__pic">
+      <figure class="about__pic">
         <img class="about__img" src="images/stock/skytree.jpg" alt="Tokyo Skytree">
-      </div>
+        <figcaption class="about__caption">
+          Tokyo Skytree, Japan<br>Second tallest structure in the world
+        </figcaption>
+      </figure>
       <div class="about__vision">
-      
+        <div class="about__text">
+          <h3 class="about__sub">Vision</h3>
+          <p class="about__p">
+            We are experts who integrate the skills, knowledge and experience needed to bring our clients' ideas to life.
+          </p>
+          <p class="about__p">
+            We are eager to listen to their voices, to share their vision, and together, to shape spaces, environments, cities and society.
+          </p>
+          <p class="about__p">
+            We invent new possibilities by bringing together the right mix of experience, creativity and passion to deliver that exceeds expectations.
+          </p>
+          <p class="about__p">
+            For 100 years, we have worked hand-in-hand with clients, designing solutions and environments that create truly meaningful experience for all.
+          </p>
+        </div>
+      </div>
+      <div class="about__who">
+        <h3 class="about__sub">Who We Are</h3>
+        <p class="about__p">
+          We proudly work under the expression <span class="about__p--em">"EXPERIENCE, INTEGRATED"</span>, which shows our determination in breaking new ground in environmental design by meeting and furthering expectations. We design solutions and environments that create truly meaningful experiences for people and communities around the world by integrating our accumulated expertise and knowledge with that of our clients’.
+        </p>
       </div>
       <div class="about__tagline">
-      
-      </div>
-      <div class="about__motto">
-      
+        <img class="about__tag" src="images/logos/tagline.svg" alt="Experience, Intergrated">
+        <p>Integrating accumulated proficiency to deliver rich experiences</p>
       </div>
     </div>
   </main>
@@ -153,7 +180,7 @@
       function scrollTo(target) {
         $("html, body").animate({
           scrollTop: $(target).offset().top - 100
-        }, 1000);
+        }, 1500);
       };
 
       $(window).bind("mousewheel", function() {

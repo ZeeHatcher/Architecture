@@ -21,6 +21,7 @@ body {
   font-family: "Catamaran", sans-serif;
   font-size: 18px;
   min-height: 100vh;
+  color: #222;
   position: relative;
 }
 
@@ -699,24 +700,67 @@ hr {
       about.html CSS
     ==============================================================  */
 .about {
-  background-color: #222;
   padding: 0;
 }
 
 .about__head {
-  color: #fff;
-  grid-column: 1 / -1;
+  grid-column: 3 / -3;
+  border-bottom: solid 0.5px #000;
 }
 
 .about__body {
-  grid-column: 1 / 8 ;
-  color: #fff;
+  text-align: justify;
+  grid-column: 3 / -3 ;
+}
+
+.about__title {
+  float: left;
+}
+
+.about__motto {
+  margin-top: 2.1em;
+  float: right;
+  opacity: 0.3;
 }
 
 .about__pic {
-  grid-column: 8 / 13;
+  grid-column: 4 / -4;
 }
 
 .about__img {
   width: 100%;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.about__caption {
+  text-align: center;
+  opacity: 0.5;
+  line-height: 1em;
+}
+
+.about__vision {
+  grid-column: 1 / -1;
+  background-color: #222;
+  color: #fff;
+  padding: 2em;
+}
+
+.about__text {
+  margin: auto;
+  width: 500px;
+  text-align: center;
+}
+
+.about__p {
+  line-height: 1.2em;
+  margin: 1em 0;
+}
+
+.about__tagline {
+  grid-column: 1 / -1;
+}
+
+.about__who {
+  text-align: justify;
+  grid-column: 3 / -3;
 }

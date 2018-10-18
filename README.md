@@ -92,11 +92,6 @@ FUTURE FEATURES
     <td>back to top button </td>
     <td align="center"><img src="https://placehold.it/15/00ff00/000000?text=+"></td>
  </tr>
- </table>
-  
-DISCARDED/IMPOSSIBLE IDEAS THAT MAY BE IMPLEMENTED
---------------------------------------------------
-<table>
   <tr>
     <td>animation - scrolling, changing into a new website</td>
     <td align="center"><img src="https://placehold.it/15/f03c15/000000?text=+"></td>

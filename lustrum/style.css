@@ -552,21 +552,40 @@ bodylustrum {
 /*  ==============================================================
       feedback.html CSS
     ==============================================================  */
+.grid__form {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  grid-template-rows: auto;
+  margin: 0 0;
+}
+
 .background--blue {
-  background-color: white;
+  background-color: lightblue;
+  background-blend-mode: lighten;
 }
 
 .feedback {
-  margin: 5em 10em 0em 10em;
+  padding: 2.5em 10em 2.5em 10em;
+}
+
+.form__vl {
+    border-left: .03em solid black;
+    height: 25%;
+    position: absolute;
+    left: 60%;
+    margin: 3% 0%;
+    width: .1%;
+    opacity: .1;
 }
 
 .form {
   font-size: 1.2em;
-  margin: 2% 20%;
+  margin: 5% 10% 5% 10%;
   background-color: white;
-  border: 0em solid black;
-  padding: 1.5em 2em;
+  border: 0 solid black;
+  padding: 0;
   border-radius: .5em;
+  font-size: 1.1em;
 }
 
 .form__question {
@@ -578,16 +597,12 @@ form ul {
   padding-left:3%
 }
 
-.form__input__text--short {
-  width: 30em;
+.form__input__text {
   max-width: 80%;
   font-size: .8em;
-}
-
-.form__input__text--long {
-  width: 50em;
-  max-width: 80%;
-  font-size: .8em;
+  border: .05em solid blue;
+  border-radius: 4px;
+  padding: .3em;
 }
 
 .padthree {
@@ -599,20 +614,24 @@ form ul {
   text-align: left;
   padding-left: 3%;
   width: 90%;
-  border: .1em solid;
+  border: .1em solid blue;
 }
 
 .form__table, .form__table__tr {
-  border: .015em solid grey;
+  border: .05em solid blue;
 }
 
 th, td {
   padding: 0em .5em;
+  text-align: center;
 }
 
 .form__textarea {
   max-width: 100%;
   font-size: .8em;
+  border: .05em solid blue;
+  border-radius: 4px;]
+  padding: .3em;
 }
 
 .form__submit__box {
@@ -626,6 +645,7 @@ th, td {
   width: 6em;
   font-weight: bold;
   font-size: .7em;
+  border-radius: 1em;
 }
 
 .button--green {
@@ -639,6 +659,43 @@ th, td {
   color: #FFF;
   border-color: #00FF00
 }
+
+.form__desc {
+  margin: 10% 10% 5% 0%;
+  left: 70%;
+}
+
+.form__slider {
+  vertical-align: middle;
+  width: 100%;
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: .9em; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  border-radius: 1em;
+}
+
+/* Mouse-over effects */
+.form__slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.form__slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 1.3em; /* Set a specific slider handle width */
+  height: 1.3em; /* Slider handle height */
+  background: blue; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 50%;
+}
+
 
 
 /*  ==============================================================

@@ -640,12 +640,13 @@ th, td {
 }
 
 .form__submit {
-  float: right;
+  margin-left: 90%;
   height: 3em;
   width: 6em;
   font-weight: bold;
   font-size: .7em;
   border-radius: 1em;
+  text-align: left;
 }
 
 .button--green {

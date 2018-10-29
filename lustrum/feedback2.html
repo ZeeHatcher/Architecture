@@ -61,16 +61,15 @@
       <div id="scroll-down" class="button button--white button--scroll-down"></div>
     </div>
 
-    <div id="page-content" class="background--blue">
-      <div class="feedback">
+    <div id="page-content">
+      <div class="feedback background--blue">
         <h3>Feedback</h3>
         <h5>Your feedback will help us make this website better.</h5>
       </div>
-      <hr>
       <div class="form">
         <p>Your feedback has been sent to us. We appreciate the time you have taken to help us improve our site and services.</p>
         <br><br><br><br><br><br><br><br>
-        <a href="index.html">Back to our homepage</a>
+        <a href="index.html">Back to our homepage &gt;</a>
       </div>
     </div>
   </main>
@@ -150,6 +149,10 @@
       $(window).bind("mousewheel", function() {
         $("html, body").stop(true, false);
       });
+
+      setTimeout(function() {
+        scrollTo("#page-content");
+      }, 750);
 
       // Change parallax image here
       // Put url in between the brackets

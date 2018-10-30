@@ -71,7 +71,7 @@ a {
   text-decoration: none;
 }
 
-li {
+ul li {
 	list-style: none;
 }
 
@@ -790,4 +790,28 @@ hr {
 .about__who {
   text-align: justify;
   grid-column: 3 / -3;
+}
+
+/*  ==============================================================
+      policy.html CSS
+    ==============================================================  */
+.policy__head {
+  grid-column: 3 / -3;
+  border-bottom: solid #000 0.5px;
+}
+
+.policy__body {
+  grid-column: 3 / -3;
+}
+
+.policy__p {
+  line-height: 1.2em;
+  margin: 2em 0;
+}
+
+.policy__p--list {
+  margin: 0.5em 0;
+}
+
+.policy__list {
 }

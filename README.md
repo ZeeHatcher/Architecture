@@ -45,7 +45,7 @@
   </tr>
   <tr>
     <td>feedback.html</td>
-    <td align="center"><img src="http://progressed.io/bar/70?title=Polishing"></td>
+    <td align="center"><img src="http://progressed.io/bar/99?title=Polishing"></td>
   </tr>
   <tr>
     <td>about.html</td>

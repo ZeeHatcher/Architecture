@@ -1,44 +1,88 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-	<!-- Description: FST10011 Fundamentals Of Web Technology : Web Development Assignment -->
-	<!-- Author: benis :~DDDDDDDDDDDD -->
-	<!-- Date: -->
-	<!-- Validated: -->
-	<meta charset="utf-8">
-	<meta name="author" content="">
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Catamaran:400,700" rel="stylesheet">
-	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebusneuebold" type="text/css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	
-	<title>Lustrum Group</title>
-	<link rel="shortcut icon" type="image/x-icon" href="images/wheelchair.png">
+  <!-- Description: FST10011 Fundamentals Of Web Technology: Web Development Assignment -->
+  <!-- Authors: Wong Kah Heng, Shamil Haqeem bin Shukarmin, Jonathan Seng -->
+  <!-- Date:  -->
+  <!-- Validated:  -->
 
+  <meta charset="utf-8">
+  <meta name="author" content="Wong Kah Heng, Shamil Haqeem bin Shukarmin, Jonathan Seng">
+  <meta name="description" content="Introduction To Architecture">
+  <meta name="keywords" content="architecture, nikken sekkei, construction">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>L U S T R U M</title> <!-- Remember the title -->
+  <link rel="icon" href="images/logos/wheelchair.png" type="image/png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:400,700" rel="stylesheet">
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebusneuebold" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body class="lustrum">
+  <header class="relative">
+    <div class="lustrum__head">
+      <h2 class="lustrum__title">Lustrum</h2>
+      <h5 class="lustrum__subtitle">Who <span class="lustrum__subtitle--em">we</span> are</h5>
+      <hr>
+    </div>
+  </header>
 
+  <main>
+    <div class="portraits">
+      <div id="page-content" class="grid--col-3">
+        <div class="portrait portrait--kh">
+            <img class="portrait__image" src="images/portraits/kh-re.png" alt="Wong Kah Heng">
+          <div class="portrait__border">
+            <h5 class="portrait__name">Wong Kah Heng</h5>
+            <p class="portrait__p"><em>Kah Heng</em> is our <strong>tempo setter</strong> that leads us to be focused on the task at hand while he does virtually nothing besides instructing us we would not have had as much progress if did we not have our loveable man</p>
+          </div>
+        </div>
+        <div class="portrait portrait--s">
+          <img class="portrait__image" src="images/portraits/Shamil.png" alt="Shamil Haqeem">
+          <div class="portrait__border">
+            <h5 class="portrait__name">Shamil Haqeem</h5>
+            <p class="portrait__p"><em>Shamil</em> is our <strong>resident client</strong>, identical to Kah Heng, he says more than he does, he spits out ideas for the rest to try out and when it happens to be good, he takes all the credit that he can, for example the hero image for every page. </p>
+          </div>
+        </div>
+        <div class="portrait portrait--j">
+          <img class="portrait__image" src="images/portraits/Jonathan.png" alt="Jonathan Seng">
+          <div class="portrait__border">
+            <h5 class="portrait__name">Jonathan Seng</h5>
+            <p class="portrait__p"><em>John</em> is our friendly neighbourhood <strong>slave</strong>, he does all the work without expecting anything back, he's responsible for the look and feel and the only person that does any considerable effort.</p>
+          </div>
+        </div>
+      </div>
 
-	<h1 class="text-center font-sizebig">Lustrum</h1>
+      <a class="lustrum__button button button--white" href="index.html">Back To Main Page</a>
+    </div>
+  </main>
 
-	<div class="grid-container">
-		<div class="grid-item">Shamil Haqeem</div>
-		<div class="grid-item">Wong Kah Heng</div>
-		<div class="grid-item">Jonathan Seng</div>
-		<div class="vl1"></div>
-		<div class="vl2"></div>
-		<div class="grid-item"><img src="images/placeholder.jpg"></div>
-		<div class="grid-item"><img src="images/placeholder.jpg"></div>
-		<div class="grid-item"><img src="images/placeholder.jpg"></div>
-	</div>
+  <script>
+    $(window).ready(function() {
+      function scrollTo(target) {
+        $("html, body").animate({
+          scrollTop: $(target).offset().top
+        }, 1000);
+      };
 
+      $(window).bind("mousewheel", function() {
+        $("html, body").stop(true, false);
+      });
 
+      var top = $(document).scrollTop()
+
+      if (top == 0) {
+        console.log(top);
+        setTimeout(function() {
+          scrollTo("#page-content");
+        }, 750);
+      };
+    });
+  </script>
 </body>
-
 
 </html>

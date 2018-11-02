@@ -355,6 +355,42 @@ hr {
   color: #222;
 }
 
+.content {
+  padding: 0;
+}
+
+.content__head {
+  grid-column: 3 / -3;
+  border-bottom: solid 0.5px #000;
+}
+
+.content__title {
+  float: left;
+}
+
+.content__sub {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.content__body {
+  text-align: justify;
+  grid-column: 3 / -3 ;
+}
+
+.content__p {
+  line-height: 1.2em;
+  margin: 1em 0;
+}
+
+.content__pic--side {
+
+}
+
+.content__pic--large {
+  grid-column: 4 / -4;
+}
+
 .grid--col-12 {
   margin: 3em 0;
   display: grid;
@@ -719,28 +755,10 @@ hr {
   padding: 0;
 }
 
-.about__head {
-  grid-column: 3 / -3;
-  border-bottom: solid 0.5px #000;
-}
-
-.about__body {
-  text-align: justify;
-  grid-column: 3 / -3 ;
-}
-
-.about__title {
-  float: left;
-}
-
 .about__motto {
   margin-top: 2.1em;
   float: right;
   opacity: 0.3;
-}
-
-.about__pic {
-  grid-column: 4 / -4;
 }
 
 .about__img {
@@ -767,16 +785,6 @@ hr {
   text-align: center;
 }
 
-.about__sub {
-  text-align: center;
-  margin-bottom: 0.5em;
-}
-
-.about__p {
-  line-height: 1.2em;
-  margin: 1em 0;
-}
-
 .about__tagline {
   text-align: center;
   grid-column: 1 / -1;
@@ -790,4 +798,27 @@ hr {
 .about__who {
   text-align: justify;
   grid-column: 3 / -3;
+}
+
+/*  ==============================================================
+      opportunities.html CSS
+    ==============================================================  */
+.opportunities {
+  padding: 0;
+}
+
+.opportunities__openings {
+  grid-column: 3 / 6;
+}
+
+.opportunities__job::before {
+  content: ">";
+  margin-right: 1em;
+}
+
+.opportunities__submission {
+  grid-column: 6 / -3;
+  background-color: #222;
+  color: #fff;
+  padding: 1em;
 }

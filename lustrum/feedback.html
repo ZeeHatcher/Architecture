@@ -2,113 +2,270 @@
 <html lang="en">
 
 <head>
-	<!-- Description: FST10011 Fundamentals Of Web Technology: Web Development Assignment -->
-	<!-- Authors: Wong Kah Heng, Shamil Haqeem bin Shukarmin, Jonathan Seng -->
-	<!-- Date:  -->
-	<!-- Validated:  -->
 
-	<meta charset="utf-8">
-	<meta name="author" content="Wong Kah Heng, Shamil Haqeem bin Shukarmin, Jonathan Seng">
-	<meta name="description" content="Intdoduction To Architecture">
-	<meta name="keywords" content="architecture, nikken sekkei, scholarship">
-	<title>Feedback</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Catamaran:400,700" rel="stylesheet">
-	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebusneuebold" type="text/css" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Description: FST10011 Fundamentals Of Web Technology: Web Development Assignment -->
+  <!-- Authors: Wong Kah Heng, Shamil Haqeem bin Shukarmin, Jonathan Seng -->
+  <!-- Date:  -->
+  <!-- Validated:  -->
+
+  <meta charset="utf-8">
+  <meta name="author" content="Wong Kah Heng, Shamil Haqeem bin Shukarmin, Jonathan Seng">
+  <meta name="description" content="Feedback">
+  <meta name="keywords" content="feedback">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Feedback</title>
+  <link rel="shortcut icon" href="images/logos/logo-favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:400,700" rel="stylesheet">
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebusneuebold" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
-	<header>
-		<div class="logo">
-			<a href="index.html"><img alt="Nikken Sekkei Logo" src="images/logo.png"></a>
-		</div>
-		<nav>
-			<ul class="navbar">
-				<li class="navbar__link"><a href="intro.html">Introduction to Architecture</a></li>
-				<li class="navbar__link"><a href="project.html">Projects</a></li>
-				<li class="navbar__link"><a href="news.html">News</a></li>
-				<li class="navbar__link"><a href="opportunities.html">Opportunities</a></li>
-			</ul>
-		</nav>
-	</header>
+  <header>
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <a href="index.html"><img alt="nikken sekkei Logo" src="images/logos/logo.png"></a>
+      </div>
 
-	<div class="feedback">
-		<h1>Feedback</h1>
-		<p>Your feedback will help us make this website better.</p>
-	</div>
-	<hr>
-	<div>
-		<form action="/action_page.php" method="post" class="form">
-			<!--add modal-->
-			<label for="" class="form__question">1. Is this your first time visiting the website?</label> <br>
-			<input type="radio" id="" name="firstvisit" onclick=""> Yes <br>
-			<input type="radio" id="" name="firstvisit" onclick=""> No <br><br>
+      <ul class="navbar__links">
+        <li class="navbar__link"><a href="architecture.html">Introduction to Architecture</a></li>
+        <li class="navbar__link"><a href="projects.html">Projects</a></li>
+        <li class="navbar__link"><a href="news.html">News</a></li>
+        <li class="navbar__link"><a href="opportunities.html">Opportunities</a></li>
+        <li class="navbar__link"><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
 
-			<label class="form__question">2. What was your reason for visiting the website?</label> <br>
-			<input type="text" id="" name="visitreason" class="form__input__text"> <br><br>
+  <main>
+    <div id="parallax-img" class="parallax parallax--bgA">
+      <nav class="navbar navbar--white navbar--trans">
+        <div class="navbar__logo">
+          <a href="index.html"><img alt="Nikken Sekkei Logo" src="images/logos/logo-white.png"></a>
+        </div>
 
-			<label class="form__question">3. Did you find everything you were looking for?</label> <br>
-			<input type="radio" id="" name="foundinfo" onclick=""> Yes, all of it <br>
-			<input type="radio" id="" name="foundinfo" onclick=""> Some of it <br>
-			<input type="radio" id="" name="foundinfo" onclick=""> None at all <br><br>
+        <ul class="navbar__links">
+          <li class="navbar__link"><a href="architecture.html">Introduction to Architecture</a></li>
+          <li class="navbar__link"><a href="projects.html">Projects</a></li>
+          <li class="navbar__link"><a href="news.html">News</a></li>
+          <li class="navbar__link"><a href="opportunities.html">Opportunities</a></li>
+          <li class="navbar__link"><a href="about.html">About</a></li>
+        </ul>
+      </nav>
 
-			<label class="form__question">4. What was missing and should be included in the website?</label> <br>
-			<input type="text" id="" name="missinginfo" class="form__input__text"> <br><br>
+      <h1 class="parallax__title">FEEDBACK</h1>
 
-			<label class="form__question">5. How easy was it for you to navigate around the website?</label> <br>
-			<input type="radio" id="" name="navigation" onclick=""> Very easy <br>
-			<input type="radio" id="" name="navigation" onclick=""> Easy <br>
-			<input type="radio" id="" name="navigation" onclick=""> Just okay <br>
-			<input type="radio" id="" name="navigation" onclick=""> Confusing <br>
-			<input type="radio" id="" name="navigation" onclick=""> Very confusing <br><br>
+      <div id="scroll-down" class="button button--white button--scroll-down"></div>
+    </div>
 
-			<label class="form__question">6. What is your overall impression of the website?</label>
-			<table class="form__table">
-				<tr class="form__table__tr">
-					<th></th>
-					<th>1</th>
-					<th>2</th>
-					<th>3</th>
-				</tr>
-				<tr class="form__table__tr">
-					<td>Professional</td>
-					<td><input type="radio" id="" name="professional" onclick=""></td>
-					<td><input type="radio" id="" name="professional" onclick=""></td>
-					<td><input type="radio" id="" name="professional" onclick=""></td>
-				</tr>
-				<tr class="form__table__tr">
-					<td>Informative</td>
-					<td><input type="radio" id="" name="informative" onclick=""></td>
-					<td><input type="radio" id="" name="informative" onclick=""></td>
-					<td><input type="radio" id="" name="informative" onclick=""></td>
-				</tr>
-				<tr class="form__table__tr">
-					<td>Visually Pleasing</td>
-					<td><input type="radio" id="" name="visual" onclick="">
-					<td><input type="radio" id="" name="visual" onclick="">
-					<td><input type="radio" id="" name="visual" onclick="">
-				</tr>
-				<tr class="form__table__tr">
-					<td>Performance Speed</td>
-					<td><input type="radio" id="" name="speed" onclick="">
-					<td><input type="radio" id="" name="speed" onclick="">
-					<td><input type="radio" id="" name="speed" onclick="">
-				</tr>
-			</table><br>
+    <div id="page-content">
+      <div class="feedback background--blue">
+        <h3>Feedback</h3>
+        <h5>Your feedback will help us make this website better.</h5>
+      </div>
+      <div class="grid__form">
+        <div class="form">
+          <form action="feedback2.html" method="post">
+            <label class="form__question">1. Is this your first time visiting the website?</label>
+            <label class="form_answer container"><input type="radio" id="firstvisit" name="firstvisit"> Yes <span class="checkmark"></span></label>
+            <label class="form_answer container"><input type="radio" id="notfirstvisit" name="firstvisit"> No <span class="checkmark"></span></label>
+            <br>
 
-			<label class="form__question">7. Other suggestions to help improve the website.</label> <br>
-			<textarea class="form__textarea" id="" name="suggestion" rows=4 cols="100"></textarea> <br>
+            <label class="form__question">2. How did you find our website?</label>
+            <label class="form_answer container"><input type="radio" id="searchengine" name="foundsite"> Found in search engine <span class="checkmark"></span></label>
+            <label class="form_answer container"><input type="radio" id="socialmedia" name="foundsite"> Through social media <span class="checkmark"></span></label>
+            <label class="form_answer container"><input type="radio" id="advertisment" name="foundsite"> Through advertisments <span class="checkmark"></span></label>
+            <br>
 
-			<div class="form__submit__box"><input type="submit" value="Submit" class="form__submit button button--green"></div>
-		</form>
-	</div>
+            <label for="question3" class="form__question">3. What was your reason for visiting the website?</label>
+            <label class="form_answer"><input type="text" id="question3" name="visitreason" class="form__input__text" size="60"></label>
+            <br>
 
-	</div>
+            <label class="form__question">4. Did you find everything you were looking for?</label>
+            <label class="form_answer container"><input type="radio" id="foundall" name="foundinfo"> Yes, all of it <span class="checkmark"></span></label>
+            <label class="form_answer container"><input type="radio" id="foundsome" name="foundinfo"> Some of it <span class="checkmark"></span></label>
+            <label class="form_answer container"><input type="radio" id="foundnone" name="foundinfo"> None at all <span class="checkmark"></span></label>
+            <br>
 
+            <label for="question5" class="form__question">5. What was missing and should be included in the website?</label>
+            <label class="form_answer"><input type="text" id="question5" name="missinginfo" class="form__input__text" size="60"></label>
+            <br>
 
+            <label class="form__question">6. How easy was it for you to navigate around the website?</label>
+            <label class="form_answer container"><input type="radio" id="effortless" name="navigation"> Effortless <span class="checkmark"></span></label>
+            <label class="form_answer container"><input type="radio" id="comfortable" name="navigation"> Comfortable <span class="checkmark"></span></label>
+            <label class="form_answer container"><input type="radio" id="easy" name="navigation"> Easy <span class="checkmark"></span></label>
+            <label class="form_answer container"><input type="radio" id="confusing" name="navigation"> Confusing <span class="checkmark"></span></label>
+            <label class="form_answer container"><input type="radio" id="unmanageabke" name="navigation"> Unmanageable <span class="checkmark"></span></label>
+            <br>
+
+            <label class="form__question">7. What is your overall impression of the website?</label>
+            <table class="form__table">
+              <tr class="form__table__tr">
+                <th></th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+              </tr>
+              <tr class="form__table__tr">
+                <td>Professional</td>
+                <td colspan="5"><input type="range" id="question7" class="form__slider" name="professional" min="1" max="5"></td>
+              </tr>
+              <tr class="form__table__tr">
+                <td>Informative</td>
+                <td colspan="5"><input type="range" id="question7" class="form__slider" name="informative" min="1" max="5"td>
+              </tr>
+              <tr class="form__table__tr">
+                <td>Visually Pleasing</td>
+                <td colspan="5"><input type="range" id="question7" class="form__slider" name="visual" min="1" max="5"></td>
+              </tr>
+              <tr class="form__table__tr">
+                <td>Performance Speed</td>
+                <td colspan="5"><input type="range" id="question7" class="form__slider" name="speed" min="1" max="5"></td>
+              </tr>
+            </table><br>
+
+            <label for="question8" class="form__question">8. Other suggestions to help improve the website.</label>
+            <div class="form__textarea__container">
+              <textarea class="form__textarea" id="question8" name="suggestion" rows="6" cols="100"></textarea>
+            </div>
+
+            <input type="submit" value="Submit" class="form__submit button button--green">
+          </form>
+        </div>
+
+        <!-- Vertical line -->
+        <div class="form__vl"></div>
+
+        <div class="form__desc">
+          <p>We are always striving to provide excellent service.</p>
+          <br>
+          <p>We'd love to get your feedback. Thank you for taking your time in filling up our feedback form.</p>
+          <br>
+          <br>
+          <p>We appreciate it!</p>
+          <br>
+          <br>
+          <br>
+          <p>If you need help, feel free to contact us, or email us at <strong><a href="http://www.google.com" target="_blank">nikken@sekkei.jp</a></strong></p>
+          <br>
+          <img src="images/stock/heart.jpg">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <hr>
+    <div class="disclaimer">
+      <h5 class="disclaimer__title">Disclaimer</h5>
+      <p class="disclaimer__text">
+        This website is created for education and non-commercial use only.
+        It is an assignment for completion of unit,
+        FST10011 Fundamentals of Web Technology based on the Foundation (IT/Multimedia) course from Swinburne University of Technology Sarawak Campus.
+      </p>
+    </div>
+
+    <div class="footer">
+      <div class="finfo">
+        <div class="finfo__col-1">
+          <h6 class="finfo__title">Feedback</h6>
+          <p class="finfo__p">
+            We are always trying to improve your overall experience. <br><br>
+            Please tell us about your experience with this website.
+          </p>
+          <div class="finfo__button">
+            <a href="feedback.html" class="button button--grey">Feedback</a>
+          </div>
+        </div>
+        <div class="finfo__col-2">
+          <h6 class="finfo__title">Quick Access</h6>
+          <ul>
+            <li><a href="architecture.html" class="finfo__link">Introduction to Architecture</a></li>
+            <li><a href="projects.html" class="finfo__link">Projects</a></li>
+            <li><a href="news.html" class="finfo__link">News</a></li>
+            <li><a href="opportunities.html" class="finfo__link">Opportunities</a></li>
+            <li><a href="about.html" class="finfo__link">About</a></li>
+            <li><a href="sitemap.html" class="finfo__link">Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="finfo__col-3">
+          <h6 class="finfo__title">Contact Us</h6>
+          <p class="finfo__p">
+            General and Business Inquiries: <br><br>
+            <a class="finfo__link finfo__link--email" href="mailto:global@nikken.jp">global@nikken.jp</a>
+          </p>
+          <p class="finfo__p">
+            Press: <br><br>
+            <a class="finfo__link finfo__link--email" href="mailto:media@nikken.jp">media@nikken.jp</a>
+          </p>
+        </div>
+      </div>
+      <ul class="copyright">
+        <a class="copyright__logo" href="https://www.nikken.co.jp/en/index.html"><img src="images/logos/logo2-white.png" alt="nikken sekkei logo"></a>
+        <li>Copyrights &copy; 2018 <a href="lustrum.html" class="copyright__link">Lustrum</a> All Rights Reserved</li>
+        <li class="copyright__policy"><a href="sitepolicy.html" class="copyright__link">Site Policy</a></li>
+        <li class="copyright__policy">|</li>
+        <li class="copyright__policy"><a href="privacypolicy.html" class="copyright__link">Privacy Policy</a></li>
+        <li class="date-modified">Date Modified | <span id="date-modified"></span></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    $(document).ready(function() {
+      // DO NOT DELETE ZONE START //
+      function lastModified() {
+        var modifiedDate = new Date(document.lastModified);
+        var date = modifiedDate.toLocaleDateString();
+        return date;
+      };
+
+      function scrollTo(target) {
+        $("html, body").animate({
+          scrollTop: $(target).offset().top - 100
+        }, 1000);
+      };
+
+      $(window).bind("mousewheel", function() {
+        $("html, body").stop(true, false);
+      });
+
+      setTimeout(function() {
+        scrollTo("#page-content");
+      }, 750);
+
+      // Change parallax image here
+      // Put url in between the brackets
+      $('#parallax-img').css('background-image','url(images/stock/1residential.jpg)');
+
+      $("header").hide();
+
+      $(document).scroll(function() {
+        var top = $(document).scrollTop();
+
+        if (top > 99) {
+          $("header").fadeIn("slow");
+        } else {
+          $("header").fadeOut("slow");
+        };
+      });
+
+      $("#scroll-down").click(function() {
+        scrollTo("#page-content");
+      });
+
+      $("#date-modified").html(lastModified());
+      // DO NOT DELETE ZONE END //
+      // Your JS code starts below //
+    });
+  </script>
 </body>
-
 
 </html>

@@ -554,14 +554,14 @@ bodylustrum {
     ==============================================================  */
 .grid__form {
   display: grid;
-  grid-template-columns: 65% 35%;
+  grid-template-columns: 64% 35%;
+  grid-column-gap: 1%;
   grid-template-rows: auto;
   margin: 0 0;
 }
 
 .background--blue {
   background-color: lightblue;
-  background-blend-mode: lighten;
 }
 
 .feedback {
@@ -570,15 +570,16 @@ bodylustrum {
 
 .form__vl {
     border-left: .03em solid black;
-    height: 25%;
+    height: 40%;
     position: absolute;
     left: 60%;
     margin: 3% 0%;
     width: .1%;
-    opacity: .1;
+    opacity: .2;
 }
 
 .form {
+  grid-column: 1;
   font-size: 1.2em;
   margin: 5% 10% 5% 10%;
   background-color: white;
@@ -588,65 +589,56 @@ bodylustrum {
   font-size: 1.1em;
 }
 
+form label {
+  margin-bottom: .5em;
+}
+
 .form__question {
+  display: block;
   padding-left: 1%;
   font-weight: bold;
 }
 
-form ul {
-  padding-left:3%
+.form_answer {
+  display: block;
+  padding-left: 3%;
 }
 
 .form__input__text {
   max-width: 80%;
   font-size: .8em;
-  border: .05em solid blue;
+  border: .05em solid #2c7bd6;
   border-radius: 4px;
   padding: .3em;
 }
 
-.padthree {
+.form__textarea__container {
   padding-left: 3%;
 }
 
 .form__table {
-  border-collapse: collapse;
-  text-align: left;
-  padding-left: 3%;
-  width: 90%;
-  border: .1em solid blue;
-}
-
-.form__table, .form__table__tr {
-  border: .05em solid blue;
+  width: 80%;
 }
 
 th, td {
-  padding: 0em .5em;
   text-align: center;
 }
 
 .form__textarea {
   max-width: 100%;
   font-size: .8em;
-  border: .05em solid blue;
-  border-radius: 4px;]
+  border: .05em solid #2c7bd6;
+  border-radius: 4px;
   padding: .3em;
 }
 
-.form__submit__box {
-  margin: 1.5em .2em;
-  height: 1em;
-}
-
 .form__submit {
-  margin-left: 90%;
+  display: block;
+  margin: 5% 0 5% 90%;
   height: 3em;
-  width: 6em;
   font-weight: bold;
   font-size: .7em;
-  border-radius: 1em;
-  text-align: left;
+  border-radius: 2em;
 }
 
 .button--green {
@@ -662,8 +654,8 @@ th, td {
 }
 
 .form__desc {
-  margin: 10% 10% 5% 0%;
-  left: 70%;
+  grid-column: 2;
+  margin: 10% 15% 5% 0%;
 }
 
 .form__slider {
@@ -672,7 +664,7 @@ th, td {
   -webkit-appearance: none;  /* Override default CSS styles */
   appearance: none;
   width: 100%; /* Full-width */
-  height: .9em; /* Specified height */
+  height: .5em; /* Specified height */
   background: #d3d3d3; /* Grey background */
   outline: none; /* Remove outline */
   opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
@@ -681,22 +673,55 @@ th, td {
   border-radius: 1em;
 }
 
-/* Mouse-over effects */
 .form__slider:hover {
   opacity: 1; /* Fully shown on mouse-over */
 }
 
-/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+/* The slider handle */
 .form__slider::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
-  width: 1.3em; /* Set a specific slider handle width */
-  height: 1.3em; /* Slider handle height */
-  background: blue; /* Green background */
+  width: 1.1em; /* Set a specific slider handle width */
+  height: 1.1em; /* Slider handle height */
+  background: #2c7bd6; /* Blue background */
   cursor: pointer; /* Cursor on hover */
   border-radius: 50%;
 }
 
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 1.7em;
+  cursor: pointer;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 20%;
+  left: 2%;
+  height: .8em;
+  width: .8em;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #5998ff;
+}
 
 
 /*  ==============================================================

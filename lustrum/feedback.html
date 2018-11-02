@@ -70,102 +70,89 @@
         <div class="form">
           <form action="feedback2.html" method="post">
             <label class="form__question">1. Is this your first time visiting the website?</label>
-            <ul>
-              <li><input type="radio" id="firstvisit" name="firstvisit" onclick=""> <label for="firstvisit"> Yes </label></li>
-              <li><input type="radio" id="notfirstvisit" name="firstvisit" onclick=""> <label for="notfirstvisit"> No </label></li>
-            </ul>
+            <label class="form_answer container"><input type="radio" id="firstvisit" name="firstvisit"> Yes <span class="checkmark"></span></label>
+            <label class="form_answer container"><input type="radio" id="notfirstvisit" name="firstvisit"> No <span class="checkmark"></span></label>
             <br>
 
             <label class="form__question">2. How did you find our website?</label>
-            <ul>
-              <li><input type="radio" id="searchengine" name="foundsite" onclick=""> <label for="searchengine"> Found in search engine </label></li>
-              <li><input type="radio" id="socialmedia" name="foundsite" onclick=""> <label for="socialmedia"> Through social media </label></li>
-              <li><input type="radio" id="advertisment" name="foundsite" onclick=""> <label for="advertisment"> Through advertisments </label></li>
-              <li><input type="radio" id="otherfind" name="foundsite" onclick=""> <label for="otherfind"> Other: <input type="text" id="question2" name="foundsite" class="form__input__text" size="40"> </label></li>
-            </ul>
+            <label class="form_answer container"><input type="radio" id="searchengine" name="foundsite"> Found in search engine <span class="checkmark"></span></label>
+            <label class="form_answer container"><input type="radio" id="socialmedia" name="foundsite"> Through social media <span class="checkmark"></span></label>
+            <label class="form_answer container"><input type="radio" id="advertisment" name="foundsite"> Through advertisments <span class="checkmark"></span></label>
             <br>
 
-            <label for="question3" class="form__question">3. What was your reason for visiting the website?</label><br>
-            <ul>
-              <li><input type="text" id="question3" name="visitreason" class="form__input__text" size="60">
-            </ul>
+            <label for="question3" class="form__question">3. What was your reason for visiting the website?</label>
+            <label class="form_answer"><input type="text" id="question3" name="visitreason" class="form__input__text" size="60"></label>
             <br>
 
             <label class="form__question">4. Did you find everything you were looking for?</label>
-            <ul>
-              <li><input type="radio" id="foundall" name="foundinfo" onclick=""> <label for="foundall"> Yes, all of it </label></li>
-              <li><input type="radio" id="foundsome" name="foundinfo" onclick=""> <label for="foundsome"> Some of it </label></li>
-              <li><input type="radio" id="foundnone" name="foundinfo" onclick=""> <label for="foundnone"> None at all </label></li>
-            </ul>
+            <label class="form_answer container"><input type="radio" id="foundall" name="foundinfo"> Yes, all of it <span class="checkmark"></span></label>
+            <label class="form_answer container"><input type="radio" id="foundsome" name="foundinfo"> Some of it <span class="checkmark"></span></label>
+            <label class="form_answer container"><input type="radio" id="foundnone" name="foundinfo"> None at all <span class="checkmark"></span></label>
             <br>
 
-            <label for="question5" class="form__question">5. What was missing and should be included in the website?</label><br>
-            <ul>
-              <li><input type="text" id="question5" name="missinginfo" class="form__input__text" size="60">
-            </ul>
+            <label for="question5" class="form__question">5. What was missing and should be included in the website?</label>
+            <label class="form_answer"><input type="text" id="question5" name="missinginfo" class="form__input__text" size="60"></label>
             <br>
 
             <label class="form__question">6. How easy was it for you to navigate around the website?</label>
-            <ul>
-              <li><input type="radio" id="effortless" name="navigation" onclick=""> <label for="effortless"> Effortless </label></li>
-              <li><input type="radio" id="comfortable" name="navigation" onclick=""> <label for="comfortable"> Comfortable </label></li>
-              <li><input type="radio" id="easy" name="navigation" onclick=""> <label for="easy"> Easy </label></li>
-              <li><input type="radio" id="confusing" name="navigation" onclick=""> <label for="confusing"> Confusing </label></li>
-              <li><input type="radio" id="unmanageabke" name="navigation" onclick=""> <label for="unmanageabke"> Unmanageable </label></li>
-            </ul>
+            <label class="form_answer container"><input type="radio" id="effortless" name="navigation"> Effortless <span class="checkmark"></span></label>
+            <label class="form_answer container"><input type="radio" id="comfortable" name="navigation"> Comfortable <span class="checkmark"></span></label>
+            <label class="form_answer container"><input type="radio" id="easy" name="navigation"> Easy <span class="checkmark"></span></label>
+            <label class="form_answer container"><input type="radio" id="confusing" name="navigation"> Confusing <span class="checkmark"></span></label>
+            <label class="form_answer container"><input type="radio" id="unmanageabke" name="navigation"> Unmanageable <span class="checkmark"></span></label>
             <br>
 
             <label class="form__question">7. What is your overall impression of the website?</label>
-            <div class="padthree">
-              <table class="form__table">
-                <tr class="form__table__tr">
-                  <th></th>
-                  <th>1</th>
-                  <th>2</th>
-                  <th>3</th>
-                  <th>4</th>
-                  <th>5</th>
-                </tr>
-                <tr class="form__table__tr">
-                  <td>Professional</td>
-                  <td colspan="5"><input type="range" id="question7" class="form__slider" name="professional" min="1" max="5"></td>
-                </tr>
-                <tr class="form__table__tr">
-                  <td>Informative</td>
-                  <td colspan=5""><input type="range" id="question7" class="form__slider" name="informative" min="1" max="5"td>
-                </tr>
-                <tr class="form__table__tr">
-                  <td>Visually Pleasing</td>
-                  <td colspan="5"><input type="range" id="question7" class="form__slider" name="visual" min="1" max="5"></td>
-                </tr>
-                <tr class="form__table__tr">
-                  <td>Performance Speed</td>
-                  <td colspan="5"><input type="range" id="question7" class="form__slider" name="speed" min="1" max="5"></td>
-                </tr>
-              </table><br>
-            </div>
+            <table class="form__table">
+              <tr class="form__table__tr">
+                <th></th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+              </tr>
+              <tr class="form__table__tr">
+                <td>Professional</td>
+                <td colspan="5"><input type="range" id="question7" class="form__slider" name="professional" min="1" max="5"></td>
+              </tr>
+              <tr class="form__table__tr">
+                <td>Informative</td>
+                <td colspan="5"><input type="range" id="question7" class="form__slider" name="informative" min="1" max="5"td>
+              </tr>
+              <tr class="form__table__tr">
+                <td>Visually Pleasing</td>
+                <td colspan="5"><input type="range" id="question7" class="form__slider" name="visual" min="1" max="5"></td>
+              </tr>
+              <tr class="form__table__tr">
+                <td>Performance Speed</td>
+                <td colspan="5"><input type="range" id="question7" class="form__slider" name="speed" min="1" max="5"></td>
+              </tr>
+            </table><br>
 
-            <label for="question8" class="form__question">8. Other suggestions to help improve the website.</label> <br>
-            <div class="padthree">
+            <label for="question8" class="form__question">8. Other suggestions to help improve the website.</label>
+            <div class="form__textarea__container">
               <textarea class="form__textarea" id="question8" name="suggestion" rows="6" cols="100"></textarea>
             </div>
 
-            <div class="form__submit__box"><input type="submit" value="Submit" class="form__submit button button--green"></div>
+            <input type="submit" value="Submit" class="form__submit button button--green">
           </form>
         </div>
+
         <!-- Vertical line -->
         <div class="form__vl"></div>
 
         <div class="form__desc">
-          <p>We're always striving to provide excellent service.</p>
+          <p>We are always striving to provide excellent service.</p>
           <br>
-          <p>We'd love to get your feedback. Thank you for your time.</p>
+          <p>We'd love to get your feedback. Thank you for taking your time in filling up our feedback form.</p>
+          <br>
           <br>
           <p>We appreciate it!</p>
           <br>
-          <hr>
           <br>
-          <p>If you need help, feel free to contact us, or email us at <strong><a href="http://www.google.com" target="_blank">shamil@haram.man.</a></strong></p>
+          <br>
+          <p>If you need help, feel free to contact us, or email us at <strong><a href="http://www.google.com" target="_blank">nikken@sekkei.jp</a></strong></p>
           <br>
           <img src="images/stock/heart.jpg">
         </div>

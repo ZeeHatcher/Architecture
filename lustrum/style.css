@@ -98,6 +98,11 @@ hr {
   border-top: solid #000 1px;
 }
 
+hr {
+  margin: 0 10em;
+  border-top: solid #000 1px;
+}
+
 /*  ==============================================================
       Mandatory CSS
     ==============================================================  */
@@ -303,6 +308,7 @@ hr {
   transition: 0.2s, color 0.2s;
 }
 
+
 .button--scroll-down {
   display: block;
   height: 2em;
@@ -355,6 +361,7 @@ hr {
   color: #222;
 }
 
+
 .grid--col-12 {
   margin: 3em 0;
   display: grid;
@@ -369,6 +376,7 @@ hr {
   grid-gap: 7em;
   grid-template-columns: repeat(3, 1fr);
   padding: 7em;
+
 }
 
 .parallax {
@@ -616,53 +624,95 @@ hr {
 /*  ==============================================================
       feedback.html CSS
     ==============================================================  */
+.grid__form {
+  display: grid;
+  grid-template-columns: 64% 35%;
+  grid-column-gap: 1%;
+  grid-template-rows: auto;
+  margin: 0 0;
+}
+
+.background--blue {
+  background-color: lightblue;
+}
+
 .feedback {
-	margin: .5em 2em;
+
+  padding: 2.5em 10em 2.5em 10em;
+}
+
+.form__vl {
+    border-left: .03em solid black;
+    height: 40%;
+    position: absolute;
+    left: 60%;
+    margin: 3% 0%;
+    width: .1%;
+    opacity: .2;
 }
 
 .form {
-  background-color: #FFFFFF;
-  border: .02em solid black;
-  margin: 2% 10%;
-  padding: 1em;
+  grid-column: 1;
+  font-size: 1.2em;
+  margin: 5% 10% 5% 10%;
+  background-color: white;
+  border: 0 solid black;
+  padding: 0;
+  border-radius: .5em;
+  font-size: 1.1em;
 }
 
+form label {
+  margin-bottom: .5em;
+
+
 .form__question {
+  display: block;
+  padding-left: 1%;
   font-weight: bold;
+}
+
+.form_answer {
+  display: block;
+  padding-left: 3%;
 }
 
 .form__input__text {
-  max-width: 100%;
-  width: 50em;
+  max-width: 80%;
+  font-size: .8em;
+  border: .05em solid #2c7bd6;
+  border-radius: 4px;
+  padding: .3em;
+}
+
+.form__textarea__container {
+  padding-left: 3%;
 }
 
 .form__table {
-  border: .1em solid;
-  border-collapse: collapse;
-  padding: 1%;
-  text-align: left;
-  width: 50%;
+  width: 80%;
 }
 
-.form__table,
-.form__table__tr {
-	border: .015em solid grey;
+th, td {
+  text-align: center;
 }
 
 .form__textarea {
-	max-width: 100%;
-}
-
-.form__submit__box {
-  height: 1em;
-  margin: 1.5em .2em;
+  max-width: 100%;
+  font-size: .8em;
+  border: .05em solid #2c7bd6;
+  border-radius: 4px;
+  padding: .3em;
 }
 
 .form__submit {
-  float: right;
-  font-weight: bold;
+  display: block;
+  margin: 5% 0 5% 90%;
   height: 3em;
-  width: 6em;
+  font-weight: bold;
+  font-size: .7em;
+  border-radius: 2em;
+
 }
 
 .button--green {
@@ -790,4 +840,110 @@ hr {
 .about__who {
   text-align: justify;
   grid-column: 3 / -3;
+}
+
+.form__desc {
+  grid-column: 2;
+  margin: 10% 15% 5% 0%;
+}
+
+.form__slider {
+  vertical-align: middle;
+  width: 100%;
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: .5em; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  border-radius: 1em;
+}
+
+.form__slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle */
+.form__slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 1.1em; /* Set a specific slider handle width */
+  height: 1.1em; /* Slider handle height */
+  background: #2c7bd6; /* Blue background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 50%;
+}
+
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 1.7em;
+  cursor: pointer;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 20%;
+  left: 2%;
+  height: .8em;
+  width: .8em;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #5998ff;
+}
+
+
+/*  ==============================================================
+      sitemap.html CSS
+    ==============================================================  */
+.sitemap {
+  background-color: #222;
+  color: #fff;
+}
+
+.sitemap__title {
+  grid-column: 2 / -1;
+}
+
+.sitemap__links {
+  grid-column: 2 / -1;
+  grid-row: 2 / 3;
+}
+
+.sitemap__link {
+  color: #aaa;
+  transition: color 0.2s;
+}
+
+.sitemap__link::before {
+  content: ">";
+  margin-right: 1em;
+}
+
+.sitemap__link:hover {
+  color: #fff;
+}
+
+.sitemap__nest {
+  margin-left: 2em;
 }

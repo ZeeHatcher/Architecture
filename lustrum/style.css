@@ -637,7 +637,6 @@ hr {
 }
 
 .feedback {
-
   padding: 2.5em 10em 2.5em 10em;
 }
 
@@ -664,7 +663,7 @@ hr {
 
 form label {
   margin-bottom: .5em;
-
+}
 
 .form__question {
   display: block;
@@ -672,9 +671,22 @@ form label {
   font-weight: bold;
 }
 
-.form_answer {
+.form__answer {
   display: block;
   padding-left: 3%;
+}
+
+form select {
+  padding: .3em;
+  max-width: 80%;
+  border: .1em solid #2c7bd6;
+  border-radius: 4px;
+  width: 50%;
+  font-size: .8em;
+}
+
+form select option {
+  padding: .3em;
 }
 
 .form__input__text {
@@ -725,6 +737,96 @@ th, td {
   background-color: #00FF00;
   border-color: #00FF00;
   color: #FFF
+}
+
+.form__desc {
+  grid-column: 2;
+  margin: 10% 15% 5% 0%;
+}
+
+.form__slider {
+  vertical-align: middle;
+  width: 100%;
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: .5em; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  border-radius: 1em;
+}
+
+.form__slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle */
+.form__slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 1.1em; /* Set a specific slider handle width */
+  height: 1.1em; /* Slider handle height */
+  background: #2c7bd6; /* Blue background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 50%;
+}
+
+/* Customize the label (the container) */
+.radio__container {
+  display: block;
+  position: relative;
+  padding-left: 1.7em;
+  cursor: pointer;
+}
+
+/* Hide the browser's default radio button */
+.radio__container input {
+  position: absolute;
+  opacity: 0;
+}
+
+/* Create a custom radio button */
+.checkmark__radio {
+  position: absolute;
+  top: 20%;
+  left: 2%;
+  height: .8em;
+  width: .8em;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.checkmark__checkbox {
+  position: absolute;
+  top: 20%;
+  left: 2%;
+  height: .8em;
+  width: .8em;
+  background-color: #eee;
+  border-radius: 10%;
+}
+
+/* On mouse-over, add a grey background color */
+.radio__container:hover input ~ .checkmark__radio {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio__container input:checked ~ .checkmark__radio {
+  background-color: #5998ff;
+}
+
+/* On mouse-over, add a grey background color */
+.radio__container:hover input ~ .checkmark__checkbox {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio__container input:checked ~ .checkmark__checkbox {
+  background-color: #5998ff;
 }
 
 /*  ==============================================================
@@ -841,77 +943,6 @@ th, td {
   text-align: justify;
   grid-column: 3 / -3;
 }
-
-.form__desc {
-  grid-column: 2;
-  margin: 10% 15% 5% 0%;
-}
-
-.form__slider {
-  vertical-align: middle;
-  width: 100%;
-  -webkit-appearance: none;  /* Override default CSS styles */
-  appearance: none;
-  width: 100%; /* Full-width */
-  height: .5em; /* Specified height */
-  background: #d3d3d3; /* Grey background */
-  outline: none; /* Remove outline */
-  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-  transition: opacity .2s;
-  border-radius: 1em;
-}
-
-.form__slider:hover {
-  opacity: 1; /* Fully shown on mouse-over */
-}
-
-/* The slider handle */
-.form__slider::-webkit-slider-thumb {
-  -webkit-appearance: none; /* Override default look */
-  appearance: none;
-  width: 1.1em; /* Set a specific slider handle width */
-  height: 1.1em; /* Slider handle height */
-  background: #2c7bd6; /* Blue background */
-  cursor: pointer; /* Cursor on hover */
-  border-radius: 50%;
-}
-
-/* Customize the label (the container) */
-.container {
-  display: block;
-  position: relative;
-  padding-left: 1.7em;
-  cursor: pointer;
-}
-
-/* Hide the browser's default radio button */
-.container input {
-  position: absolute;
-  opacity: 0;
-}
-
-/* Create a custom radio button */
-.checkmark {
-  position: absolute;
-  top: 20%;
-  left: 2%;
-  height: .8em;
-  width: .8em;
-  background-color: #eee;
-  border-radius: 50%;
-}
-
-/* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
-  background-color: #ccc;
-}
-
-/* When the radio button is checked, add a blue background */
-.container input:checked ~ .checkmark {
-  background-color: #5998ff;
-}
-
 
 /*  ==============================================================
       sitemap.html CSS

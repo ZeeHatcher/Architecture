@@ -71,39 +71,57 @@
         <div class="form">
           <form action="feedback2.html" method="post">
             <label class="form__question">1. Is this your first time visiting the website?</label>
-            <label class="form_answer container"><input type="radio" id="firstvisit" name="firstvisit"> Yes <span class="checkmark"></span></label>
-            <label class="form_answer container"><input type="radio" id="notfirstvisit" name="firstvisit"> No <span class="checkmark"></span></label>
+            <label class="form__answer radio__container"><input type="radio" id="firstvisit" name="firstvisit"> Yes <span class="checkmark__radio"></span></label>
+            <label class="form__answer radio__container"><input type="radio" id="notfirstvisit" name="firstvisit"> No <span class="checkmark__radio"></span></label>
             <br>
 
-            <label class="form__question">2. How did you find our website?</label>
-            <label class="form_answer container"><input type="radio" id="searchengine" name="foundsite"> Found in search engine <span class="checkmark"></span></label>
-            <label class="form_answer container"><input type="radio" id="socialmedia" name="foundsite"> Through social media <span class="checkmark"></span></label>
-            <label class="form_answer container"><input type="radio" id="advertisment" name="foundsite"> Through advertisments <span class="checkmark"></span></label>
+            <label class="form__question">2. Which region are you from?</label>
+            <div class="form__answer">
+              <select id="region" name="region">
+              <option value="australia">Australia</option>
+              <option value="namerica">North Amreica</option>
+              <option value="samerica">South America</option>
+              <option value="seasia">South East Asia</option>
+              <option value="middleeast">Middle East</option>
+              <option value="europe">Europe</option>
+              <option value="uk">United Kingdom</option>
+              <option value="arctic">Arctic</option>
+              <option value="antartica">Antartica</option>
+              <option value="iceland">Iceland</option>
+              <option value="other">Other</option>
+              </select>
+            </div>
             <br>
 
-            <label for="question3" class="form__question">3. What was your reason for visiting the website?</label>
-            <label class="form_answer"><input type="text" id="question3" name="visitreason" class="form__input__text" size="60"></label>
+            <label class="form__question">3. How did you find our website?</label>
+            <label class="form__answer radio__container"><input type="checkbox" id="searchengine" name="foundsite"> Found in search engine <span class="checkmark__checkbox"></span></label>
+            <label class="form__answer radio__container"><input type="checkbox" id="socialmedia" name="foundsite"> Through social media <span class="checkmark__checkbox"></span></label>
+            <label class="form__answer radio__container"><input type="checkbox" id="advertisment" name="foundsite"> Through advertisments <span class="checkmark__checkbox"></span></label>
             <br>
 
-            <label class="form__question">4. Did you find everything you were looking for?</label>
-            <label class="form_answer container"><input type="radio" id="foundall" name="foundinfo"> Yes, all of it <span class="checkmark"></span></label>
-            <label class="form_answer container"><input type="radio" id="foundsome" name="foundinfo"> Some of it <span class="checkmark"></span></label>
-            <label class="form_answer container"><input type="radio" id="foundnone" name="foundinfo"> None at all <span class="checkmark"></span></label>
+            <label for="question3" class="form__question">4. What was your reason for visiting the website?</label>
+            <label class="form__answer"><input type="text" id="visitreason" name="visitreason" class="form__input__text" size="60"></label>
             <br>
 
-            <label for="question5" class="form__question">5. What was missing and should be included in the website?</label>
-            <label class="form_answer"><input type="text" id="question5" name="missinginfo" class="form__input__text" size="60"></label>
+            <label class="form__question">5. Did you find everything you were looking for?</label>
+            <label class="form__answer radio__container"><input type="radio" id="foundall" name="foundinfo"> Yes, all of it <span class="checkmark__radio"></span></label>
+            <label class="form__answer radio__container"><input type="radio" id="foundsome" name="foundinfo"> Some of it <span class="checkmark__radio"></span></label>
+            <label class="form__answer radio__container"><input type="radio" id="foundnone" name="foundinfo"> None at all <span class="checkmark__radio"></span></label>
             <br>
 
-            <label class="form__question">6. How easy was it for you to navigate around the website?</label>
-            <label class="form_answer container"><input type="radio" id="effortless" name="navigation"> Effortless <span class="checkmark"></span></label>
-            <label class="form_answer container"><input type="radio" id="comfortable" name="navigation"> Comfortable <span class="checkmark"></span></label>
-            <label class="form_answer container"><input type="radio" id="easy" name="navigation"> Easy <span class="checkmark"></span></label>
-            <label class="form_answer container"><input type="radio" id="confusing" name="navigation"> Confusing <span class="checkmark"></span></label>
-            <label class="form_answer container"><input type="radio" id="unmanageabke" name="navigation"> Unmanageable <span class="checkmark"></span></label>
+            <label for="question5" class="form__question">6. What was missing and should be included in the website?</label>
+            <label class="form__answer"><input type="text" id="question5" name="missinginfo" class="form__input__text" size="60"></label>
             <br>
 
-            <label class="form__question">7. What is your overall impression of the website?</label>
+            <label class="form__question">7. How easy was it for you to navigate around the website?</label>
+            <label class="form__answer radio__container"><input type="radio" id="effortless" name="navigation"> Effortless <span class="checkmark__radio"></span></label>
+            <label class="form__answer radio__container"><input type="radio" id="comfortable" name="navigation"> Comfortable <span class="checkmark__radio"></span></label>
+            <label class="form__answer radio__container"><input type="radio" id="easy" name="navigation"> Easy <span class="checkmark__radio"></span></label>
+            <label class="form__answer radio__container"><input type="radio" id="confusing" name="navigation"> Confusing <span class="checkmark__radio"></span></label>
+            <label class="form__answer radio__container"><input type="radio" id="unmanageabke" name="navigation"> Unmanageable <span class="checkmark__radio"></span></label>
+            <br>
+
+            <label class="form__question">8. What is your overall impression of the website?</label>
             <table class="form__table">
               <tr class="form__table__tr">
                 <th></th>
@@ -131,7 +149,7 @@
               </tr>
             </table><br>
 
-            <label for="question8" class="form__question">8. Other suggestions to help improve the website.</label>
+            <label for="question8" class="form__question">9. Other suggestions to help improve the website.</label>
             <div class="form__textarea__container">
               <textarea class="form__textarea" id="question8" name="suggestion" rows="6" cols="100"></textarea>
             </div>
@@ -243,7 +261,7 @@
 
       // Change parallax image here
       // Put url in between the brackets
-      $('#parallax-img').css('background-image','url(images/stock/1residential.jpg)');
+      $('#parallax-img').css('background-image','url(images/stock/11.jpg)');
 
       $("header").hide();
 

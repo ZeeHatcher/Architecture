@@ -296,6 +296,11 @@ hr {
   margin-right: 0.5em;
 }
 
+.bullet::before {
+  content: ">";
+  margin-right: 1em;
+}
+
 .button {
   border: solid 2px;
   cursor: pointer;
@@ -809,9 +814,33 @@ hr {
   margin: 2em 0;
 }
 
-.policy__p--list {
+.policy__list {
+  list-style-position: inside;
+}
+
+.policy__li {
+  line-height: 1.2em;
+  margin: 2em 0;
+}
+
+.policy__list--nested {
+  margin-left: 2em;
+  list-style-type: lower-alpha;
+}
+
+.policy__list--nested .policy__li {
   margin: 0.5em 0;
 }
 
-.policy__list {
+.policy__li .policy__p {
+  margin: 0;
+}
+
+.policy__subtitle {
+  margin: 1em 0;
+}
+
+.policy__p--em {
+  font-weight: bold;
+  margin-bottom: -1.5em;
 }

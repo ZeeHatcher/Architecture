@@ -98,10 +98,6 @@ hr {
   border-top: solid #000 1px;
 }
 
-hr {
-  margin: 0 10em;
-  border-top: solid #000 1px;
-}
 
 /*  ==============================================================
       Mandatory CSS
@@ -626,7 +622,7 @@ hr {
     ==============================================================  */
 .grid__form {
   display: grid;
-  grid-template-columns: 64% 35%;
+  grid-template-columns: 62% 33%;
   grid-column-gap: 1%;
   grid-template-rows: auto;
   margin: 0 0;
@@ -655,10 +651,20 @@ hr {
   font-size: 1.2em;
   margin: 5% 10% 5% 10%;
   background-color: white;
-  border: 0 solid black;
+  border: 0;
   padding: 0;
   border-radius: .5em;
   font-size: 1.1em;
+}
+
+fieldset {
+  padding: 1%;
+  border: 0.05em solid #5e9af9;
+  margin: 5% 0;
+}
+
+legend {
+  font-weight: bolder;
 }
 
 form label {
@@ -698,11 +704,11 @@ form select option {
 }
 
 .form__textarea__container {
-  padding-left: 3%;
+  padding-left: 5%;
 }
 
 .form__table {
-  width: 80%;
+  width: 60%;
 }
 
 th, td {
@@ -710,7 +716,8 @@ th, td {
 }
 
 .form__textarea {
-  max-width: 100%;
+  width: 70%;
+  max-width: 70%;
   font-size: .8em;
   border: .05em solid #2c7bd6;
   border-radius: 4px;
@@ -724,7 +731,6 @@ th, td {
   font-weight: bold;
   font-size: .7em;
   border-radius: 2em;
-
 }
 
 .button--green {
@@ -746,10 +752,9 @@ th, td {
 
 .form__slider {
   vertical-align: middle;
-  width: 100%;
   -webkit-appearance: none;  /* Override default CSS styles */
   appearance: none;
-  width: 100%; /* Full-width */
+  width: 90%; /* Full-width */
   height: .5em; /* Specified height */
   background: #d3d3d3; /* Grey background */
   outline: none; /* Remove outline */
@@ -792,7 +797,7 @@ th, td {
 .checkmark__radio {
   position: absolute;
   top: 20%;
-  left: 2%;
+  left: 1%;
   height: .8em;
   width: .8em;
   background-color: #eee;
@@ -802,7 +807,7 @@ th, td {
 .checkmark__checkbox {
   position: absolute;
   top: 20%;
-  left: 2%;
+  left: 1%;
   height: .8em;
   width: .8em;
   background-color: #eee;
@@ -828,6 +833,26 @@ th, td {
 .radio__container input:checked ~ .checkmark__checkbox {
   background-color: #5998ff;
 }
+
+.feedback2 {
+  margin: 5%;
+}
+
+/* For small screen */
+@media only screen and (max-width: 1200px) {
+  .grid__form {
+    grid-template-columns: 100%;
+  }
+
+  .form__desc {
+    opacity: 0;
+  }
+
+  .form__vl {
+    border: 0;
+  }
+}
+
 
 /*  ==============================================================
       sitemap.html CSS

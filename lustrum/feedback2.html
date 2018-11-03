@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Description: FST10011 Fundamentals Of Web Technology: Web Development Assignment -->
+  <!-- Authors: Wong Kah Heng, Shamil Haqeem bin Shukarmin, Jonathan Seng -->
+  <!-- Date:  -->
+  <!-- Validated:  -->
+
+  <meta charset="utf-8">
+  <meta name="author" content="Wong Kah Heng, Shamil Haqeem bin Shukarmin, Jonathan Seng">
+  <meta name="description" content="Feedback">
+  <meta name="keywords" content="feedback">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Feedback</title>
+  <link rel="shortcut icon" href="images/logos/logo-favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:400,700" rel="stylesheet">
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebusneuebold" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="feedback2">
+    <p>Your feedback has been sent to us. We appreciate the time you have taken to help us improve our site and services.</p>
+    <br><br><br><br><br>
+    <a href="index.html">You will be redirected to our home page in a few seconds.</a>
+  </div>
+  <script>
+    function redirect(){
+       window.location = $('a').attr('href');
+    }
+
+    setTimeout(redirect, 2000);
+  </script>
+</body>
+
+</html>

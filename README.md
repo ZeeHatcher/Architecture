@@ -45,7 +45,7 @@
   </tr>
   <tr>
     <td>feedback.html</td>
-    <td align="center"><img src="http://progressed.io/bar/70?title=Polishing"></td>
+    <td align="center"><img src="http://progressed.io/bar/99?title=Polishing"></td>
   </tr>
   <tr>
     <td>about.html</td>
@@ -106,7 +106,7 @@ FUTURE FEATURES
   </tr>
 </table>
 
-
+<a href="https://codescene.io/projects/3600/jobs/latest-successful/results"><img src="https://codescene.io/projects/3600/status.svg" />Get more details at <strong>codescene.io</strong>.</a>
 
 
 

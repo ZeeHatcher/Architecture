@@ -25,7 +25,7 @@
   </tr>
   <tr>
     <td>architecture.html</td>
-    <td align="center"><img src="http://progressed.io/bar/0?title=Pending"></td>
+    <td align="center"><img src="http://progressed.io/bar/10?title=Started"></td>
   </tr>
   <tr>
     <td>opportunities.html</td>

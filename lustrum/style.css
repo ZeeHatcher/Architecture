@@ -668,7 +668,7 @@ legend {
 }
 
 form label {
-  margin-bottom: .5em;
+  margin-bottom: .2em;
 }
 
 .form__question {
@@ -713,6 +713,10 @@ form select option {
 
 th, td {
   text-align: center;
+}
+
+th {
+  width: 1%;
 }
 
 .form__textarea {

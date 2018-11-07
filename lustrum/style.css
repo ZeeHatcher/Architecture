@@ -304,6 +304,10 @@ hr {
   transition: 0.2s, color 0.2s;
 }
 
+.bullet::before {
+  content: ">";
+  margin-right: 1em;
+}
 
 .button--scroll-down {
   display: block;
@@ -1002,4 +1006,52 @@ th, td {
 
 .sitemap__nest {
   margin-left: 2em;
+}
+
+/*  ==============================================================
+      policy.html CSS
+    ==============================================================  */
+.policy__head {
+  grid-column: 3 / -3;
+  border-bottom: solid #000 0.5px;
+}
+
+.policy__body {
+  grid-column: 3 / -3;
+}
+
+.policy__p {
+  line-height: 1.2em;
+  margin: 2em 0;
+}
+
+.policy__list {
+  list-style-position: inside;
+}
+
+.policy__li {
+  line-height: 1.2em;
+  margin: 2em 0;
+}
+
+.policy__list--nested {
+  margin-left: 2em;
+  list-style-type: lower-alpha;
+}
+
+.policy__list--nested .policy__li {
+  margin: 0.5em 0;
+}
+
+.policy__li .policy__p {
+  margin: 0;
+}
+
+.policy__subtitle {
+  margin: 1em 0;
+}
+
+.policy__p--em {
+  font-weight: bold;
+  margin-bottom: -1.5em;
 }

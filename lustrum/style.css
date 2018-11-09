@@ -836,7 +836,7 @@ hr {
   margin: auto;
 }
 
-.opportunities__job::before {
+.opportunities__li::before {
   content: ">";
   margin-right: 0.5em;
 }

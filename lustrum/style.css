@@ -378,9 +378,27 @@ hr {
   grid-column: 3 / -3 ;
 }
 
+.content__body--stretch {
+  grid-column: 1 / -1;
+}
+
 .content__p {
   line-height: 1.2em;
   margin: 1em 0;
+}
+
+.content__p--em {
+  font-weight: bold;
+}
+
+.content__link {
+  text-decoration: underline;
+  color: #666;
+  transition: color 0.2s;
+}
+
+.content__link:hover {
+  color: #111;
 }
 
 .content__pic--side {
@@ -807,18 +825,32 @@ hr {
   padding: 0;
 }
 
-.opportunities__openings {
-  grid-column: 3 / 6;
+.opportunities__jobs {
+  background-color: #222;
+  color: #fff;
+  padding: 2em;
+}
+
+.opportunities__joblist {
+  width: 10em;
+  margin: auto;
 }
 
 .opportunities__job::before {
   content: ">";
-  margin-right: 1em;
+  margin-right: 0.5em;
 }
 
-.opportunities__submission {
-  grid-column: 6 / -3;
-  background-color: #222;
-  color: #fff;
-  padding: 1em;
+.opportunities__scholarships {
+  background-color: #333;
+  color: #ccc;
+  padding: 2em 0;
+}
+
+.opportunities__detail {
+  grid-column: 3 / -3;
+}
+
+.opportunities__scholarship-name {
+  font-weight: bold;
 }

@@ -854,3 +854,7 @@ hr {
 .opportunities__scholarship-name {
   font-weight: bold;
 }
+
+.opportunities__detail .content__p--em {
+  margin-top: 1em;
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Description: FST10011 Fundamentals Of Web Technology: Web Development Assignment -->
+  <!-- Authors: Wong Kah Heng, Shamil Haqeem bin Shukarmin, Jonathan Seng -->
+  <!-- Date:  -->
+  <!-- Validated:  -->
+
+  <meta charset="utf-8">
+  <meta name="author" content="Wong Kah Heng, Shamil Haqeem bin Shukarmin, Jonathan Seng">
+  <meta name="description" content="Introduction To Architecture">
+  <meta name="keywords" content="architecture, nikken sekkei, construction">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title></title> <!-- Remember the title -->
+  <link rel="shortcut icon" href="images/logos/logo-favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:400,700" rel="stylesheet">
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebusneuebold" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <a href="index.html"><img alt="nikken sekkei Logo" src="images/logos/logo.png"></a>
+      </div>
+
+      <ul class="navbar__links">
+        <li class="navbar__link"><a href="architecture.html">Introduction to Architecture</a></li>
+        <li class="navbar__link navbar__link--active"><a href="projects.html">Projects</a></li>
+        <li class="navbar__link"><a href="news.html">News</a></li>
+        <li class="navbar__link"><a href="opportunities.html">Opportunities</a></li>
+        <li class="navbar__link"><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div id="parallax-img" class="parallax parallax--bgA">
+      <nav class="navbar navbar--white navbar--trans">
+        <div class="navbar__logo">
+          <a href="index.html"><img alt="Nikken Sekkei Logo" src="images/logos/logo-white.png"></a>
+        </div>
+
+        <ul class="navbar__links">
+          <li class="navbar__link"><a href="architecture.html">Introduction to Architecture</a></li>
+          <li class="navbar__link navbar__link--active"><a href="projects.html">Projects</a></li>
+          <li class="navbar__link"><a href="news.html">News</a></li>
+          <li class="navbar__link"><a href="opportunities.html">Opportunities</a></li>
+          <li class="navbar__link"><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+
+      <h1 class="parallax__title">Title</h1>
+
+      <div id="scroll-down" class="button button--white button--scroll-down"></div>
+    </div>
+
+    <div id="page-content" class="grid--col-12">
+      <!-- Your code goes here -->
+    </div>
+  </main>
+
+  <footer>
+    <hr>
+    <div class="disclaimer">
+      <h5 class="disclaimer__title">Disclaimer</h5>
+      <p class="disclaimer__text">
+        This website is created for education and non-commercial use only.
+        It is an assignment for completion of unit,
+        FST10011 Fundamentals of Web Technology based on the Foundation (IT/Multimedia) course from Swinburne University of Technology Sarawak Campus.
+      </p>
+    </div>
+
+    <div class="footer">
+      <div class="finfo">
+        <div class="finfo__col-1">
+          <h6 class="finfo__title">Feedback</h6>
+          <p class="finfo__p">
+            We are always trying to improve your overall experience. <br><br>
+            Please tell us about your experience with this website.
+          </p>
+          <div class="finfo__button">
+            <a href="feedback.html" class="button button--grey">Feedback</a>
+          </div>
+        </div>
+        <div class="finfo__col-2">
+          <h6 class="finfo__title">Quick Access</h6>
+          <ul>
+            <li><a href="architecture.html" class="finfo__link">Introduction to Architecture</a></li>
+            <li><a href="projects.html" class="finfo__link">Projects</a></li>
+            <li><a href="news.html" class="finfo__link">News</a></li>
+            <li><a href="opportunities.html" class="finfo__link">Opportunities</a></li>
+            <li><a href="about.html" class="finfo__link">About</a></li>
+            <li><a href="sitemap.html" class="finfo__link">Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="finfo__col-3">
+          <h6 class="finfo__title">Contact Us</h6>
+          <p class="finfo__p">
+            General and Business Inquiries: <br><br>
+            <a class="finfo__link finfo__link--email" href="mailto:global@nikken.jp">global@nikken.jp</a>
+          </p>
+          <p class="finfo__p">
+            Press: <br><br>
+            <a class="finfo__link finfo__link--email" href="mailto:media@nikken.jp">media@nikken.jp</a>
+          </p>
+        </div>
+      </div>
+      <ul class="copyright">
+        <a class="copyright__logo" href="https://www.nikken.co.jp/en/index.html" target="_blank"><img src="images/logos/logo2-white.png" alt="nikken sekkei logo"></a>
+        <li>Copyrights &copy; 2018 <a href="lustrum.html" class="copyright__link">Lustrum</a> All Rights Reserved</li>
+        <li class="copyright__policy"><a href="sitepolicy.html" class="copyright__link">Site Policy</a></li>
+        <li class="copyright__policy">|</li>
+        <li class="copyright__policy"><a href="privacypolicy.html" class="copyright__link">Privacy Policy</a></li>
+        <li class="date-modified">Date Modified | <span id="date-modified"></span></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    $(window).ready(function() {
+      // DO NOT DELETE ZONE START //
+      function lastModified() {
+        var modifiedDate = new Date(document.lastModified);
+        var date = modifiedDate.toLocaleDateString();
+        return date;
+      };
+
+      function scrollTo(target) {
+        $("html, body").animate({
+          scrollTop: $(target).offset().top - 100
+        }, 1500);
+      };
+
+      $(window).bind("mousewheel", function() {
+        $("html, body").stop(true, false);
+      });
+
+      setTimeout(function() {
+        scrollTo("#page-content");
+      }, 2000);
+
+      // Change parallax image here
+      // Put url in between the brackets
+      $('#parallax-img').css('background-image','url(https://via.placeholder.com/1920x1080)');
+
+      $("header").hide();
+
+      $(document).scroll(function() {
+        var top = $(document).scrollTop();
+
+        if (top > 99) {
+          $("header").fadeIn("slow");
+        } else {
+          $("header").fadeOut("slow");
+        };
+      });
+
+      $("#scroll-down").click(function() {
+        scrollTo("#page-content");
+      });
+
+      $("#date-modified").html(lastModified());
+      // DO NOT DELETE ZONE END //
+      // Your JS code starts below //
+    });
+  </script>
+</body>
+
+</html>

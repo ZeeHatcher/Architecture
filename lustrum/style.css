@@ -361,6 +361,59 @@ hr {
   color: #222;
 }
 
+.content {
+  padding: 0;
+}
+
+.content__head {
+  grid-column: 3 / -3;
+  border-bottom: solid 0.5px #000;
+}
+
+.content__title {
+  float: left;
+}
+
+.content__sub {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.content__body {
+  text-align: justify;
+  grid-column: 3 / -3 ;
+}
+
+.content__body--stretch {
+  grid-column: 1 / -1;
+}
+
+.content__p {
+  line-height: 1.2em;
+  margin: 1em 0;
+}
+
+.content__p--em {
+  font-weight: bold;
+}
+
+.content__link {
+  text-decoration: underline;
+  color: #666;
+  transition: color 0.2s;
+}
+
+.content__link:hover {
+  color: #111;
+}
+
+.content__pic--side {
+
+}
+
+.content__pic--large {
+  grid-column: 4 / -4;
+}
 
 .grid--col-12 {
   margin: 3em 0;
@@ -1060,6 +1113,46 @@ th {
   margin-bottom: -1.5em;
 }
 
+/*  ==============================================================
+      opportunities.html CSS
+    ==============================================================  */
+.opportunities {
+  padding: 0;
+}
+
+.opportunities__jobs {
+  background-color: #222;
+  color: #fff;
+  padding: 2em;
+}
+
+.opportunities__joblist {
+  width: 10em;
+  margin: auto;
+}
+
+.opportunities__li::before {
+  content: ">";
+  margin-right: 0.5em;
+}
+
+.opportunities__scholarships {
+  background-color: #333;
+  color: #ccc;
+  padding: 2em 0;
+}
+
+.opportunities__detail {
+  grid-column: 3 / -3;
+}
+
+.opportunities__scholarship-name {
+  font-weight: bold;
+}
+
+.opportunities__detail .content__p--em {
+  margin-top: 1em;
+}
 
 /*  ==============================================================
       news.html CSS

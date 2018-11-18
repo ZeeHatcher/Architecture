@@ -13,7 +13,7 @@
   <meta name="keywords" content="architecture, nikken sekkei, construction">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title></title> <!-- Remember the title -->
+  <title>Projects</title> <!-- Remember the title -->
   <link rel="shortcut icon" href="images/logos/logo-favicon.ico" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Catamaran:400,700" rel="stylesheet">
@@ -55,7 +55,7 @@
         </ul>
       </nav>
 
-      <h1 class="parallax__title">Title</h1>
+      <h1 class="parallax__title">Projects</h1>
 
       <div id="scroll-down" class="button button--white button--scroll-down"></div>
     </div>
@@ -125,6 +125,8 @@
   <script>
     $(window).ready(function() {
       // DO NOT DELETE ZONE START //
+      var top = $(document).scrollTop();
+
       function lastModified() {
         var modifiedDate = new Date(document.lastModified);
         var date = modifiedDate.toLocaleDateString();
@@ -142,7 +144,9 @@
       });
 
       setTimeout(function() {
-        scrollTo("#page-content");
+        if (top == 0) {
+          scrollTo("#page-content");
+        };
       }, 2000);
 
       // Change parallax image here
@@ -152,7 +156,7 @@
       $("header").hide();
 
       $(document).scroll(function() {
-        var top = $(document).scrollTop();
+        top = $(document).scrollTop();
 
         if (top > 99) {
           $("header").fadeIn("slow");

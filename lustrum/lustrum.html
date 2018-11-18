@@ -63,24 +63,27 @@
 
   <script>
     $(window).ready(function() {
+      var top = $(document).scrollTop()
+
       function scrollTo(target) {
         $("html, body").animate({
           scrollTop: $(target).offset().top
-        }, 1000);
+        }, 1500);
       };
 
       $(window).bind("mousewheel", function() {
         $("html, body").stop(true, false);
       });
 
-      var top = $(document).scrollTop()
-
-      if (top == 0) {
-        console.log(top);
-        setTimeout(function() {
+      setTimeout(function() {
+        if (top == 0) {
           scrollTo("#page-content");
-        }, 2000);
-      };
+        };
+      }, 2000);
+
+      $(document).scroll(function() {
+        top = $(document).scrollTop()
+      });
     });
   </script>
 </body>

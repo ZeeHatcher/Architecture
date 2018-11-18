@@ -33,7 +33,7 @@
       <ul class="navbar__links">
         <li class="navbar__link"><a href="architecture.html">Introduction to Architecture</a></li>
         <li class="navbar__link"><a href="projects.html">Projects</a></li>
-        <li class="navbar__link"><a href="news.html">News</a></li>
+        <li class="navbar__link navbar__link--active"><a href="news.html">News</a></li>
         <li class="navbar__link"><a href="opportunities.html">Opportunities</a></li>
         <li class="navbar__link"><a href="about.html">About</a></li>
       </ul>
@@ -50,7 +50,7 @@
         <ul class="navbar__links">
           <li class="navbar__link"><a href="architecture.html">Introduction to Architecture</a></li>
           <li class="navbar__link"><a href="projects.html">Projects</a></li>
-          <li class="navbar__link"><a href="news.html">News</a></li>
+          <li class="navbar__link navbar__link--active"><a href="news.html">News</a></li>
           <li class="navbar__link"><a href="opportunities.html">Opportunities</a></li>
           <li class="navbar__link"><a href="about.html">About</a></li>
         </ul>
@@ -281,6 +281,8 @@
   <script>
     $(window).ready(function () {
       // DO NOT DELETE ZONE START //
+      var top = $(document).scrollTop();
+
       function lastModified() {
         var modifiedDate = new Date(document.lastModified);
         var date = modifiedDate.toLocaleDateString();
@@ -297,9 +299,11 @@
         $("html, body").stop(true, false);
       });
 
-      setTimeout(function () {
-        scrollTo("#page-content");
-      }, 750);
+      setTimeout(function() {
+        if (top == 0) {
+          scrollTo("#page-content");
+        };
+      }, 2000);
 
       // Change parallax image here
       // Put url in between the brackets
@@ -308,7 +312,7 @@
       $("header").hide();
 
       $(document).scroll(function () {
-        var top = $(document).scrollTop();
+        top = $(document).scrollTop();
 
         if (top > 99) {
           $("header").fadeIn("slow");

@@ -158,12 +158,12 @@ hr {
 }
 
 .navbar__link--active {
-  border-bottom: solid #222 2px;
+  border-bottom: solid #222 1px;
   font-weight: 700;
 }
 
-.navbar__link--active:hover {
-  border-bottom: solid #222 2px;
+.navbar--white .navbar__link--active {
+  border-bottom: solid #fff 1px;
   font-weight: 700;
 }
 

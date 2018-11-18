@@ -183,6 +183,8 @@
   $(window).ready(function() {
 
     // DO NOT DELETE ZONE START //
+    var top = $(document).scrollTop();
+
     function lastModified() {
       var modifiedDate = new Date(document.lastModified);
       var date = modifiedDate.toLocaleDateString();
@@ -192,7 +194,7 @@
     function scrollTo(target) {
       $("html, body").animate({
         scrollTop: $(target).offset().top - 100
-      }, 1000);
+      }, 1500);
     };
 
     $(window).bind("mousewheel", function() {
@@ -202,7 +204,7 @@
     $("header").hide();
 
     $(document).scroll(function() {
-      var top = $(document).scrollTop();
+      top = $(document).scrollTop();
 
       if (top > 100) {
         $("header").fadeIn("slow");

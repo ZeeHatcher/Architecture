@@ -159,6 +159,7 @@
     $(window).ready(function() {
       // DO NOT DELETE ZONE START //
       var top = $(document).scrollTop();
+      var fade = true;
 
       function lastModified() {
         var modifiedDate = new Date(document.lastModified);
@@ -191,10 +192,17 @@
       $(document).scroll(function() {
         top = $(document).scrollTop();
 
-        if (top > 99) {
-          $("header").fadeIn("slow");
-        } else {
-          $("header").fadeOut("slow");
+        if (fade) {
+          fade = false
+          if (top > 99) {
+            $("header").fadeIn("slow", function() {
+              fade = true
+            });
+          } else {
+            $("header").fadeOut("slow", function() {
+              fade = true
+            });
+          };
         };
       });
 

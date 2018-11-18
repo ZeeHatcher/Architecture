@@ -158,6 +158,8 @@
   <script>
     $(window).ready(function() {
       // DO NOT DELETE ZONE START //
+      var top = $(document).scrollTop();
+
       function lastModified() {
         var modifiedDate = new Date(document.lastModified);
         var date = modifiedDate.toLocaleDateString();
@@ -175,7 +177,9 @@
       });
 
       setTimeout(function() {
-        scrollTo("#page-content");
+        if (top == 0) {
+          scrollTo("#page-content");
+        };
       }, 2000);
 
       // Change parallax image here
@@ -185,7 +189,7 @@
       $("header").hide();
 
       $(document).scroll(function() {
-        var top = $(document).scrollTop();
+        top = $(document).scrollTop();
 
         if (top > 99) {
           $("header").fadeIn("slow");

@@ -765,7 +765,7 @@ form select option {
 }
 
 .form__table {
-  width: 60%;
+  width: 80%;
 }
 
 th, td {
@@ -815,7 +815,7 @@ th {
   vertical-align: middle;
   -webkit-appearance: none;  /* Override default CSS styles */
   appearance: none;
-  width: 90%; /* Full-width */
+  width: 85%; /* Full-width */
   height: .5em; /* Specified height */
   background: #d3d3d3; /* Grey background */
   outline: none; /* Remove outline */

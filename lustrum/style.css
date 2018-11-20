@@ -407,10 +407,6 @@ hr {
   color: #111;
 }
 
-.content__pic--side {
-
-}
-
 .content__pic--large {
   grid-column: 4 / -4;
 }
@@ -1309,3 +1305,15 @@ ul li a p{
 /*  ==============================================================
       projects.html CSS
     ==============================================================  */
+.card--projects {
+  height: 500px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.button--projects {
+  bottom: 2em;
+}
+
+.project {
+  grid-column: 2 / -2;
+}

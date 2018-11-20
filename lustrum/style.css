@@ -1310,10 +1310,6 @@ ul li a p{
   grid-template-columns: 1fr 1fr;
 }
 
-.button--projects {
-  bottom: 2em;
-}
-
 .project {
   grid-column: 2 / -2;
 }

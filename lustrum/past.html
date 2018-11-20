@@ -329,7 +329,6 @@
       var slideIndex = 0;
       var slideWidth = $(".slide").width();
       showSlide(slideIndex);
-      console.log(slideWidth);
 
       function changeSlide(n) {
         slideIndex += n;
@@ -343,7 +342,7 @@
 
       $("#prev").click(function() {
         if (slideIndex > 0){
-        changeSlide(-1);
+          changeSlide(-1);
         }
       });
 

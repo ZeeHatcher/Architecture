@@ -550,7 +550,7 @@ hr {
 
 .card__button {
   position: absolute;
-  bottom: 3em;
+  bottom: 2em;
   left: 50%;
   transform: translate(-50%, 0);
 }

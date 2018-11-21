@@ -407,10 +407,6 @@ hr {
   color: #111;
 }
 
-.content__pic--side {
-
-}
-
 .content__pic--large {
   grid-column: 4 / -4;
 }
@@ -503,7 +499,7 @@ hr {
   height: 700px;
   width: 100%;
   display: grid;
-  box-shadow: 2px 2px 20px #666;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
 }
 
 .card--small {
@@ -554,7 +550,7 @@ hr {
 
 .card__button {
   position: absolute;
-  bottom: 3em;
+  bottom: 2em;
   left: 50%;
   transform: translate(-50%, 0);
 }
@@ -1300,4 +1296,109 @@ ul li a p{
   opacity: .5;
   float: right;
   margin-left: auto;
+}
+
+/*  ==============================================================
+      projects.html CSS
+    ==============================================================  */
+.card--projects {
+  height: 500px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card-pos {
+  grid-column: 2 / -2;
+}
+
+/*  ==============================================================
+      past.html, current.html & future.html CSS
+    ==============================================================  */
+.projects {
+  grid-row: 2 / 3;
+  grid-column: 3 / -3;
+}
+
+.project__title {
+  margin-bottom: 1em;
+}
+
+.project__pic {
+  margin: auto;
+  width: 80%;
+  height: 65vh;
+  text-align: center;
+}
+
+.project__img {
+  height: 90%;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.project__caption {
+  opacity: 0.5;
+}
+
+.project__p {
+  text-align: justify;
+  line-height: 1.2em;
+  margin: 1em 0;
+}
+
+.project__table {
+  width: 75%;
+  margin: auto;
+  margin-top: 3em;
+}
+
+.project__table tr {
+  border-collapse: collapse;
+}
+
+.project__table th {
+  padding: 1em;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+  border-right: solid 1px #222;
+  border-left: solid 1px #222;
+  width: 30%;
+}
+
+.project__table td {
+  text-align: left;
+  padding: 1em;
+  border-right: solid 1px #222;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+  width: 70%;
+}
+
+.project__table tr:last-child th,
+.project__table tr:last-child td {
+  border-bottom: none;
+}
+
+.slideshow {
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  position: relative;
+}
+
+.slideshow__button {
+  cursor: pointer;
+  font-size: 3em;
+  position: relative;
+  top: 35vh;
+}
+
+.slideshow__prev {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  text-align: center;
+}
+
+.slideshow__next {
+  grid-row: 2 / 3;
+  grid-column: -2 / -1;
+  text-align: center;
 }

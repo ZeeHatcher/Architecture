@@ -1238,7 +1238,7 @@ ul li a p{
   display: block;
   grid-column: 1/4;
   grid-row: 3;
-  background-color: #0F52BA;
+  background-color: #A6C9F3;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -1259,6 +1259,7 @@ ul li a p{
   padding: 0;
   font-weight: bold;
   text-align: center;
+  align: center;
   margin-top: 0.5em;
   font-family: 'Roboto';
   font-size: 120%;

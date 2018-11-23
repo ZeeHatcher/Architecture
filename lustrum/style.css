@@ -345,6 +345,14 @@ hr {
   }
 
   .footer {
+    height: 400px;
+  }
+
+  .finfo__p {
+    display: none;
+  }
+
+  .finfo__col-3 {
     display: none;
   }
 }

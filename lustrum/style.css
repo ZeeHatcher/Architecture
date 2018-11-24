@@ -348,12 +348,18 @@ hr {
     height: 400px;
   }
 
-  .finfo__p {
+  .finfo__title {
     display: none;
   }
 
-  .finfo__col-3 {
+  .finfo__col-2, .finfo__col-3 {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    height: 450px;
   }
 }
 

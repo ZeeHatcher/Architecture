@@ -98,6 +98,15 @@ hr {
   border-top: solid #000 1px;
 }
 
+@media only screen and (max-width: 1200px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    position: static;
+  }
+}
 
 /*  ==============================================================
       Mandatory CSS
@@ -106,9 +115,66 @@ hr {
   align-items: center;
   background-color: #fff;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1em 3em;
   height: 100px;
-  padding: 3em;
   width: 100%;
+}
+
+.navbar--mobile {
+  display: none;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.navbar--mobile .navbar__link {
+  display: block;
+  margin: 0;
+}
+
+.navbar--mobile .navbar__link a {
+  display: block;
+  padding: 0.5em 0;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.navbar--mobile .navbar__link--active {
+  background-color: #333;
+}
+
+.navbar--mobile .navbar__link--active a {
+  color: #ccc;
+}
+
+.navbar--mobile .navbar__logo {
+  margin: auto;
+  margin-bottom: 0.5em;
+  float: none;
+  width: 175px;
+}
+
+.navbar--mobile .navbar__logo:hover {
+  border-style: none;
+  outline: solid #222 1px;
+}
+
+.navbar--mobile .navbar__link:hover {
+  border-style: none;
+}
+
+.navbar--mobile .navbar__link a:hover {
+  border-style: none;
+  background-color: #222;
+  color: #fff;
+}
+
+.navbar--mobile .navbar__link--active {
+  border-style: none;
+}
+
+.navbar--mobile hr {
+  margin: 1em 10em;
 }
 
 .navbar--trans {
@@ -117,7 +183,7 @@ hr {
   top: 0;
 }
 
-.navbar--white .navbar__link a {
+.navbar--white a {
   color: #fff;
 }
 
@@ -137,10 +203,6 @@ hr {
   border-color: #fff;
   border-style: solid none;
   border-width: 1px;
-}
-
-.navbar__links {
-  margin-left: auto;
 }
 
 .navbar__link {
@@ -271,6 +333,34 @@ hr {
 
 .date-modified {
   float: right;
+}
+
+@media only screen and (max-width: 1200px) {
+  .navbar {
+    display: none;
+  }
+
+  .navbar--mobile {
+    display: block;
+  }
+
+  .footer {
+    height: 400px;
+  }
+
+  .finfo__title {
+    display: none;
+  }
+
+  .finfo__col-2, .finfo__col-3 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    height: 450px;
+  }
 }
 
 /*  ==============================================================
@@ -447,6 +537,16 @@ hr {
   transform: translate(-50%, -50%);
 }
 
+@media only screen and (max-width: 1200px) {
+  .hero__p {
+    display: none;
+  }
+
+  .blockquote {
+    display: none;
+  }
+}
+
 /*  ==============================================================
       index.html CSS
     ==============================================================  */
@@ -462,7 +562,9 @@ hr {
 
 .hero__content {
   color: #fff;
-  padding: 13% 13em;
+  width: 80vw;
+  margin: auto;
+  padding: 13% 0;
 }
 
 .hero__title {
@@ -580,6 +682,34 @@ hr {
   grid-column: 6 / -1;
 }
 
+@media only screen and (max-width: 1200px) {
+  .hero__content {
+    padding: 40vh 0;
+    text-align: center;
+  }
+
+  .card--large {
+    grid-template-rows: 60% 40%;
+    grid-template-columns: auto;
+  }
+
+  .card__content {
+    grid-row: 2 / 3;
+  }
+
+  .card__img {
+    grid-row: 1 / 2
+  }
+
+  .grid__intro,
+  .grid__projects,
+  .grid__news,
+  .grid__opportunities,
+  .grid__gallery {
+    grid-row: auto;
+    grid-column: 1 / -1;
+  }
+}
 
 /*  ==============================================================
       lustrum.html CSS
@@ -1308,6 +1438,13 @@ ul li a p{
 
 .card-pos {
   grid-column: 2 / -2;
+}
+
+@media only screen and (max-width: 1200px) {
+  .card--projects {
+    grid-template-columns: auto;
+    grid-template-rows: 60% 40%;
+  }
 }
 
 /*  ==============================================================

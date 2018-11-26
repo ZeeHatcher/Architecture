@@ -1292,14 +1292,26 @@ th {
   margin-bottom:0.5em;
 }
 .news__list__recent {
-  margin: 5%;
+  margin: 5% 10%;
 }
 
 .news__list__recent p {
   display: block;
-  margin: 1% 5%;
-  border: 2px solid black;
+  border: 2px solid #222;
   clear: both;
+}
+
+.news__list__recent li {
+  margin: 1em 0;
+}
+
+.news__list__recent p {
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.news__list__recent li:hover p {
+  background-color: #222;
+  color: #fff;
 }
 
 ul li a p{
@@ -1413,13 +1425,17 @@ ul li a p{
 }
 
 .news__list__archive {
-  margin: 1% 5%;
+  margin: 5em 5em;
 }
+
 .news__list__archive p {
   display: block;
-  margin: 1% 2%;
   border-bottom: 1px solid black;
   clear: both;
+}
+
+.news__list__archive li:hover p {
+  font-weight: bold;
 }
 
 .news__date {

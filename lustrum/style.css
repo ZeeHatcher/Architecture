@@ -1041,10 +1041,6 @@ th {
   background-color: #5998ff;
 }
 
-.feedback2 {
-  margin: 5%;
-}
-
 /* For small screen */
 @media only screen and (max-width: 1200px) {
   .grid__form {

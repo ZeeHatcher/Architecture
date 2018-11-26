@@ -544,6 +544,11 @@ hr {
   .blockquote {
     display: none;
   }
+
+  .grid--col-3 {
+    grid-template-columns: 100%;
+    padding: 10em;
+  }
 }
 
 /*  ==============================================================
@@ -798,6 +803,16 @@ hr {
 .portrait__p {
   padding: 0 2em;
   margin-bottom: 1em;
+}
+
+@media only screen and (max-width: 1200px) {
+  .portrait__name {
+    font-size: 3em;
+  }
+
+  .portrait__p {
+    font-size: 1.5em;
+  }
 }
 
 /*  ==============================================================

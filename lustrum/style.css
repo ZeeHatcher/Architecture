@@ -869,6 +869,12 @@ legend {
   font-weight: bolder;
 }
 
+.form__block {
+  margin-bottom: 5%;
+  display: block;
+  width: 100%;
+}
+
 form label {
   margin-bottom: .2em;
 }
@@ -923,8 +929,8 @@ th {
 }
 
 .form__textarea {
-  width: 70%;
-  max-width: 70%;
+  width: 250%;
+  max-width: 250%;
   font-size: .8em;
   border: .05em solid #2c7bd6;
   border-radius: 4px;
@@ -1042,7 +1048,7 @@ th {
 }
 
 /* For small screen */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 800px) {
   .grid__form {
     grid-template-columns: 100%;
   }

@@ -91,13 +91,13 @@
             <fieldset>
               <legend>Personal Information</legend>
               <table>
-                <tr>
+                <tr class="form__block">
                   <td class="form__question"><label>1. Is this your first time visiting the website?</label></td>
                   <td class="form__answer radio__container"><input type="radio" id="firstvisit" name="firstvisit"> Yes <span class="checkmark__radio"></span></td>
                   <td class="form__answer radio__container"><input type="radio" id="notfirstvisit" name="firstvisit"> No <span class="checkmark__radio"></span></td>
                 </tr>
 
-                <tr>
+                <tr class="form__block">
                   <td class="form__question"><label>2. Which region are you from?</label></td>
                   <td class="form__answer">
                     <select id="region" name="region">
@@ -123,7 +123,7 @@
             <fieldset>
               <legend>Our Website</legend>
               <table>
-                <tr>
+                <tr class="form__block">
                   <td class="form__question"><label>3. How did you find our website?</label></td>
                   <td class="form__question"><label>You may select more than one.</label></td>
                   <td class="form__answer radio__container"><input type="checkbox" id="searchengine" name="foundsite"> Found in search engine <span class="checkmark__checkbox"></span></td>
@@ -132,7 +132,7 @@
                   <td></td>
                 </tr>
 
-                <tr>
+                <tr class="form__block">
                   <td class="form__question"><label for="question3">4. What was your reason for visiting the website?</label></td>
                   <td class="form__answer"><input type="text" id="question3" name="visitreason" class="form__input__text" size="60"></td>
                   <td></td>
@@ -141,7 +141,7 @@
                   <td></td>
                 </tr>
 
-                <tr>
+                <tr class="form__block">
                   <td class="form__question"><label>5. Did you find everything you were looking for?</label></td>
                   <td class="form__answer radio__container"><input type="radio" id="foundall" name="foundinfo"> Yes, all of it <span class="checkmark__radio"></span></td>
                   <td class="form__answer radio__container"><input type="radio" id="foundsome" name="foundinfo"> Some of it <span class="checkmark__radio"></span></td>
@@ -150,7 +150,7 @@
                   <td></td>
                 </tr>
 
-                <tr>
+                <tr class="form__block">
                   <td class="form__question"><label for="question6">6. What was missing and should be included in the website?</label></td>
                   <td class="form__answer"><input type="text" id="question6" name="missinginfo" class="form__input__text" size="60"></td>
                   <td></td>
@@ -159,7 +159,7 @@
                   <td></td>
                 </tr>
 
-                <tr>
+                <tr class="form__block">
                   <td class="form__question"><label>7. How easy was it for you to navigate around the website?</label></td>
                   <td class="form__answer radio__container"><input type="radio" id="effortless" name="navigation"> Effortless <span class="checkmark__radio"></span></td>
                   <td class="form__answer radio__container"><input type="radio" id="comfortable" name="navigation"> Comfortable <span class="checkmark__radio"></span></td>
@@ -168,7 +168,7 @@
                   <td class="form__answer radio__container"><input type="radio" id="unmanageabke" name="navigation"> Unmanageable <span class="checkmark__radio"></span></td>
                 </tr>
 
-                <tr>
+                <tr class="form__block">
                   <td class="form__question"><label>8. What is your overall impression of the website?</label></td>
                   <td class="form__answer">
                     <table class="form__table">
@@ -197,11 +197,17 @@
                         <td colspan="5"><input type="range" id="speddslider" class="form__slider" name="speed" min="1" max="5"></td>
                       </tr>
                     </table><br>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
 
-                    <label for="suggestion" class="form__question">9. Other suggestions to help improve the website.</label>
-                    <div class="form__textarea__container">
-                      <textarea class="form__textarea" id="suggestion" name="suggestion" rows="6"></textarea>
-                    </div>
+                <tr class="form__block">
+                  <td class="form__question"><label for="suggestion">9. Other suggestions to help improve the website.</label></td>
+                  <td class="form__textarea__container">
+                    <textarea class="form__textarea" id="suggestion" name="suggestion" rows="6"></textarea>
                   </td>
                   <td></td>
                   <td></td>

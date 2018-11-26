@@ -87,35 +87,34 @@
       </div>
       <div class="grid__form">
         <div class="form">
-          <form action="feedback2.html" method="post">
+          <form action="mailto:somon:sysim@swinburne.edu.my" method="post" enctype="text/plain">
             <fieldset>
               <legend>Personal Information</legend>
               <table>
                 <tr>
-                  <label class="form__question">1. Is this your first time visiting the website?</label>
-                  <label class="form__answer radio__container"><input type="radio" id="firstvisit" name="firstvisit"> Yes <span class="checkmark__radio"></span></label>
-                  <label class="form__answer radio__container"><input type="radio" id="notfirstvisit" name="firstvisit"> No <span class="checkmark__radio"></span></label>
-                  <br>
+                  <td class="form__question"><label>1. Is this your first time visiting the website?</label></td>
+                  <td class="form__answer radio__container"><input type="radio" id="firstvisit" name="firstvisit"> Yes <span class="checkmark__radio"></span></td>
+                  <td class="form__answer radio__container"><input type="radio" id="notfirstvisit" name="firstvisit"> No <span class="checkmark__radio"></span></td>
                 </tr>
 
                 <tr>
-                  <label class="form__question">2. Which region are you from?</label>
-                  <div class="form__answer">
+                  <td class="form__question"><label>2. Which region are you from?</label></td>
+                  <td class="form__answer">
                     <select id="region" name="region">
-                    <option value="australia">Australia</option>
-                    <option value="namerica">North Amreica</option>
-                    <option value="samerica">South America</option>
-                    <option value="seasia">South East Asia</option>
-                    <option value="asia">Asia</option>
-                    <option value="middleeast">Middle East</option>
-                    <option value="europe">Europe</option>
-                    <option value="uk">United Kingdom</option>
-                    <option value="arctic">Arctic</option>
-                    <option value="antartica">Antartica</option>
-                    <option value="iceland">Iceland</option>
-                    <option value="other">Other</option>
+                      <option value="australia">Australia</option>
+                      <option value="namerica">North Amreica</option>
+                      <option value="samerica">South America</option>
+                      <option value="seasia">South East Asia</option>
+                      <option value="asia">Asia</option>
+                      <option value="middleeast">Middle East</option>
+                      <option value="europe">Europe</option>
+                      <option value="uk">United Kingdom</option>
+                      <option value="arctic">Arctic</option>
+                      <option value="antartica">Antartica</option>
+                      <option value="iceland">Iceland</option>
+                      <option value="other">Other</option>
                     </select>
-                  </div>
+                  </td>
                 </tr>
               </table>
             </fieldset>
@@ -124,77 +123,74 @@
               <legend>Our Website</legend>
               <table>
                 <tr>
-                  <label class="form__question">3. How did you find our website?</label>
-                  <label class="form__question">You may select more than one.</label>
-                  <label class="form__answer radio__container"><input type="checkbox" id="searchengine" name="foundsite"> Found in search engine <span class="checkmark__checkbox"></span></label>
-                  <label class="form__answer radio__container"><input type="checkbox" id="socialmedia" name="foundsite"> Through social media <span class="checkmark__checkbox"></span></label>
-                  <label class="form__answer radio__container"><input type="checkbox" id="advertisment" name="foundsite"> Through advertisments <span class="checkmark__checkbox"></span></label>
-                  <br>
+                  <td class="form__question"><label>3. How did you find our website?</label></td>
+                  <td class="form__question"><label>You may select more than one.</label></td>
+                  <td class="form__answer radio__container"><input type="checkbox" id="searchengine" name="foundsite"> Found in search engine <span class="checkmark__checkbox"></span></td>
+                  <td class="form__answer radio__container"><input type="checkbox" id="socialmedia" name="foundsite"> Through social media <span class="checkmark__checkbox"></span></td>
+                  <td class="form__answer radio__container"><input type="checkbox" id="advertisment" name="foundsite"> Through advertisments <span class="checkmark__checkbox"></span></td>
                 </tr>
 
                 <tr>
-                  <label for="question3" class="form__question">4. What was your reason for visiting the website?</label>
-                  <label class="form__answer"><input type="text" id="visitreason" name="visitreason" class="form__input__text" size="60"></label>
-                  <br>
+                  <td class="form__question"><label for="question3">4. What was your reason for visiting the website?</label></td>
+                  <td class="form__answer"><input type="text" id="question3" name="visitreason" class="form__input__text" size="60"></td>
                 </tr>
 
                 <tr>
-                  <label class="form__question">5. Did you find everything you were looking for?</label>
-                  <label class="form__answer radio__container"><input type="radio" id="foundall" name="foundinfo"> Yes, all of it <span class="checkmark__radio"></span></label>
-                  <label class="form__answer radio__container"><input type="radio" id="foundsome" name="foundinfo"> Some of it <span class="checkmark__radio"></span></label>
-                  <label class="form__answer radio__container"><input type="radio" id="foundnone" name="foundinfo"> None at all <span class="checkmark__radio"></span></label>
-                  <br>
+                  <td class="form__question"><label>5. Did you find everything you were looking for?</label></td>
+                  <td class="form__answer radio__container"><input type="radio" id="foundall" name="foundinfo"> Yes, all of it <span class="checkmark__radio"></span></td>
+                  <td class="form__answer radio__container"><input type="radio" id="foundsome" name="foundinfo"> Some of it <span class="checkmark__radio"></span></td>
+                  <td class="form__answer radio__container"><input type="radio" id="foundnone" name="foundinfo"> None at all <span class="checkmark__radio"></span></td>
                 </tr>
 
                 <tr>
-                  <label for="question5" class="form__question">6. What was missing and should be included in the website?</label>
-                  <label class="form__answer"><input type="text" id="question5" name="missinginfo" class="form__input__text" size="60"></label>
-                  <br>
+                  <td class="form__question"><label for="question6">6. What was missing and should be included in the website?</label></td>
+                  <td class="form__answer"><input type="text" id="question6" name="missinginfo" class="form__input__text" size="60"></td>
                 </tr>
 
                 <tr>
-                  <label class="form__question">7. How easy was it for you to navigate around the website?</label>
-                  <label class="form__answer radio__container"><input type="radio" id="effortless" name="navigation"> Effortless <span class="checkmark__radio"></span></label>
-                  <label class="form__answer radio__container"><input type="radio" id="comfortable" name="navigation"> Comfortable <span class="checkmark__radio"></span></label>
-                  <label class="form__answer radio__container"><input type="radio" id="easy" name="navigation"> Easy <span class="checkmark__radio"></span></label>
-                  <label class="form__answer radio__container"><input type="radio" id="confusing" name="navigation"> Confusing <span class="checkmark__radio"></span></label>
-                  <label class="form__answer radio__container"><input type="radio" id="unmanageabke" name="navigation"> Unmanageable <span class="checkmark__radio"></span></label>
-                  <br>
+                  <td class="form__question"><label>7. How easy was it for you to navigate around the website?</label></td>
+                  <td class="form__answer radio__container"><input type="radio" id="effortless" name="navigation"> Effortless <span class="checkmark__radio"></span></td>
+                  <td class="form__answer radio__container"><input type="radio" id="comfortable" name="navigation"> Comfortable <span class="checkmark__radio"></span></td>
+                  <td class="form__answer radio__container"><input type="radio" id="easy" name="navigation"> Easy <span class="checkmark__radio"></span></td>
+                  <td class="form__answer radio__container"><input type="radio" id="confusing" name="navigation"> Confusing <span class="checkmark__radio"></span></td>
+                  <td class="form__answer radio__container"><input type="radio" id="unmanageabke" name="navigation"> Unmanageable <span class="checkmark__radio"></span></td>
                 </tr>
 
                 <tr>
-                  <label class="form__question">8. What is your overall impression of the website?</label>
-                  <table class="form__table">
-                    <tr>
-                      <th></th>
-                      <th>1</th>
-                      <th>2</th>
-                      <th>3</th>
-                      <th>4</th>
-                      <th>5</th>
-                    </tr>
-                    <tr>
-                      <td>Professional</td>
-                      <td colspan="5"><input type="range" id="question7" class="form__slider" name="professional" min="1" max="5"></td>
-                    </tr>
-                    <tr>
-                      <td>Informative</td>
-                      <td colspan="5"><input type="range" id="question7" class="form__slider" name="informative" min="1" max="5"td>
-                    </tr>
-                    <tr>
-                      <td>Visually Pleasing</td>
-                      <td colspan="5"><input type="range" id="question7" class="form__slider" name="visual" min="1" max="5"></td>
-                    </tr>
-                    <tr>
-                      <td>Performance Speed</td>
-                      <td colspan="5"><input type="range" id="question7" class="form__slider" name="speed" min="1" max="5"></td>
-                    </tr>
-                  </table><br>
+                  <td class="form__question"><label>8. What is your overall impression of the website?</label></td>
+                  <td class="form__answer">
+                    <table class="form__table">
+                      <tr>
+                        <th></th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                      </tr>
+                      <tr>
+                        <td>Professional</td>
+                        <td colspan="5"><input type="range" id="proslider" class="form__slider" name="professional" min="1" max="5"></td>
+                      </tr>
+                      <tr>
+                        <td>Informative</td>
+                        <td colspan="5"><input type="range" id="infoslider" class="form__slider" name="informative" min="1" max="5"></td>
+                      </tr>
+                      <tr>
+                        <td>Visually Pleasing</td>
+                        <td colspan="5"><input type="range" id="visualslider" class="form__slider" name="visual" min="1" max="5"></td>
+                      </tr>
+                      <tr>
+                        <td>Performance Speed</td>
+                        <td colspan="5"><input type="range" id="speddslider" class="form__slider" name="speed" min="1" max="5"></td>
+                      </tr>
+                    </table><br>
 
-                  <label for="suggestion" class="form__question">9. Other suggestions to help improve the website.</label>
-                  <div class="form__textarea__container">
-                    <textarea class="form__textarea" id="suggestion" name="suggestion" rows="6"></textarea>
-                  </div>
+                    <label for="suggestion" class="form__question">9. Other suggestions to help improve the website.</label>
+                    <div class="form__textarea__container">
+                      <textarea class="form__textarea" id="suggestion" name="suggestion" rows="6"></textarea>
+                    </div>
+                  </td>
                 </tr>
               </table>
             </fieldset>
@@ -219,7 +215,7 @@
           <br>
           <p>If you need help, feel free to contact us, or email us at <strong><a href="http://www.google.com" target="_blank">nikken@sekkei.jp</a></strong></p>
           <br>
-          <img src="images/stock/heart.jpg">
+          <img src="images/stock/heart.jpg" alt="Heart">
         </div>
       </div>
     </article>
@@ -272,7 +268,7 @@
         </div>
       </div>
       <ul class="copyright">
-        <a class="copyright__logo" target="_blank" href="https://www.nikken.co.jp/en/index.html"><img src="images/logos/logo2-white.png" alt="nikken sekkei logo"></a>
+        <li><a class="copyright__logo" target="_blank" href="https://www.nikken.co.jp/en/index.html"><img src="images/logos/logo2-white.png" alt="nikken sekkei logo"></a>
         <li>Copyrights &copy; 2018 <a href="lustrum.html" class="copyright__link">Lustrum</a> All Rights Reserved</li>
         <li class="copyright__policy"><a href="sitepolicy.html" class="copyright__link">Site Policy</a></li>
         <li class="copyright__policy">|</li>

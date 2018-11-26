@@ -827,7 +827,7 @@ hr {
   grid-template-columns: 62% 33%;
   grid-column-gap: 1%;
   grid-template-rows: auto;
-  margin: 0 0;
+  margin: 0;
 }
 
 .background--blue {
@@ -874,9 +874,9 @@ form label {
 }
 
 .form__question {
-  display: block;
   padding-left: 1%;
   font-weight: bold;
+  display: block;
 }
 
 .form__answer {
@@ -911,9 +911,10 @@ form select option {
 
 .form__table {
   width: 80%;
+  margin: 0;
 }
 
-th, td {
+.form__table th, .form__table td {
   text-align: center;
 }
 

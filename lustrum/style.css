@@ -515,7 +515,6 @@ hr {
   grid-gap: 7em;
   grid-template-columns: repeat(3, 1fr);
   padding: 7em;
-
 }
 
 .parallax {
@@ -1542,4 +1541,66 @@ ul li a p{
   grid-row: 2 / 3;
   grid-column: -2 / -1;
   text-align: center;
+}
+
+/*  ==============================================================
+      gallery.html CSS
+    ==============================================================  */
+.gallery {
+  margin-top: 2em;
+  grid-column: 2 / -2;
+}
+
+.gallery__pic {
+  display: block;
+  float: left;
+  position: relative;
+  width: 31%;
+  padding-bottom: 31%;
+  margin: 1.16%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.gallery__pic:hover {
+  opacity: 1;
+}
+
+.pic--1 {
+  background-image: url(images/stock/institute.jpg);
+}
+
+.pic--2 {
+  background-image: url(images/stock/pola.jpg);
+}
+
+.pic--3 {
+  background-image: url(images/stock/hoki.jpg);
+}
+
+.pic--4 {
+  background-image: url(images/stock/dome.jpg);
+}
+
+.pic--5 {
+  background-image: url(images/stock/guangdong.jpg);
+}
+
+.pic--6 {
+  background-image: url(images/stock/akagane.jpg);
+}
+
+.pic--7 {
+  background-image: url(images/stock/midtown.jpg);
+}
+
+.pic--8 {
+  background-image: url(images/stock/chronogate.jpg);
+}
+
+.pic--9 {
+  background-image: url(images/stock/ginza.jpg);
 }

@@ -37,6 +37,24 @@
         <li class="navbar__link"><a href="about.html">About</a></li>
       </ul>
     </nav>
+
+    <nav class="navbar--mobile">
+      <div class="navbar__logo">
+        <a href="index.html"><img alt="nikken sekkei Logo" src="images/logos/logo.png"></a>
+      </div>
+
+      <hr>
+
+      <ul class="navbar__links">
+        <li class="navbar__link"><a href="architecture.html">Introduction to Architecture</a></li>
+        <li class="navbar__link"><a href="projects.html">Projects</a></li>
+        <li class="navbar__link"><a href="news.html">News</a></li>
+        <li class="navbar__link"><a href="opportunities.html">Opportunities</a></li>
+        <li class="navbar__link"><a href="about.html">About</a></li>
+      </ul>
+
+      <hr>
+    </nav>
   </header>
 
   <main>
@@ -145,7 +163,7 @@
         </div>
       </div>
       <ul class="copyright">
-        <a class="copyright__logo" href="https://www.nikken.co.jp/en/index.html"><img src="images/logos/logo2-white.png" alt="nikken sekkei logo"></a>
+        <a class="copyright__logo" target="_blank" href="https://www.nikken.co.jp/en/index.html"><img src="images/logos/logo2-white.png" alt="nikken sekkei logo"></a>
         <li>Copyrights &copy; 2018 <a href="lustrum.html" class="copyright__link">Lustrum</a> All Rights Reserved</li>
         <li class="copyright__policy"><a href="sitepolicy.html" class="copyright__link">Site Policy</a></li>
         <li class="copyright__policy">|</li>
@@ -187,19 +205,19 @@
       // Put url in between the brackets
       $('#parallax-img').css('background-image','url(images/stock/office2.jpg)');
 
-      $("header").hide();
+      $("header .navbar").hide();
 
       $(document).scroll(function() {
         top = $(document).scrollTop();
 
-        if (fade) {
+        if (fade && $(".navbar--mobile").css("display") == "none") {
           fade = false
           if (top > 99) {
-            $("header").fadeIn("slow", function() {
+            $("header .navbar").fadeIn("slow", function() {
               fade = true
             });
           } else {
-            $("header").fadeOut("slow", function() {
+            $("header .navbar").fadeOut("slow", function() {
               fade = true
             });
           };

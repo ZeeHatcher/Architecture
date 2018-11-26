@@ -1504,6 +1504,7 @@ ul li a p{
   width: 75%;
   margin: auto;
   margin-top: 3em;
+  border-spacing: 0;
 }
 
 .project__table tr {

@@ -35,6 +35,7 @@ header {
 
 footer {
   width: 100%;
+  clear: both;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -96,6 +97,7 @@ body::-webkit-scrollbar-thumb:hover {
 hr {
   margin: 0 10em;
   border-top: solid #000 1px;
+  clear: both;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1631,3 +1633,23 @@ ul li a p{
 /*  ==============================================================
       architecture.html CSS
     ==============================================================  */
+.section {
+  padding: 1em 10em;
+  clear: both;
+}
+
+.section__content {
+  float: left;
+  width: 50%;
+  position: relative;
+}
+
+.section__title {
+  text-align: center;
+  margin: 0.5em 0;
+}
+
+.section__p {
+  line-height: 1em;
+  text-align: center;
+}

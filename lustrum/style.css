@@ -1634,14 +1634,20 @@ ul li a p{
       architecture.html CSS
     ==============================================================  */
 .section {
-  padding: 1em 10em;
+  padding: 2em 10em;
   clear: both;
+  margin: 5em 0;
+  overflow: hidden;
 }
 
 .section__content {
   float: left;
   width: 50%;
+}
+
+.section__pic {
   position: relative;
+  height: auto;
 }
 
 .section__title {
@@ -1652,4 +1658,10 @@ ul li a p{
 .section__p {
   line-height: 1em;
   text-align: center;
+}
+
+.section__img {
+  position: absolute;
+  display: block;
+  width: 50%;
 }

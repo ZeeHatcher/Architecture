@@ -89,20 +89,20 @@
             <h4 class="project__title">Tokyo Dome</h4>
 
             <figure class="project__pic">
-              <img class="project__img" src="images/stock/dome.jpg" alt="midtown">
+              <img class="project__img" src="images/stock/dome.jpg" alt="tokyo dome"> <!-- https://www.nikken.co.jp/en/projects/p4iusj0000001gt1-img/pj0028_02.jpg -->
               <figcaption class="project__caption">
                 Tokyo Dome, Tokyo, Japan
               </figcaption>
             </figure>
 
-            <p class="project__p">
+            <p class="project__p"> <!-- https://www.nikken.co.jp/en/projects/sports/tokyo_dome.html -->
               Tokyo Dome is the first all-weather stadium with a roof in Japan.
-                The roof has an air-membrane structure reinforced with low-profile
-                cables, and glass fiber cloth with a translucent Teflon coating was
-                used as a roofing material. To make sure the adjacent Japanese garden
-                receives sunlight, the roof was slanted at a gradient of 1/10
-                from the infield to the outfield. With around 62,000 seating capacity,
-                roughly 13,000 of which are movable, it can accommodate a variety of events.
+              The roof has an air-membrane structure reinforced with low-profile
+              cables, and glass fiber cloth with a translucent Teflon coating was
+              used as a roofing material. To make sure the adjacent Japanese garden
+              receives sunlight, the roof was slanted at a gradient of 1/10
+              from the infield to the outfield. With around 62,000 seating capacity,
+              roughly 13,000 of which are movable, it can accommodate a variety of events.
             </p>
 
             <table class="project__table">
@@ -129,13 +129,13 @@
             <h4 class="project__title">Guangzhou Library</h4>
 
             <figure class="project__pic">
-              <img class="project__img" src="images/stock/guangdong.jpg" alt="haneda chronogate">
+              <img class="project__img" src="images/stock/guangdong.jpg" alt="guangzhou library"> <!-- https://www.nikken.co.jp/en/projects/p4iusj0000000lsw-img/pj0033_02.jpg -->
               <figcaption class="project__caption">
                 Guangzhou Library, Guangzhou, Guangdong Province, China
               </figcaption>
             </figure>
 
-            <p class="project__p">
+            <p class="project__p"> <!-- https://www.nikken.co.jp/en/projects/cultural/guangzhou_library.html -->
               Offering a selection of 3.5 million books to browse through,
                 this large-scale library has few precedents anywhere in the world.
                 It was designed to be a facility that is open to the citizens,
@@ -170,13 +170,13 @@
             <h4 class="project__title">Akagane Museum</h4>
 
             <figure class="project__pic">
-              <img class="project__img" src="images/stock/akagane.jpg" alt="yamaha ginza">
+              <img class="project__img" src="images/stock/akagane.jpg" alt="akagane museum"> <!-- https://www.nikken.co.jp/en/projects/p4iusj0000000mej-img/pj0034_02.jpg -->
               <figcaption class="project__caption">
                 Akagane Museum, Ehime, Japan
               </figcaption>
             </figure>
 
-            <p class="project__p">
+            <p class="project__p"> <!-- https://www.nikken.co.jp/en/projects/cultural/akagane_museum.html -->
               Here we designed a base for creating and sharing new art
                 and culture while meeting and interacting with people of
                 various backgrounds and interests. The facility is comprised
@@ -219,17 +219,17 @@
     </article>
   </main>
 
-  <footer>
-    <hr>
-    <div class="disclaimer">
-      <h5 class="disclaimer__title">Disclaimer</h5>
-      <p class="disclaimer__text">
-        This website is created for education and non-commercial use only.
-        It is an assignment for completion of unit,
-        FST10011 Fundamentals of Web Technology based on the Foundation (IT/Multimedia) course from Swinburne University of Technology Sarawak Campus.
-      </p>
-    </div>
+  <hr>
+  <div class="disclaimer">
+    <h5 class="disclaimer__title">Disclaimer</h5>
+    <p class="disclaimer__text">
+      This website is created for education and non-commercial use only.
+      It is an assignment for completion of unit,
+      FST10011 Fundamentals of Web Technology based on the Foundation (IT/Multimedia) course from Swinburne University of Technology Sarawak Campus.
+    </p>
+  </div>
 
+  <footer>
     <div class="footer">
       <div class="finfo">
         <div class="finfo__col-1">
@@ -306,9 +306,9 @@
 
       // Change parallax image here
       // Put url in between the brackets
-      $('#parallax-img').css('background-image','url(images/stock/denso.jpg)');
+      $('#parallax-img').css('background-image','url(images/stock/denso.jpg)'); // https://www.nikken.co.jp/en/projects/p4iusj0000000nue-img/pj0049_04.jpg
 
-      $("header").hide();
+      $("header .navbar").hide();
 
       $(document).scroll(function() {
         top = $(document).scrollTop();

@@ -35,6 +35,7 @@ header {
 
 footer {
   width: 100%;
+  clear: both;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -96,6 +97,7 @@ body::-webkit-scrollbar-thumb:hover {
 hr {
   margin: 0 10em;
   border-top: solid #000 1px;
+  clear: both;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -545,6 +547,11 @@ hr {
     display: none;
   }
 
+  .grid--col-12 {
+    margin: 0;
+    padding: 3em 2em;
+  }
+
   .grid--col-3 {
     grid-template-columns: 100%;
     padding: 10em;
@@ -555,7 +562,7 @@ hr {
       index.html CSS
     ==============================================================  */
 .hero {
-  background-image: url(images/stock/pj0005_02.jpg);
+  background-image: url(images/stock/pj0005_02.jpg); /* https://www.nikken.co.jp/en/projects/p4iusj0000000ik1-img/pj0005_02.jpg */
   background-repeat: no-repeat;
   background-position: 0 50%;
   height: 100vh;
@@ -1593,37 +1600,132 @@ ul li a p{
 }
 
 .pic--1 {
-  background-image: url(images/stock/institute.jpg);
+  background-image: url(images/stock/institute.jpg); /* https://lh3.googleusercontent.com/Q0fjwDKkHV3eEXmvJMVcA5JQvcsMDfUbJVcdpKKOUwAKQhqLg5oniAQw9S1mmw4DwmrDrw=s136 */
 }
 
 .pic--2 {
-  background-image: url(images/stock/pola.jpg);
+  background-image: url(images/stock/pola.jpg); /* https://lh3.googleusercontent.com/oYPDsKUG3yc5ZwDT02azU4hrovj7j5IHs7JqfTar-9q3mAOPw_aIbL_whNH-pY6tJtEUbw=s136 */
 }
 
 .pic--3 {
-  background-image: url(images/stock/hoki.jpg);
+  background-image: url(images/stock/hoki.jpg); /* https://lh3.googleusercontent.com/QDzj9l06dznIHQInGW26Dbw8ZI56UKkqshc36PepRPhI2qmxq25eEroJvV8UmD19Ux0ikw=s136 */
 }
 
 .pic--4 {
-  background-image: url(images/stock/dome.jpg);
+  background-image: url(images/stock/dome.jpg); /* https://www.nikken.co.jp/en/projects/p4iusj0000001gt1-img/pj0028_02.jpg */
 }
 
 .pic--5 {
-  background-image: url(images/stock/guangdong.jpg);
+  background-image: url(images/stock/guangdong.jpg); /* https://www.nikken.co.jp/en/projects/p4iusj0000000lsw-img/pj0033_02.jpg */
 }
 
 .pic--6 {
-  background-image: url(images/stock/akagane.jpg);
+  background-image: url(images/stock/akagane.jpg); /* https://www.nikken.co.jp/en/projects/p4iusj0000000mej-img/pj0034_02.jpg */
 }
 
 .pic--7 {
-  background-image: url(images/stock/midtown.jpg);
+  background-image: url(images/stock/midtown.jpg); /* https://www.nikken.co.jp/en/projects/p4iusj0000000ifo-img/pj0003_02.jpg */
 }
 
 .pic--8 {
-  background-image: url(images/stock/chronogate.jpg);
+  background-image: url(images/stock/chronogate.jpg); /* https://www.nikken.co.jp/en/projects/p4iusj0000000ink-img/pj0009_02.jpg */
 }
 
 .pic--9 {
-  background-image: url(images/stock/ginza.jpg);
+  background-image: url(images/stock/ginza.jpg); /* https://www.nikken.co.jp/en/projects/p4iusj0000000koa-img/pj0020_02.jpg */
+}
+
+/*  ==============================================================
+      architecture.html CSS
+    ==============================================================  */
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5em 10em;
+  margin: 5em 0;
+}
+
+.section--black {
+  background-color: #222;
+  color: #fff;
+}
+
+.section--grey {
+  background-color: #333;
+  color: #ccc;
+}
+
+.section__content {
+  width: 50%;
+}
+
+.section__content--wide {
+  width: 100%;
+}
+
+.section__pic {
+  position: relative;
+}
+
+.section__title {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.section__p {
+  line-height: 1em;
+  text-align: center;
+  padding: 0 2em;
+}
+
+.section__img {
+  object-fit: cover;
+  position: absolute;
+  display: block;
+  height: 80%;
+  max-width: 60%;
+  min-width: 40%;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.section__img--pos-1 {
+  top: 0;
+  left: 0;
+}
+
+.section__img--pos-2 {
+  top: 25%;
+  left: 40%;
+}
+
+.section__img--pos-3 {
+  top: 0;
+  right: 0;
+}
+
+.section__img--pos-4 {
+  top: 25%;
+  right: 40%;
+}
+
+.section__content--wide .section__img {
+  position: static;
+  height: auto;
+  max-width: 50%;
+  margin: 3em auto;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .section {
+    padding: 2em 5em;
+  }
+
+  .section__content {
+    width: 100%;
+  }
+
+  .section__img {
+    display: none;
+  }
 }

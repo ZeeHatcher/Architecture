@@ -547,6 +547,11 @@ hr {
     display: none;
   }
 
+  .grid--col-12 {
+    margin: 0;
+    padding: 3em 2em;
+  }
+
   .grid--col-3 {
     grid-template-columns: 100%;
     padding: 10em;
@@ -1635,8 +1640,8 @@ ul li a p{
     ==============================================================  */
 .section {
   display: flex;
+  flex-wrap: wrap;
   padding: 5em 10em;
-  clear: both;
   margin: 5em 0;
 }
 
@@ -1709,4 +1714,18 @@ ul li a p{
   max-width: 50%;
   margin: 3em auto;
   margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .section {
+    padding: 2em 5em;
+  }
+
+  .section__content {
+    width: 100%;
+  }
+
+  .section__img {
+    display: none;
+  }
 }

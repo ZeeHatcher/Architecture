@@ -827,7 +827,7 @@ hr {
   grid-template-columns: 62% 33%;
   grid-column-gap: 1%;
   grid-template-rows: auto;
-  margin: 0 0;
+  margin: 0;
 }
 
 .background--blue {
@@ -869,14 +869,20 @@ legend {
   font-weight: bolder;
 }
 
+.form__block {
+  margin-bottom: 5%;
+  display: block;
+  width: 100%;
+}
+
 form label {
   margin-bottom: .2em;
 }
 
 .form__question {
-  display: block;
   padding-left: 1%;
   font-weight: bold;
+  display: block;
 }
 
 .form__answer {
@@ -911,9 +917,10 @@ form select option {
 
 .form__table {
   width: 80%;
+  margin: 0;
 }
 
-th, td {
+.form__table th, .form__table td {
   text-align: center;
 }
 
@@ -922,8 +929,8 @@ th {
 }
 
 .form__textarea {
-  width: 70%;
-  max-width: 70%;
+  width: 250%;
+  max-width: 250%;
   font-size: .8em;
   border: .05em solid #2c7bd6;
   border-radius: 4px;
@@ -1040,12 +1047,8 @@ th {
   background-color: #5998ff;
 }
 
-.feedback2 {
-  margin: 5%;
-}
-
 /* For small screen */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 800px) {
   .grid__form {
     grid-template-columns: 100%;
   }
@@ -1507,6 +1510,7 @@ ul li a p{
   width: 75%;
   margin: auto;
   margin-top: 3em;
+  border-spacing: 0;
 }
 
 .project__table tr {

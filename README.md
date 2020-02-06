@@ -1,5 +1,5 @@
 # Architecture
-**Assignment Unit:** FST10014 Programming  
+**Assignment Unit:** FST10011 Fundamentals of Web Technology  
 **Language(s):** HTML, CSS, JavaScript, jQuery  
 **Description:** A website designed to provide information on architecture, and also on the selected client, which was Nikken Sekkei.
 
